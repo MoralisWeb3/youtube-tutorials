@@ -5,8 +5,6 @@ const MARKETPLACE_CONTRACT_ADDRESS = "0x1d6A4CF64B52F6c73f201839AdED7379Ce58059c
 
 init = async () => {
     hideElement(userItemsSection);
-    hideElement(userInfo);
-    hideElement(createItemForm);
     window.web3 = await Moralis.Web3.enable();
     window.tokenContract = new web3.eth.Contract(tokenContractAbi, TOKEN_CONTRACT_ADDRESS);
     window.marketplaceContract = new web3.eth.Contract(marketplaceContractAbi, MARKETPLACE_CONTRACT_ADDRESS);
@@ -114,7 +112,7 @@ openUserInfo = async () => {
             hideElement(userAvatarImg);
         }
 
-        showElement(userInfo);
+        $('#userInfo').modal('show');
     }else{
         login();
     }
@@ -187,7 +185,7 @@ mintNft = async (metadataUrl) => {
 openUserItems = async () => {
     user = await Moralis.User.current();
     if (user){    
-        showElement(userItemsSection);
+        $('#userItems').modal('show');
     }else{
         login();
     }
@@ -258,6 +256,7 @@ renderItem = (item) => {
     if (item.sellerAvatar){
         itemForSale.getElementsByTagName("img")[0].src = item.sellerAvatar.url();
         itemForSale.getElementsByTagName("img")[0].alt = item.sellerUsername;
+     
     }
 
     itemForSale.getElementsByTagName("img")[1].src = item.image;
@@ -314,7 +313,7 @@ const userProfileButton = document.getElementById("btnUserInfo");
 userProfileButton.onclick = openUserInfo;
 
 const openCreateItemButton = document.getElementById("btnOpenCreateItem");
-openCreateItemButton.onclick = () => showElement(createItemForm);
+openCreateItemButton.onclick = () => $('#createItem').modal('show');
 
 //  User profile
 const userInfo = document.getElementById("userInfo");
