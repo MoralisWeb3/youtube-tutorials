@@ -4,6 +4,8 @@
 
 [Part 1 - I Cloned Etherscan in 5 hours - Environment Setup](https://youtu.be/1bJ1lbz8oZI)
 
+[Part 2 - I Cloned Etherscan in 5 hours -Cloud Query Hook](https://youtu.be/X4NOOnLruH4)
+
 
 # Getting Started with Create React App
 
