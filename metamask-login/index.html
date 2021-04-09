@@ -13,7 +13,7 @@
     <title>Metamask Demo</title>
 
 	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-    <script src="https://npmcdn.com/moralis@0.0.6/dist/moralis.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   </head>
 
   <body>
@@ -21,8 +21,8 @@
 	<button onclick="login()">Login with Metamask</button>
 
 	<script>
-		Moralis.initialize("pWO5CSxyCCwjho7Mriu6TRNEVXL6oCNuWEnXnsO7"); // Application id from moralis.io
-		Moralis.serverURL = "https://4gp8qpnnhzcq.moralis.io:2053/server"; //Server url from moralis.io
+		Moralis.initialize("APPLICATION_ID"); // Application id from moralis.io
+		Moralis.serverURL = "SERVER_URL"; //Server url from moralis.io
 	
 		async function login(){
 			console.log("login clicked");
@@ -36,11 +36,5 @@
 		}
 	
 	</script>
-
-
   </body>
-
-
-  
-  
 </html>
