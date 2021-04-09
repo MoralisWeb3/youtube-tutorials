@@ -1,5 +1,6 @@
 import Moralis from "moralis";
 import "./App.css";
+import TransResults from "./components/TransResults";
 import { useMoralisCloudQuery } from "./hooks/cloudQuery";
 
 Moralis.initialize(process.env.REACT_APP_MORALIS_APPLICATION_ID);
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <h1>Moralis Scan</h1>
+      <TransResults />
     </div>
   );
 }
