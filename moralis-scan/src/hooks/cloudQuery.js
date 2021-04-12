@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 const defaultCloudQueryOptions = {
   params: {},
   postProcess: (r) => r.attributes,
+  onSuccess: () => {},
 };
 
 export function useMoralisCloudQuery(
@@ -28,6 +29,10 @@ export function useMoralisCloudQuery(
             setState({ data: output, error: null, loading: false });
           } else {
             setState({ data: null, error: null, loading: false });
+          }
+
+          if (typeof options.onSuccess === "function") {
+            options.onSuccess();
           }
         })
         .catch((error) => {
