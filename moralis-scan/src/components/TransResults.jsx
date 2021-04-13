@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { processTransaction } from '../queries/transactions';
 import { useMoralisCloudQuery } from '../hooks/cloudQuery';
 
@@ -12,12 +12,11 @@ const cols = [
   { colName: "Txn Fee", key: "gas_price" },
 ];
 
-const options = {
-  params: { userAddress: "0x29781d9fca70165cbc952b8c558d528b85541f0b" },
-  postProcess: processTransaction,
-};
-
-export default function TransResults() {
+export default function TransResults({userAddress}) {
+  const options = useMemo(()=> ({
+    params: { userAddress },
+    postProcess: processTransaction,
+  }), [userAddress]);
   const { data: results, error, loading } = useMoralisCloudQuery("getTransactions", options);
 
   if (!results) {
@@ -40,7 +39,7 @@ export default function TransResults() {
           {results.map((t, i) => (
             <tr key={i}>
               {cols.map((col) => (
-                <td>{t[col.key]}</td>
+                <td key={col.colName}>{t[col.key]}</td>
               ))}
             </tr>
           ))}
