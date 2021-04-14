@@ -12,6 +12,8 @@
 
 [Part 5 - I Cloned Etherscan in 5 hours - Routing](https://youtu.be/LFsj0-_tw0Y)
 
+[Part 6 - I Cloned Etherscan in 5 hours - Pagination Hook](https://youtu.be/_2V4peyS0Ns)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
