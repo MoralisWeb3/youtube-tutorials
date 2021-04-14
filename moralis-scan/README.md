@@ -8,6 +8,8 @@
 
 [Part 3 - I Cloned Etherscan in 5 hours - Transaction Component](https://youtu.be/WzuA_BLhF7c)
 
+[Part 4 - I Cloned Etherscan in 5 hours - Search Component](https://youtu.be/DM3mf2L7Iq8)
+
 
 # Getting Started with Create React App
 

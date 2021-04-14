@@ -1,0 +1,10 @@
+#loginButton,#logoutButton{
+    font-size:50px;
+    position:absolute;
+}
+
+#userInfo{
+    position:absolute;
+    top:70px;
+    background-color: white;
+}
