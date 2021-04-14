@@ -11,8 +11,7 @@ Moralis.serverURL = process.env.REACT_APP_MORALIS_SERVER_URL;
 
 function App() {
   return (
-    <div className="App">
-      <h1>Moralis Scan</h1>
+    <div className="container">
       <Router>
         <Header />
         <Switch>

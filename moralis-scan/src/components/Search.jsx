@@ -14,7 +14,7 @@ export default function Search() {
     params: {address}, // query params
     onSuccess: () => history.push(`/address/${address}`),
   }), [address, history]);
-  const {loading} = useMoralisCloudQuery("watchEthAddress", watchParams);
+  const {loading} = useMoralisCloudQuery("searchEthAddress", watchParams);
 
   const submitSearch = async (e) => {
     e.preventDefault();
