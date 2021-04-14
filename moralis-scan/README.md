@@ -10,6 +10,7 @@
 
 [Part 4 - I Cloned Etherscan in 5 hours - Search Component](https://youtu.be/DM3mf2L7Iq8)
 
+[Part 5 - I Cloned Etherscan in 5 hours - Routing](https://youtu.be/LFsj0-_tw0Y)
 
 # Getting Started with Create React App
 

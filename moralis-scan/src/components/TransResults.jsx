@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
 import { processTransaction } from '../queries/transactions';
 import { useMoralisCloudQuery } from '../hooks/cloudQuery';
+import { useParams } from 'react-router';
 
 const cols = [
   { colName: "Txn Hash", key: "hash" },
@@ -12,7 +13,8 @@ const cols = [
   { colName: "Txn Fee", key: "gas_price" },
 ];
 
-export default function TransResults({userAddress}) {
+export default function TransResults() {
+  const {address: userAddress} = useParams();
   const options = useMemo(()=> ({
     params: { userAddress },
     postProcess: processTransaction,
