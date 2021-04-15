@@ -1,7 +1,4 @@
-import React, { useMemo } from 'react'
-import { processTransaction } from '../queries/transactions';
-import { useParams } from 'react-router';
-import { usePagination } from '../hooks/pagination';
+import { useResultContext } from "./Paginator";
 
 const cols = [
   { colName: "Txn Hash", key: "hash" },
@@ -14,16 +11,11 @@ const cols = [
 ];
 
 export default function TransResults() {
-  const {address: userAddress} = useParams();
-  const options = useMemo(()=> ({
-    postProcess: processTransaction,
-  }), []);
-  const { results, error, loading } = usePagination("getTransactions", userAddress, options);
-
+  const { results } = useResultContext();
   if (!results) {
     return null;
   }
-  
+
   return (
     <div>
       <table className="table">
