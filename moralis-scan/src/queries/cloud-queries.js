@@ -1,40 +1,40 @@
 import Moralis from "moralis";
 
-Moralis.Cloud.define("searchEthAddress", async function(request) {
-  const { address } = request.params
+Moralis.Cloud.define("searchEthAddress", async function (request) {
+  const { address } = request.params;
   if (!address) {
-    return null
+    return null;
   }
 
   // find out if address is already watched
   const query = new Moralis.Query("WatchedEthAddress");
-  query.equalTo("address", address)
+  query.equalTo("address", address);
   const watchCount = await query.count();
-  
+
   if (watchCount > 0) {
     // already watched don't sync again
     return null;
   }
-  
-  return Moralis.Cloud.run("watchEthAddress", {address});
+
+  return Moralis.Cloud.run("watchEthAddress", { address });
 });
 
-Moralis.Cloud.define("getTransactions", function(request) {
-  const {userAddress, pageSize, pageNum } = request.params;
+Moralis.Cloud.define("getTransactions", function (request) {
+  const { userAddress, pageSize, pageNum } = request.params;
   const offset = (pageNum - 1) * pageSize;
-  
+
   const query = new Moralis.Query("EthTransactions");
   query.equalTo("from_address", userAddress);
   query.descending("block_number");
   query.withCount();
-  query.skip(offset)
+  query.skip(offset);
   query.limit(pageSize);
 
   return query.find();
 });
 
 Moralis.Cloud.define("getTokenTranfers", async (request) => {
-  const {userAddress, pageSize, pageNum } = request.params;
+  const { userAddress, pageSize, pageNum } = request.params;
   const offset = (pageNum - 1) * pageSize;
   const output = {
     results: [],
@@ -85,5 +85,46 @@ Moralis.Cloud.define("getTokenTranfers", async (request) => {
   delete lookupPipeline.count;
 
   output.results = await query.aggregate(lookupPipeline);
+  return output;
+});
+
+Moralis.Cloud.define("getTokenBalances", async (request) => {
+  const { userAddress, pageSize, pageNum } = request.params;
+  const offset = (pageNum - 1) * pageSize;
+
+  // count results
+  const query = new Moralis.Query("EthTokenBalance");
+  const matchPipeline = {
+    match: {
+      address: userAddress,
+      contract_type: "ERC20",
+      balance: { $ne: "0" },
+    },
+  };
+  const countPipeline = { ...matchPipeline, count: "count" };
+  const countResult = await query.aggregate(countPipeline);
+
+  // get page
+  const pagePipeline = {
+    ...matchPipeline,
+    addFields: {
+      adjBal: {
+        $divide: [
+          { $toDouble: "$balance" },
+          { $pow: [10, { $toDouble: "$decimals" }] },
+        ],
+      },
+    },
+    sort: { adjBal: -1 },
+    skip: offset,
+    limit: pageSize,
+  };
+  const pageResults = await query.aggregate(pagePipeline);
+
+  const output = {
+    results: pageResults,
+    count: countResult[0].count,
+  };
+
   return output;
 });

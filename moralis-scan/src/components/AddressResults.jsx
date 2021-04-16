@@ -7,6 +7,7 @@ import {
   useParams,
 } from "react-router-dom";
 import Transactions from './Transactions';
+import "./AddressResults.css";
 
 export default function AddressResults() {
   const {address} =  useParams();
@@ -32,6 +33,15 @@ export default function AddressResults() {
                   to={`/address/${address}/erc20`}
                 >
                   ERC20 Token Txns
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  to={`/address/${address}/tokenBalance`}
+                >
+                  Token Balances
                 </NavLink>
               </li>
             </ul>
