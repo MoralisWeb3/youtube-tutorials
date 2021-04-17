@@ -16,6 +16,8 @@
 
 [Part 7 - I Cloned Etherscan in 5 hours - Pagination Component](https://youtu.be/3x5eQdZo9i0)
 
+[Part 8 - I Cloned Etherscan in 5 hours - Token Transactions](https://youtu.be/lzjMcjn6XCk)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

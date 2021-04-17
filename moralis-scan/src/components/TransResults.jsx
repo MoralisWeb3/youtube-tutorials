@@ -1,18 +1,10 @@
+import { useTransType } from "../hooks/useTransType";
 import { useResultContext } from "./Paginator";
-
-const cols = [
-  { colName: "Txn Hash", key: "hash" },
-  { colName: "Block", key: "block_number" },
-  { colName: "Age", key: "ago" },
-  { colName: "From", key: "from_address" },
-  { colName: "To", key: "to_address" },
-  { colName: "Value", key: "value" },
-  { colName: "Txn Fee", key: "gas_price" },
-];
 
 export default function TransResults() {
   const { results } = useResultContext();
-  if (!results) {
+  const { cols } = useTransType();
+  if (!results || !cols) {
     return null;
   }
 

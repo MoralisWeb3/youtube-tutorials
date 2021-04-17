@@ -1,11 +1,12 @@
 import React from 'react'
 import { useParams } from 'react-router';
-import { processTransaction } from '../queries/transactions';
+import { useTransType } from '../hooks/useTransType';
 import Paginator from './Paginator';
 import TransResults from './TransResults';
 
 export default function Transactions() {
   const {address } = useParams();
+  const {methodName, postProcess} = useTransType();
   if (!address) {
     return null;
   }
@@ -14,8 +15,8 @@ export default function Transactions() {
     <div>
       <Paginator
         userAddress={address}
-        methodName="getTransactions"
-        options={{ postProcess: processTransaction }}
+        methodName={methodName}
+        options={{ postProcess }}
       >
         <TransResults />
       </Paginator>

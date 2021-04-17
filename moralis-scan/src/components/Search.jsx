@@ -1,6 +1,6 @@
-import React, { useMemo, useState } from 'react'
-import { useHistory } from 'react-router';
-import { useMoralisCloudQuery } from '../hooks/cloudQuery';
+import React, { useMemo, useState } from "react";
+import { useHistory } from "react-router";
+import { useMoralisCloudQuery } from "../hooks/cloudQuery";
 
 export default function Search() {
   const [searchTxt, setSearchTxt] = useState("");
@@ -10,11 +10,18 @@ export default function Search() {
 
   const onSearchTextChanged = (e) => setSearchTxt(e.target.value);
 
-  const watchParams = useMemo(()=> ({
-    params: {address}, // query params
-    onSuccess: () => history.push(`/address/${address}`),
-  }), [address, history]);
-  const {loading} = useMoralisCloudQuery("searchEthAddress", watchParams);
+  const watchParams = useMemo(
+    () => ({
+      params: { address }, // query params
+      onSuccess: () => {
+        if (address) {
+          history.push(`/address/${address}/main`);
+        }
+      },
+    }),
+    [address, history]
+  );
+  const { loading } = useMoralisCloudQuery("searchEthAddress", watchParams);
 
   const submitSearch = async (e) => {
     e.preventDefault();
