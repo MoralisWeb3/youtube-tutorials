@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router";
+import { processTokenBalance } from "../queries/tokenBalance";
 import { processTokenTransfer } from "../queries/tokenTransfer";
 import { processTransaction } from "../queries/transactions";
 
@@ -28,6 +29,15 @@ const TransTypeOptions = {
     ],
     methodName: "getTokenTranfers",
     postProcess: processTokenTransfer,
+  },
+  tokenBalance: {
+    cols: [
+      { colName: "Name", key: "name" },
+      { colName: "Balance", key: "balance" },
+    ],
+    methodName: "getTokenBalances",
+    postProcess: processTokenBalance,
+    // itemName: "tokens",
   },
 };
 

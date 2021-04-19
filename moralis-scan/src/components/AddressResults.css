@@ -1,0 +1,15 @@
+.nav .nav-link {
+  color: rgba(74,79,85,.8);
+  font-weight: 600;
+  padding: .75rem;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  transition: .3s;
+  margin-bottom: -1px;
+  margin-top: -1px;
+}
+
+.nav .nav-link.active {
+  border-bottom-color: #3498db;
+  color: #3498db;
+}
