@@ -18,6 +18,8 @@
 
 [Part 8 - I Cloned Etherscan in 5 hours - Token Transactions](https://youtu.be/lzjMcjn6XCk)
 
+[Part 9 - I Cloned Etherscan in 5 hours - Token Balances](https://youtu.be/Xt4lxc2kEuw)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
