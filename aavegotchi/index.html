@@ -1,0 +1,205 @@
+
+
+<!--
+
+1) AUTHENTICATE WITH METAMASK
+2) ADD USER TO DB
+3) ADD MORE DATA TO THE USER PROFILE
+
+-->
+
+<html>
+<head>
+  <title>Metamask Demo</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://npmcdn.com/moralis@0.0.6/dist/moralis.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <button onclick="login()">Login with Metamask</button>
+
+  <script>
+    Moralis.initialize(""); // Application id from moralis.io
+    Moralis.serverURL = ""; //Server url from moralis.io
+
+    var state = {}
+    var sprites = []
+    var buttonsLocked = {}
+
+
+    async function login(){
+      console.log("login clicked");
+      var user = await Moralis.Web3.authenticate();
+      if(user){
+        console.log(user);
+      }
+    }
+
+    var config = {
+      type: Phaser.AUTO,
+      width: 1200,
+      height: 700,
+      scene: {
+        preload: preload,
+        create: create,
+        update: update
+      },
+      physics: {
+        default: 'arcade',
+        arcade: { debug: true }
+      }
+    };
+
+    var game = new Phaser.Game(config);
+    var context;
+
+    function preload ()
+    {
+      ping();
+      context = this;
+      context.load.image('background', 'bg.jpg');
+    }
+
+    async function create ()
+    {
+      this.wKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+      this.aKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+      this.sKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
+      this.dKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
+
+      // wait for game state update
+      let query = new Moralis.Query("GameState");
+      let subscription = await query.subscribe();
+      query.equalTo("stateType", "globalGameState");
+      subscription.on('update', (object) => {
+        state = object.get("state");
+        console.log(state)
+      });
+
+
+      // get current state
+      state = await Moralis.Cloud.run("getState")
+
+      context.add.image(0, 0, 'background').setOrigin(0,0).setScale(1,1);
+    }
+
+    async function  update ()
+    {
+      cursors = this.input.keyboard.createCursorKeys();
+      const params =  { cursors: cursors };
+
+      if (this.wKey.isDown) {
+
+        if(!buttonsLocked["up"]){
+          console.log('W is pressed');
+
+          buttonsLocked["up"]=true;
+          await Moralis.Cloud.run("move", {direction:"up"});
+          buttonsLocked["up"]=false;
+        }
+
+      }
+      else if(this.aKey.isDown){
+        if(!buttonsLocked["left"]){
+          console.log('A is pressed');
+
+          buttonsLocked["left"]=true;
+          await Moralis.Cloud.run("move", {direction:"left"});
+          buttonsLocked["left"]=false;
+        }
+      }
+      else if(this.sKey.isDown){
+        if(!buttonsLocked["down"]){
+          console.log('S is pressed');
+
+          buttonsLocked["down"]=true;
+          await Moralis.Cloud.run("move", {direction:"down"});
+          buttonsLocked["down"]=false;
+        }
+      }
+      else if(this.dKey.isDown){
+        if(!buttonsLocked["right"]){
+          console.log('D is pressed');
+
+          buttonsLocked["right"]=true;
+          await Moralis.Cloud.run("move", {direction:"right"});
+          buttonsLocked["right"]=false;
+        }
+      }
+
+      drawState()
+    }
+
+    async function ping(){
+      setTimeout(ping,1000)
+      await Moralis.Cloud.run("ping");
+    }
+
+
+
+    function drawState(){
+
+      for (let userId in state) {
+
+        // new player that we haven't seen - need to load image, create sprite
+        if(!sprites[userId]){
+
+          sprites[userId] = {loading:true}
+
+          const svgBlob = new Blob([state[userId].svg], {type:"image/svg+xml;charset=utf-8"})
+          const url = URL.createObjectURL(svgBlob)
+
+          context.load.image('player'+userId,url).on('filecomplete', function(){
+            if(sprites[userId].loading)
+            {
+              sprites[userId].loading = false
+              setTimeout(function(){ //had to add this delay for images to always show
+                sprites[userId] =  context.physics.add.image(state[userId].x, state[userId].y, 'player'+userId).setScale(0.5,0.5).setOrigin(0,0);
+              },1000)
+            }
+          }, context);
+          context.load.start()
+        }
+        // existing player - just move around existing sprite
+        else{
+
+          if(sprites[userId].x<state[userId].x)
+            sprites[userId].x+=5;
+
+          else if(sprites[userId].x>state[userId].x)
+              sprites[userId].x-=5;
+
+
+
+          if(sprites[userId].y<state[userId].y)
+              sprites[userId].y+=5;
+
+          else if(sprites[userId].y>state[userId].y)
+              sprites[userId].y-=5;
+
+        }
+      }
+
+    }
+
+
+
+
+
+
+
+  </script>
+
+
+</body>
+
+
+
+
+</html>
