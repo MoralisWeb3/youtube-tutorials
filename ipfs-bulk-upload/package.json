@@ -1,0 +1,15 @@
+{
+  "name": "ipfs-upload-bulk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "images.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "fs": "0.0.1-security"
+  }
+}
