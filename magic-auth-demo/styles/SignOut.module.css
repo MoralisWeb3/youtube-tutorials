@@ -1,0 +1,72 @@
+.signOutCard {
+  width: 50vw;
+  height: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.subHeader {
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.detailsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.detailsDiv > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0.5;
+}
+.detailsDiv > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0.5;
+}
+
+.detailsDiv > div > p {
+  overflow-wrap: anywhere;
+}
+
+.fotter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 1;
+  column-gap: 15px;
+}
+
+.fotter > button {
+  width: 100px;
+}
+
+.fotter > button:nth-child(2) {
+  border: 1px solid black;
+  background-image: none;
+  color: black;
+  background-color: transparent;
+}
+
+.refresh {
+  color: white;
+  background-color: rgb(104, 81, 255);
+  border: 0px solid transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
