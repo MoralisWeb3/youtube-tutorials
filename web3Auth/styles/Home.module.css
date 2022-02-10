@@ -1,0 +1,53 @@
+.backgroundParent {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #1ac7fe, #b114fb);
+}
+.card {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.buttonCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loginButton {
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 0px;
+  color: white;
+  background-image: linear-gradient(90deg, #0364ff, #1ac7fe);
+  width: 100%;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+.green {
+  color: green;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}

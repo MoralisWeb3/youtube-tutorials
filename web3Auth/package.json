@@ -1,0 +1,25 @@
+{
+  "name": "blank-project-next",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@web3auth/web3auth": "^0.2.3",
+    "ethers": "^5.5.3",
+    "moralis": "^1.3.0",
+    "next": "12.0.8",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-moralis": "^1.0.4",
+    "web3": "^1.7.0",
+    "web3uikit": "^0.1.19"
+  },
+  "devDependencies": {
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8"
+  }
+}
