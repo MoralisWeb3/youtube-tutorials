@@ -1,0 +1,17 @@
+{
+    "name": "LeanTransition.Editor",
+    "references": [
+        "GUID:82c7e6eac44d7e048b22ad98800dcfc7"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

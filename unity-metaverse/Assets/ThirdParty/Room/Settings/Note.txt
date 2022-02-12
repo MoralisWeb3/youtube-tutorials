@@ -1,0 +1,3 @@
+we recommend using Post Processing Stack created by Unity and using the following settings as shown in the photos
+Unity post processing:
+assetstore.unity.com/packages/essentials/post-processing-stack-83912

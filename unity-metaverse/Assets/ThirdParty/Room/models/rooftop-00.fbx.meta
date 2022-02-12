@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: cd342c9f9a9c8f042bc81f7ce625482b
+timeCreated: 1542056640
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: top roof.000
+    100004: top roof.001
+    100006: top roof.002
+    100008: top roof.003
+    100010: top roof.004
+    100012: top roof.005
+    100014: top roof.006
+    100016: top roof.007
+    100018: top roof.008
+    100020: top roof.009
+    100022: top roof.010
+    100024: top roof.011
+    100026: top roof.012
+    100028: top roof.013
+    400000: //RootNode
+    400002: top roof.000
+    400004: top roof.001
+    400006: top roof.002
+    400008: top roof.003
+    400010: top roof.004
+    400012: top roof.005
+    400014: top roof.006
+    400016: top roof.007
+    400018: top roof.008
+    400020: top roof.009
+    400022: top roof.010
+    400024: top roof.011
+    400026: top roof.012
+    400028: top roof.013
+    2300000: top roof.000
+    2300002: top roof.001
+    2300004: top roof.002
+    2300006: top roof.003
+    2300008: top roof.004
+    2300010: top roof.005
+    2300012: top roof.006
+    2300014: top roof.007
+    2300016: top roof.008
+    2300018: top roof.009
+    2300020: top roof.010
+    2300022: top roof.011
+    2300024: top roof.012
+    2300026: top roof.013
+    3300000: top roof.000
+    3300002: top roof.001
+    3300004: top roof.002
+    3300006: top roof.003
+    3300008: top roof.004
+    3300010: top roof.005
+    3300012: top roof.006
+    3300014: top roof.007
+    3300016: top roof.008
+    3300018: top roof.009
+    3300020: top roof.010
+    3300022: top roof.011
+    3300024: top roof.012
+    3300026: top roof.013
+    4300000: top roof.013
+    4300002: top roof.012
+    4300004: top roof.011
+    4300006: top roof.010
+    4300008: top roof.009
+    4300010: top roof.008
+    4300012: top roof.007
+    4300014: top roof.006
+    4300016: top roof.005
+    4300018: top roof.004
+    4300020: top roof.003
+    4300022: top roof.000
+    4300024: top roof.002
+    4300026: top roof.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
