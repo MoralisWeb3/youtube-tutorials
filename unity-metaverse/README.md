@@ -22,6 +22,8 @@ If you need further help you can leave a comment in the <a href="https://forum.m
 <ul>
   <li>On Unity Hub, open the project by selecting the <b>unity-metaverse</b> folder from the extracted files:
     <img src="https://media.giphy.com/media/fXPHmFmA9udSxBYjgv/giphy.gif"></li>
+  <li>Once in Unity, go to <b>Scenes</b> and open <b>Main:</b>
+    <img src=""></li>
 </ul>
   
 
