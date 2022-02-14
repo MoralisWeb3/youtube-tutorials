@@ -7,5 +7,6 @@ Follow this README to learn how to download the project and open it with <b>Unit
   <li>Download and install <a href="https://unity3d.com/get-unity/download">Unity Hub</a></li>
   <li>Once installed, download <a href="https://unity3d.com/unity/qa/lts-releases?version=2020.3">Unity 2020.3.26f1 LTS version</a> for best compatibility</li>
 </ul>
+![](https://github.com/MoralisWeb3/youtube-tutorials/tree/main/unity-metaverse/gifs/unity_lts.gif)
 
 
