@@ -22,8 +22,11 @@ If you need further help you can leave a comment in the <a href="https://forum.m
 <ul>
   <li>On Unity Hub, open the project by selecting the <b>unity-metaverse</b> folder from the extracted files:
     <img src="https://media.giphy.com/media/fXPHmFmA9udSxBYjgv/giphy.gif"></li>
-  <li>Once in Unity, go to <b>Scenes</b> and open <b>Main:</b>
-    <img src=""></li>
+  <li>Once in Unity, go to <b>Scenes</b> and open <b>Main:</b><br>
+    <img src="https://media.giphy.com/media/zp6Px8r2XQzk1l9lGM/giphy.gif"></li>
+  <li>Add your <a href="https://admin.moralis.io/servers">Server URL and Application ID</a> to the <b>MoralisSetup prefab:</b><br>
+    <img src="https://media.giphy.com/media/FayrCvQT0dtnlClP6S/giphy.gif"></li>
+  <li>Lastly, add the correct <b>Speedy Node URL</b> and <b>HIT ▶️</b>!</li>
 </ul>
   
 
