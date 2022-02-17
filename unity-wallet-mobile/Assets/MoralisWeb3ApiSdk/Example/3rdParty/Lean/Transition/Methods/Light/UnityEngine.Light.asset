@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5545acbf3507bc44ad0dbb5454900f1, type: 3}
+  m_Name: UnityEngine.Light
+  m_EditorClassIdentifier: 
+  entries:
+  - Title: Intensity
+    Template: {fileID: 11400000, guid: c0f6e40f2e6422d4a93fdf10f337a9fe, type: 2}
+    Contents: "PROPERTY\tintensity\nDEFAULT\t = 1.0f\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Intensity\")]"
+  - Title: Range
+    Template: {fileID: 11400000, guid: c0f6e40f2e6422d4a93fdf10f337a9fe, type: 2}
+    Contents: "PROPERTY\trange\nDEFAULT\t = 1.0f\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Range\")]"
+  - Title: Color
+    Template: {fileID: 11400000, guid: a594876431832f1468812560a677920a, type: 2}
+    Contents: "PROPERTY\tcolor\nDEFAULT\t = UnityEngine.Color.white\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Color\")]"

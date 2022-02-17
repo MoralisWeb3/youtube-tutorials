@@ -1,0 +1,18 @@
+{
+  "name": "ru.threedisevenzeror.unitygifdecoder",
+  "version": "1.0.3",
+  "displayName": "Gif Decoder",
+  "description": "Classes and components for reading and decoding .GIF files  in Unity",
+  "unity": "2018.1",
+  "keywords": [
+    "Gif",
+    "Image",
+    "Format",
+    "Graphics"
+  ],
+  "author": {
+    "name": "3DI70R",
+    "email": "ThreeDISevenZeroR@gmail.com"
+  },
+  "type": "library"
+}
