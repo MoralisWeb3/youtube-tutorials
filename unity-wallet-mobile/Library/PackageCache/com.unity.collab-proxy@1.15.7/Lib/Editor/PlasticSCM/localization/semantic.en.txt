@@ -1,0 +1,646 @@
+﻿== Base ==
+Base: 
+
+== ChangedResultFile ==
+Do you want to save the result file?
+
+== ChangedDestinationFile ==
+Do you want to save the destination file?
+
+== CloseButton ==
+Close
+
+== ConfiguredStatus ==
+configured!
+
+== NotConfigureStatus ==
+not configured
+
+== Destination ==
+Destination: 
+
+== ErrorAutomaticOptionNeeded ==
+In silent mode the automatic merge option is needed
+
+== ErrorComparisonMethod ==
+Invalid comparison method
+
+== ErrorConflictCanNotBeApplied ==
+The conflict resolution cannot be applied because it depends on other conflict's resolution. Please try to resolve conflicts in a different order. The conflict resolution returned the following error: {0}
+
+== ErrorContributorsMustBeSpecified ==
+The contributors must be specified
+
+== ErrorEncoding ==
+Specified encoding cannot be identified ({0}).
+
+== ErrorExecutingExternalDiffTool ==
+An error occurred when executing external diff tool: 
+
+== ErrorExecutingExternalMergeTool ==
+An error occurred when executing external merge tool: 
+
+== ErrorExecutingExternal2WayMergeTool ==
+An error occurred when executing external 2-way merge tool: 
+
+== ErrorFileTitleType ==
+Oops! We do not support your language... yet!
+
+== ErrorFileType ==
+SemanticMerge received the following files: {0}.
+The file extensions are not recognized as supported languages.
+You can run your default text-based {1} tool.
+
+Note: in case you know these files contain a supported language check how to use the -l param in SemanticMerge.
+
+== ErrorJVMNotAvailableTitle ==
+Oops! JVM not found - required to parse your files
+
+== ErrorJVMNotAvailable ==
+SemanticMerge requires a valid JVM installation available
+in order to parse your {0} files.
+
+You can run your default text-based {1} tool instead.
+    
+== ErrorNumberOfContributorsDoesNotMatch ==
+The number of contributors does not match
+
+== ErrorTabSpaces ==
+Invalid tab spaces
+
+== ErrorVersionControl ==
+Invalid version control to configure
+
+== OpenDialogFilterForExecutableFile ==
+Executable Files (*.exe)|*.exe
+
+== OpenDialogTitleForConfigFile ==
+Browse for config file
+
+== OpenDialogTitleForExecutableFile ==
+Browse for executable file
+
+== PlasticSCMConfigurationNotification ==
+Changes won't take effect until you reopen the Plastic SCM GUI
+
+== RestartMergeWithConfigChangesMessage ==
+In order to apply the new saved configuration, the merge should be restarted. 
+
+== RestartDiffWithConfigChangesMessage ==
+In order to apply the new saved configuration, the diff should be restarted. 
+
+== RestartMergeQuestion ==
+You have already resolved {0} conflict(s) that will be lost. Are you sure you want to restart the merge?
+
+== ResultNeeded ==
+A result file path must be specified
+
+== Source ==
+Source: 
+
+== UnsolvedPendingConflicts ==
+The file still has {0} unsolved conflicts.
+
+== UnexpectedError ==
+An unexpected error has occurred.
+
+== Usage ==
+      Usage: semanticmerge [<configureversioncontrol> | <mergeOptions>]
+
+      configureversioncontrol:       {--configure-version-control}=<versioncontrolkey>
+            versioncontrolkey:       {plasticscm | git}
+
+      mergeOptions: <files> [-a|--automatic] [--silent] [--merge-decl] [--process-all-merges]
+                    [--nolangwarn] [--nostructurewarn] [--include-format-change] [--log-external-parser]
+                    [<contributorSymbolicNames>] [<generalOptions>]
+                    [<contributorExtendedInfo>]
+
+      files: {<sortedFiles> | <unsortedFiles>}
+            sortedFiles: <filename1> <filename2> <filename3> <filename4> <fileparamorder>
+                  fileparamorder:    {-fpo | --fileparamorder}=<list of keys separated by a semicolon>
+                                     The default value is --fileparamorder=s;d;b;r
+
+            unsortedFiles: <sourceFile> <destinationFile> <baseFile> <resultFile>
+                  sourceFile:        {-s | --source}=<filename>
+                  destinationFile:   {-d | --destination}=<filename>
+                  baseFile:          {-b | --base}=<filename>
+                  resultFile:        {-r | --result}=<filename>
+
+      -a | --automatic:        Automatically merge without user interaction unless conflicts are found.
+
+      --silent:                This option must be used combined with the --automatic option.
+                               When a merge can't be solved automatically, this option causes the tool to return immediately
+                               with a non-zero exit code (no semanticmerge tool is shown).
+                               If the tool was able to solve the merge automatically, the program returns exit code 0.
+
+      --merge-decl:            Merge automatically as many declarations* as possible.
+
+      --process-all-merges:    Merge automatically as many declarations* as possible and
+                               run the external text based tool for each non-automatic merge declaration.
+
+        *A declaration is the statement that defines any of the supported syntax elements: classes, methods, attributes, etc.
+         Depending on the element type (e.g. classes, methods), they include a body where the element is implemented.
+
+      --nolangwarn:            Run the external text based tool directly when the language is not supported.
+
+      --nostructurewarn:       Run the external text-based tool directly if structure errors are found.
+
+      --include-format-change: Include changes where only indentation and EOLs have been modified.
+                               This includes differences in white spaces and tabs at the beginning of lines and
+                               differences in EOLs. It also includes white lines at the beginning of declarations.
+                               By default all these differences are ignored to simplify the merge/diff.
+
+      --log-external-parser:   Enable logging the file contents to debug external parsers.
+
+      contributorSymbolicNames: <srcSymbolicName> <dstSymbolicName> <baseSymbolicName>
+            srcSymbolicName:     {-sn | --srcsymbolicname}=<symbolicname>
+            dstSymbolicName:     {-dn | --dstsymbolicname}=<symbolicname>
+            baseSymbolicName:    {-bn | --basesymbolicname}=<symbolicname>
+
+      generalOptions: [<defaultEncoding>] [<resultEncoding>] [<fileLanguage>] [<virtualMachine>]
+                      [<externalMergeTool>] [<external2WayMerge>] [<externalDiffTool>]
+                      [<tabSpaces>] [<extrainfofile>] [<progress>]
+            defaultEncoding:     {-e | --defaultencoding}=<encoding>
+            resultEncoding:      {-re | --resultencoding}=<encoding>
+                  encoding:      {ascii | ansi | unicode | bigendian | utf7 | utf8 | utf8bom | utf32be | utf32le}
+            fileLanguage:        {-l | --fileslanguage}={csharp | vb | java | cplusplus | php}
+            virtualMachine:      {-vm | --virtualmachine}=<path to the Java Virtual Machine executable>
+            externalParser:      {-ep | --externalparser}=<command to execute the external parser>
+            externalMergeTool:   {-emt  | --externalmergetool}={default | <user_defined_tool>}
+            external2WayMerge:   {-e2mt | --external2waymergetool}={ <user_defined_tool>}
+            externalDiffTool:    {-edt  | --externalDiffTool}={default | <user_defined_tool>}
+            tabSpaces:           {-ts   | --tabspaces}={4 | <user_defined>}
+            extrainfofile:       {-ei   | --extrainfofile}={path to a file containing extra merge information}
+            progress:            {-pg   | --progress}={string representing the progress in the whole merge process} 
+
+      contributorExtendedInfo: <contributorOwnerName> <contributorBranchName>
+                               <contributorChangeset> <contributorComment>
+
+      contributorOwnerName: <srcOwnerName> <dstOwnerName> <baseOwnerName>
+        srcOwnerName:        {-so | --srcowner}=<ownername>
+        dstOwnerName:        {-do | --dstowner}=<ownername>
+        baseOwnerName:       {-bo | --baseowner}=<ownername>
+
+      contributorBranchName: <srcBranchName>; <dstBranchName> <baseBranchName>
+        srcBranchName:       {-sb | --srcbranch}=<name>
+        dstBranchName:       {-db | --dstbranch}=<branchname>
+        baseBranchName:      {-bb | --basebranch}=<branchname>
+
+      contributorChangeset: <srcChangeset> <dstChangeset> <baseChangeset>
+        srcChangeset:        {-sc | --srccset}=<changeset>
+        dstChangeset:        {-dc | --dstcset}=<changeset>
+        baseChangeset:       {-bc | --basecset}=<changeset>
+
+      contributorComment: <srcComment> <dstComment> <baseComment>
+        srcComment:          {-sm | --srccomment}=<changeset>
+        dstComment:          {-dm | --dstcomment}=<changeset>
+        baseComment:         {-bm | --basecomment}=<changeset>
+
+
+      Examples:
+
+        semanticmergetool -b=base.cs -d=dst.cs -s=src.cs -r=result.cs
+
+        semanticmergetool base.cs dst.cs src.cs result.cs --fileparamorder=b;d;s;r
+
+        semanticmergetool -b=base.cs -d=dst.cs -s=src.cs -r=result.cs
+          -e2mt=""kdiff3.exe #sourcefile #destinationfile -o #output""
+
+        semanticmergetool -b=base.cs -d=dst.cs -s=src.cs -r=result.cs
+          -emt=""kdiff3.exe #basefile #sourcefile #destinationfile -o #output""
+
+== UsageCaption ==
+SemanticMerge Tool usage
+
+== WarningNoExternalDiffTool ==
+No external diff tool has been specified in order to proceed with the diff.
+
+== WarningNoExternal2MergeTool ==
+No external 2-way merge tool has been specified in order to merge the contents of the selected conflict.
+
+== WarningNoExternalMergeTool ==
+No external merge tool has been specified in order to proceed with the merge.
+
+== WarningExternalToolNotFound ==
+Tool not found, please introduce a valid one
+
+== WarningSemanticToolNotFound ==
+SemanticMerge tool not found, please introduce a valid one
+
+== WarningConfigFileNotFound ==
+Config file not found, please introduce a valid one
+
+== WarningInvalidJavaVirtualMachinePath ==
+Java Virtual Machine path not found
+
+== WarningInvalidTabSize ==
+Invalid tab size
+
+== RenameWindowTitle ==
+Renaming source
+
+== RenameWindowLabel ==
+New name for {0}:
+
+== RenameButton ==
+Rename
+
+== CancelButton ==
+Cancel
+
+== PendingConflictsToSolve ==
+{0}/{1}  -  Conflicts to solve: {2}
+
+== NextConflictButtonTooltip ==
+Next conflict (Ctrl+PagDown)
+
+== PreviousConflictButtonTooltip ==
+Previous conflict (Ctrl+PageUp)
+
+== SaveAndExitExplanation ==
+save the result file and exit the tool
+
+== SaveAndExitButton ==
+Save & E_xit
+
+== MergeWaitingAnimation ==
+Calculating conflicts. Please wait...
+
+== SyncDeclarationMenuItem ==
+Sync Declaration
+
+== OptionsButton ==
+Options
+
+== FindMenuItem ==
+Find...
+
+== OptionsMenuItem ==
+Options
+
+== ConfigureFontsAndColorsMenuItem ==
+Configure fonts and colors...
+
+== DisplayInfoAboutThisMerge ==
+Display info about this merge
+
+== LeftEncodingMenuItem ==
+Left encoding
+
+== RightEncodingMenuItem ==
+Right encoding
+
+== SkipFormatChangesMenuItem ==
+Skip format changes
+
+== ReformatSourceCode ==
+Reformat source code
+
+== ConfigurationMenuItem ==
+Configuration...
+
+== GetLicense ==
+Get license
+
+== GetUpdates ==
+Get updates
+
+== GetUpdatesExplanation ==
+a new version of semanticmerge is available, get it!
+
+== ShowUserGuideMenuItem ==
+User guide
+
+== UserGuideURL ==
+https://semanticmerge.com/documentation
+
+== ShowIntroGuideMenuItem ==
+Show intro guide
+
+== OpenSamplesDirectoryMenuItem ==
+Open samples
+
+== GiveUsFeedbackMenuItem ==
+Send feedback
+
+== FollowSemanticmergeMenuItem ==
+Follow @semanticmerge
+
+== AboutSemanticmergeMenuItem ==
+About & license
+
+== VisualDiffWindowTitle ==
+visual diff
+
+== VisualDiffExplanation ==
+shows a graphic that explains the diff
+
+== VisualDiffOptionExplanation ==
+select two declarations and click diff in order to see the differences
+
+== VisualDiffControlExplanation ==
+use the control key with the scroll wheel to zoom in and zoom out
+
+== ZoomInExplanation ==
+zoom in on the graphic; you can also use the control key with the scroll wheel to zoom in
+
+== ZoomOutExplanation ==
+zoom out on the graphic; you can also use the control key with the scroll wheel to zoom out
+
+== VisualMergeWindowTitle ==
+visual merge
+
+== VisualMerge ==
+_Visual Merge
+
+== VisualMergeExplanation ==
+shows a graphic that explains the merge
+
+== RunTextMerge ==
+Run _text merge
+
+== RunTextMergeExplanation ==
+runs the traditional, text based, merge tool
+
+== RestartMerge ==
+R_estart merge
+
+== RestartMergeExplanation ==
+discards all the changes and restarts the merge operation
+
+== ProcessAllMerges ==
+Process all merges
+
+== ProcessAllMergesExplanation ==
+merges automatically as many declarations as possible and runs the external text based tool for each non-automatic merge declaration
+
+== VisualDiffButton ==
+_Visual diff
+
+== RestartDiffButton ==
+_Restart diff
+
+== RestartDiffExplanation ==
+restarts the diff operation
+
+== RunTextDiffButton ==
+Run _text diff
+
+== RunTextDiffExplanation ==
+runs the traditional, text based, diff tool
+
+== OutlinePanelVisualDiffButton ==
+_visual diff
+
+== OutlinePanelRunTextDiffButton ==
+run _text diff
+
+== DivergentMoveDetails ==
+divergent move details
+
+== ShowMergeInfoExplanation ==
+displays the merge information
+
+== MergeInfoResultFile ==
+Result file: 
+
+== MergeInfoLanguage ==
+Language: 
+
+== MergeInfoBaseFile ==
+Base file
+
+== MergeInfoSourceFile ==
+Source file
+
+== MergeInfoDestinationFile ==
+Destination file
+
+== MergeInfoFileName ==
+Name: 
+
+== MergeInfoFilePath ==
+Path: 
+
+== MergeInfoExtraInfo ==
+Extra info
+
+== SemanticOutline ==
+Semantic Outline
+
+== ExpandSemanticOutlineTooltip ==
+Expand Semantic Outline
+
+== CollapseSemanticOutlineTooltip ==
+Collapse Semantic Outline
+
+== PendingConflicts ==
+Conflicts to solve ({0})
+
+== PendingConflictsExplanation ==
+shows the conflicts that need to be solved manually: happens when the same element has been modified both in 'their changes' and 'your changes'
+
+== DiffExplanation ==
+shows the diffs of this element
+
+== SourceDifferences ==
+Src - their changes ({0})
+
+== SourceDifferencesExplanation ==
+the changes made in the code you're merging from (theirs). Shows the differences between the base and the source contributor
+
+== DestinationDifferences ==
+Dst - your changes ({0})
+
+== DestinationDifferencesExplanation ==
+the changes on your working copy (yours). Shows the differences between the base and the destination contributor
+
+== NoConflictMessageText ==
+There are no conflicts to check.
+
+== NoConflictMessageDetail ==
+It means that the tool can solve the merge without user intervention.
+
+Probably you're seeing this because you want to review the merge anyway.
+
+But in case you prefer to automate the conflict resolution as much as possible: add the \"-a\" argument to the semanticmerge commandline.
+
+== MaximizeButtonLeftTooltip ==
+Maximize left panel
+
+== RestoreButtonLeftTooltip ==
+Restore left panel
+
+== MaximizeButtonSrcTooltip ==
+Maximize source panel
+
+== RestoreButtonSrcTooltip ==
+Restore source panel
+
+== MaximizeButtonDstTooltip ==
+Maximize destination panel
+
+== RestoreButtonDstTooltip ==
+Restore destination panel
+
+== MaximizeButtonBaseTooltip ==
+Maximize base panel
+
+== RestoreButtonBaseTooltip ==
+Restore base panel
+
+== MaximizeButtonResultTooltip ==
+Maximize result panel
+
+== RestoreButtonResultTooltip ==
+Restore result panel
+
+== CopyToClipboard ==
+Copy to clipboard
+
+== BackButtonTooltip ==
+Back
+
+== FindMatchesButton ==
+find _matches
+
+== DiffMatchButton ==
+_diff
+
+== MatchButton ==
+_match
+
+== UnMatchButton ==
+_unmatch
+
+== SelectElementToMatch ==
+Select an element to match
+
+== EditResultExplanation ==
+You cannot edit the result file until all conflicts are resolved. There are {0} conflict(s) remaining.
+
+== KeepSourceExplanation ==
+keeps the source changes
+
+== KeepDestinationExplanation ==
+keeps the destination changes
+
+== KeepBothExplanation ==
+keeps both changes
+
+== RenameExplanation ==
+renames the destination
+
+== MergeExplanation ==
+runs the external text merge tool to solve this conflict
+
+== TwoWayMergeExplanation ==
+launches the external 2 way mergetool to solve this conflict
+
+== DisplayConfigurationWindowExplanation ==
+shows the configuration window
+
+== DisplayAboutWindowExplanation ==
+shows the about window
+
+== HideUnchangedSelectionExplanation ==
+show only changed declarations
+
+== ShowUnchangedSelectionExplanation ==
+show the complete tree files, so you can check every declaration
+
+== GroupUnchangedSelectionExplanation ==
+show changed declarations grouping the rest of the declarations into an unchanged one
+
+== ExplainMoveMoveExplanation ==
+explains how the element was moved to different locations on source and destination contributors
+
+== SourceFileExplanation ==
+source contributor file
+
+== BaseFileExplanation ==
+base file, the ancestor of the source and destination files used during merge
+
+== DestinationFileExplanation ==
+destination contributor file
+
+== FindMatchesExplanation ==
+opens the matches window for matching an adedd with a deleted
+
+== UnmatchExplanation ==
+unmatch - in case methods were wrongly matched between base and this contributor, you can unmatch, convert them to added/deleted and correct the match manually
+
+== MatchExplanation ==
+applies the match to the selected item
+
+== InvalidEmail ==
+Invalid email
+
+== InvalidReport ==
+Invalid report
+
+== EnterValidEmailAndReport ==
+Please enter your email address, the subject and the comments.
+
+== EnterValidEmailAddress ==
+Please enter a valid email address.
+
+== ErrorReadingSampleTitle ==
+Error reading sample
+
+== ErrorReadingSampleDescription ==
+Cannot parse sample from file {0}: {1}
+
+== SamplesWindowExplanation ==
+For every sample case, we recommend you run the traditional merge tool and compare it with SemanticMerge
+
+== ShowIntroGuideButton ==
+show intro _guide
+
+== RunTextMergetoolButton ==
+text
+
+== RunSemanticMergetoolButton ==
+semantic
+
+== WelcomeSemantic20 ==
+Welcome to SemanticMerge 2.0
+
+== WelcomeExplanation1 ==
+Semantic is a different kind of merge tool. It parses the code before calculating the merge, which makes it possible to detect and automatically solve most conflicts.
+
+== WelcomeExplanation2 ==
+It is different than most merge tools you have used so far, so it is worth investing a few minutes browsing the sample cases to become a real merge master and get the best out of the tool.
+
+== ExploreTheSamplesButton ==
+_explore the samples
+
+== ReadTheIntroGuideLinkText1 ==
+To learn more about the SemanticMerge fundamentals 
+
+== ReadTheIntroGuideLinkText2 ==
+read the Intro Guide
+
+== ReadTheIntroGuideLinkText3 ==
+ (3 minutes read).
+
+== DontShowThisDialogOnStartup ==
+Don't _show this dialog on start up
+
+== RunTheToolButton ==
+run the _tool
+
+== ParsingErrorsLabel ==
+Some issues were found while processing these files.
+
+== ShowParsingErrorsButton ==
+Show parsing errors
+
+== ReleaseNotesBaseUrl ==
+https://users.semanticmerge.com/releasenotes/
+
+== MultifileCurrentFile ==
+File {0} of {1}:
+
+== MultifileCurrentFileExplanation ==
+This is the current file. To change file use the conflict navigation buttons and also the multi-file moves.

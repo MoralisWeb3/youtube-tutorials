@@ -1,0 +1,26 @@
+﻿.form {
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.field {
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0px;
+    bottom: 0px;
+    margin-right: 25px;
+}
+
+.footer Button {
+    padding: 5px 7px;
+    margin-top: 10px;
+    border-width: 2px;
+    border-radius: 0;
+}

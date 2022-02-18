@@ -1,0 +1,37 @@
+{
+    "name": "Unity.2D.Animation.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InternalAPIEditorBridge.001",
+        "Unity.InternalAPIEngineBridge.001",
+        "Unity.2D.Common.Editor",
+        "Unity.2D.Common.Runtime",
+        "Unity.2D.Animation.Runtime",
+        "Unity.2D.Animation.Triangle.Runtime",
+        "Unity.2D.Sprite.Editor",
+        "Unity.Burst",
+        "Unity.Collections"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.burst",
+            "expression": "0.0.1",
+            "define": "ENABLE_ANIMATION_BURST"
+        },
+        {
+            "name": "com.unity.collections",
+            "expression": "0.9.0-preview.6",
+            "define": "ENABLE_ANIMATION_COLLECTION"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,25 @@
+.multi-field-block {
+    padding:10px 0 0 10px;
+    flex-grow:1;
+    flex-direction:column;
+}
+
+.multi-field-block .title {
+    -unity-font-style:bold;
+    padding-left:0;
+    padding-bottom:5px;
+    white-space:normal;
+}
+
+.platform-tag {
+    -unity-font-style:bold;
+    margin-left:4px;
+    margin-bottom:4px;
+    border-radius:2px;
+    padding:2px 5px;
+}
+
+.multi-field-block .tag-container {
+    flex-direction:row;
+    flex-wrap:wrap;
+}

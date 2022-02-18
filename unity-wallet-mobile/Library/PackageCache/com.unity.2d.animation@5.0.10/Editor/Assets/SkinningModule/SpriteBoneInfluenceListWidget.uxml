@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns:ui="UnityEngine.UIElements" xmlns:eui="UnityEditor.UIElements" xmlns:aui="UnityEditor.U2D.Animation">
+  <ui:VisualElement name="Container" picking-modes="Ignore">
+    <ui:Image name ="HeaderImage">
+      <ui:Label name ="HeaderText" text ="Bone Influences"/>
+    </ui:Image>
+
+    <aui:SelectListView name="ListView" itemHeight="20" reorderable="true"/>
+
+    <ui:VisualElement name="ButtonsContainer" picking-mode="Ignore">
+      <ui:Button name="AddButton" tooltip="Add selected bone to influence Sprite">
+      </ui:Button>
+      <ui:Button name="RemoveButton" tooltip="Remove selected bone from influencing Sprite">
+      </ui:Button>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</UXML>

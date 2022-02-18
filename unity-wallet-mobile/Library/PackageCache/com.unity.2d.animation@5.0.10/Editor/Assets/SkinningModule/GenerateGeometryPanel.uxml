@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns:ui="UnityEngine.UIElements" xmlns:eui="UnityEditor.UIElements" xmlns:aui="UnityEditor.U2D.Animation">
+  <aui:GenerateGeometryPanel name="GenerateGeometryPanel" picking-mode="Ignore">
+    <ui:PopupWindow text="Geometry">
+      <ui:VisualElement name="Content">
+        <ui:VisualElement class="form-row">
+          <ui:Label name="OutlineDetailLabel" tooltip="Accuracy of the generated outline. Small values will produce simpler outlines. Large values will produce denser outlines that fit to the Sprite better" text="Outline Detail" />
+          <ui:VisualElement class="form-editor">
+            <ui:Slider name="OutlineDetailSlider" direction="Horizontal" low-value="0" high-value="100" />
+            <eui:IntegerField name="OutlineDetailField" class="slider-field" value="0" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="form-row">
+          <ui:Label name="AlphaToleranceLabel" tooltip="Pixels with alpha value smaller than tolerance will be considered transparent during outline detection" text="Alpha Tolerance" />
+          <ui:VisualElement class="form-editor">
+            <ui:Slider name="AlphaToleranceSlider" direction="Horizontal" low-value="0" high-value="254" />
+            <eui:IntegerField name="AlphaToleranceField" class="slider-field" value="0" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="form-row">
+          <ui:Label name="SubdivideLabel" tooltip="Tesselate the Sprite by adding vertices inside the generated outline" text="Subdivide" />
+          <ui:VisualElement class="form-editor">
+            <ui:Slider name="SubdivideSlider" direction="Horizontal" low-value="0" high-value="100" />
+            <eui:IntegerField name="SubdivideField" class="slider-field" value="0" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="form-row">
+          <ui:Label name="GenerateWeightsLabel" tooltip="Initialize weights automatically for the generated geometry" text="Weights" />
+          <ui:Toggle name="GenerateWeightsField" class="form-editor" value="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="form-row-space" />
+        <ui:VisualElement name="GenerateSingleSprite" class="form-row">
+          <ui:Button name="GenerateGeometryButton" text="Generate For Selected" tooltip="Generate Geometry for the selected Sprite"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="GenerateMultipleSprite" class="form-row">
+          <ui:Button name="GenerateGeometryAllButton" text="Generate For All Visible" tooltip="Generate Geometry for all the Sprites"/>
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:PopupWindow>
+  </aui:GenerateGeometryPanel>
+</UXML>

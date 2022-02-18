@@ -1,0 +1,9 @@
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement name="LoggedOutContainer" class="logged-out-container">
+        <VisualElement name="LoggedOutMessageBlock" class="center-middle-block">
+            <VisualElement name="LoggedOutIcon" class="logged-out-icon"/>
+            <TextElement name="LoggedOutMessage" class="logged-out-message" text="You are signed out"/>
+            <Button name="SignInBtn" text="Sign in..." class="submit-button"/>
+        </VisualElement>
+    </VisualElement>
+</UXML>

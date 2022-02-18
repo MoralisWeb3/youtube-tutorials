@@ -1,0 +1,20 @@
+/**********************************************************************************************************************/
+/* GenerateWeightsPanel                                                                                           */
+/**********************************************************************************************************************/
+
+.AssociateBoneDisabled {
+  height: 70px;
+}
+
+.AssociateBoneEnabled {
+  height: 90px;
+}
+
+#Content{
+    width : 250px;
+    align-content : center;
+}
+
+.form-row{
+   align-content : center;
+}

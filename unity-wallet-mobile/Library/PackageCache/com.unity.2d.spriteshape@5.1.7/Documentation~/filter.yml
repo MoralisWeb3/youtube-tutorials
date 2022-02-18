@@ -1,0 +1,13 @@
+apiRules:
+  - exclude:
+      uidRegex: UnityEngine\.U2D\.Bezier*
+      type: Type 
+  - exclude:
+      uidRegex: UnityEngine\.U2D\.Spline*
+      type: Type
+  - exclude:
+      uidRegex: UnityEngine\.U2D\.SpriteShape*
+      type: Type
+  - exclude:
+      uidRegex: UnityEditor\.U2D*
+      type: Type

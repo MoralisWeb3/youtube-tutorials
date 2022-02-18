@@ -1,0 +1,11 @@
+{
+    "name": "com.unity.2d.tilemap",
+    "displayName": "2D Tilemap Editor",
+    "version": "1.0.0",
+    "unity": "2019.2",
+    "description": "2D Tilemap Editor is a package that contains editor functionalities for editing Tilemaps.",
+    "keywords": ["2d", "Tilemap"],
+    "category": "2D",
+    "dependencies": {
+    }
+}

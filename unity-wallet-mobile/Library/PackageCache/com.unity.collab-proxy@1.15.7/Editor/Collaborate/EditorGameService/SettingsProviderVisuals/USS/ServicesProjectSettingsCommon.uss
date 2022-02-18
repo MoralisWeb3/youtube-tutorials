@@ -1,0 +1,61 @@
+.project-settings-service-specific-container {
+    flex-grow:1;
+}
+
+.project-settings-header-container {
+    flex-direction:row;
+}
+
+.project-settings-title-container,
+.project-settings-section-container {
+    padding:4px 4px 4px 8px;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+.project-settings-title{
+    font-size:16px;
+    -unity-font-style:bold;
+}
+
+.label-container {
+    flex-direction:row;
+    align-items:flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.service-link-button,
+.field-block.link-button {
+    border-width:0px;
+    -unity-text-align:middle-left;
+    align-self:flex-start;
+    padding-left:1px;
+    padding-right:2px;
+    margin-left:1px;
+    margin-right:1px;
+    background-color:rgba(0, 0, 0, 0);
+    cursor:link;
+    flex-grow:0;
+}
+
+.field-block.link-button {
+    border-width:0px;
+    -unity-text-align:middle-left;
+    align-self:flex-end;
+    padding-left:1px;
+    padding-right:2px;
+    margin-left:1px;
+    margin-right:1px;
+    background-color:rgba(0, 0, 0, 0);
+    cursor:link;
+    flex-grow:0;
+}
+
+.collab .service-icon {
+    background-image:resource("Builtin Skins/Shared/Images/ServicesWindow-ServiceIcon-Collab.png");
+}
+
+.link-container {
+    align-self: flex-end;
+}

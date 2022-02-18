@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <VisualElement class="content-body">
+        <Label text="You do not have the correct permissions to activate the installed services." calss="description"/>
+        <Label text ="Please contact a project owner or project manager to activate the service." class="description" />
+    </VisualElement>
+</ui:UXML>

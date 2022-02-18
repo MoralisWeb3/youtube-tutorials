@@ -1,0 +1,63 @@
+/**********************************************************************************************************************/
+/* MeshToolbar                                                                                                         */
+/**********************************************************************************************************************/
+
+#SelectGeometryImage {
+    background-image: url("Icons/Light/Edit_Geometry.png");
+}
+
+#CreateVertexImage {
+    background-image: url("Icons/Light/Create_Vertex.png");
+}
+
+#CreateEdgeImage {
+    background-image: url("Icons/Light/Create_Edge.png");
+}
+
+#SplitEdgeImage {
+    background-image: url("Icons/Light/Split_Edge.png");
+}
+
+#GenerateGeometryImage {
+    background-image: url("Icons/Light/Generate_Geometry.png");
+}
+
+.Dark #SelectGeometryImage {
+    background-image: url("Icons/Dark/d_Edit_Geometry.png");
+}
+
+.Dark #CreateVertexImage {
+    background-image: url("Icons/Dark/d_Create_Vertex.png");
+}
+
+.Dark #CreateEdgeImage {
+    background-image: url("Icons/Dark/d_Create_Edge.png");
+}
+
+.Dark #SplitEdgeImage {
+    background-image: url("Icons/Dark/d_Split_Edge.png");
+}
+
+.Dark #GenerateGeometryImage {
+    background-image: url("Icons/Dark/d_Generate_Geometry.png");
+}
+
+.Checked #SelectGeometryImage {
+    background-image: url("Icons/Selected/Edit_Geometry.png");
+}
+
+.Checked #CreateVertexImage {
+    background-image: url("Icons/Selected/Create_Vertex.png");
+}
+
+.Checked #CreateEdgeImage {
+    background-image: url("Icons/Selected/Create_Edge.png");
+}
+
+.Checked #SplitEdgeImage {
+    background-image: url("Icons/Selected/Split_Edge.png");
+}
+
+.Checked #GenerateGeometryImage {
+    background-image: url("Icons/Selected/Generate_Geometry.png");
+}

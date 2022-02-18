@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns:ui="UnityEngine.UIElements" xmlns:eui="UnityEditor.UIElements" xmlns:aui="UnityEditor.U2D.Animation">
+  <aui:VisibilityToolWindow name="VisibilityToolWindow" picking-mode="Ignore">
+    <ui:PopupWindow name="PopupWindow" text="Visibility">
+        <ui:VisualElement name="OpacitySliderGroup">
+            <ui:VisualElement name="BoneOpacitySliderGroup" >
+                <ui:Image name="BoneOpacitySliderIcon" tool-tip = "Adjust Bone opacity"/>
+                <ui:Slider name ="BoneOpacitySlider" low-value ="0" high-value="1" direction="Horizontal" tool-tip = "Adjust Bone opacity"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="MeshOpacitySliderGroup">
+                <ui:Image name="MeshOpacitySliderIcon" tool-tip =" Adjust Weight opacity"/>
+                <ui:Slider name ="MeshOpacitySlider" low-value ="0" high-value="1" direction="Horizontal" tool-tip =" Adjust Weight opacity"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+      <ui:VisualElement name ="VisibilityToolSelection" />
+      <ui:VisualElement name ="VisibilityToolContainer" />
+    </ui:PopupWindow>
+    <ui:VisualElement name="Resizer"/>
+  </aui:VisibilityToolWindow>
+</UXML>

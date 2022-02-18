@@ -1,0 +1,19 @@
+{
+  "name": "Unity.2D.SpriteShape.Runtime",
+  "references": [
+    "Unity.2D.Common.Runtime",
+    "Unity.Mathematics",
+    "Unity.Burst"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": true,
+  "versionDefines": [
+    {
+      "name": "com.unity.burst",
+      "expression": "0.0.1",
+      "define": "ENABLE_SPRITESHAPE_BURST"
+    }
+  ],
+  "noEngineReferences": false
+}

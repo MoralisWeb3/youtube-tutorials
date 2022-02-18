@@ -1,0 +1,42 @@
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="container">
+        <Label name="plasticConfigurationTitle" />
+        <Label name="plasticConfigurationExplanation" class="sub-section" />
+    </VisualElement>
+    <VisualElement class="container">
+        <VisualElement class="sub-section">
+            <Label name="configurationServerInfo"></Label>
+            <VisualElement name="configurationServerInfoSection">
+                <VisualElement class="flex-container">
+                    <TextField name="serverTextField" class="grow" />
+                    <Button name="connect" />
+                </VisualElement>
+                <VisualElement class="flex-container">
+                    <Toggle name="useSslToogle" />
+                    <Label name="useSsl" />
+                </VisualElement>
+                <VisualElement>
+                    <Label name="connectedLabel" class="visibility-hidden" />
+                </VisualElement>
+            </VisualElement>
+            <Label name="configurationUserNameInfo" />
+            <Label name="configurationCredentialsInfo" class="display-none" />
+            <VisualElement class="flex-container">
+                <TextField name="userTextField" class="credentials" />
+                <TextField name="passwordTextField" class="credentials display-none" />
+                <Button name="check" />
+                <VisualElement name="credentialsPadding" class="grow" />
+            </VisualElement>
+            <Label name="credentialsOk" class="visibility-hidden" />
+            <VisualElement class="flex-container">
+                <VisualElement name="spinnerContainer" class="visibility-hidden"/>
+                <Label name="spinnerLabel" class="visibility-hidden"/>
+            </VisualElement>
+        </VisualElement>
+    </VisualElement>
+    <VisualElement class="container flex-container last">
+        <VisualElement class="grow"></VisualElement>"
+        <Button name="okButton" />
+        <Button name="cancelButton" />
+    </VisualElement>
+</UXML>

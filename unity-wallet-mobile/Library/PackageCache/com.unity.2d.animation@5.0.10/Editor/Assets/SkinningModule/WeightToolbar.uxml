@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns:ui="UnityEngine.UIElements" xmlns:aui="UnityEditor.U2D.Animation">
+        <aui:WeightToolbar name="WeightToolbar">
+            <ui:PopupWindow name="PopupWindow" text="Weights">
+            <ui:Button name="AutoGenerateWeight" tooltip="Wizard to generate, normalize and clear weights">
+                <ui:Image name="AutoGenerateWeightImage" />
+                <ui:Label text ="Auto Weights"/>
+            </ui:Button>
+            <ui:Button name="WeightPainterSlider" tooltip="Allow editing of skin weight using a slider tool">
+                <ui:Image name="WeightPainterSliderImage" />
+                <ui:Label text ="Weight Slider"/>
+            </ui:Button>
+            <ui:Button name="WeightPainterBrush" tooltip="Allow editing of skin weight using a brush tool">
+                <ui:Image name="WeightPainterBrushImage" />
+                <ui:Label text ="Weight Brush"/>
+            </ui:Button>
+            <ui:Button name="BoneInfluenceWidget" tooltip="Edit bones influence on a Sprite">
+                <ui:Image name="BoneInfluenceWidgetImage" />
+                <ui:Label text ="Bone Influence"/>
+            </ui:Button>
+            </ui:PopupWindow>
+        </aui:WeightToolbar>
+</UXML>

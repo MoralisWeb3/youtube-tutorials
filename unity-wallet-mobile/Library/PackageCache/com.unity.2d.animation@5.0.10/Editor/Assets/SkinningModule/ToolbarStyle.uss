@@ -1,0 +1,81 @@
+/**********************************************************************************************************************/
+/* Toolbar                                                                                                         */
+/**********************************************************************************************************************/
+
+.Toolbar {
+     flex:0 0 auto;
+     padding-bottom : 10px;
+}
+
+Button {
+    align-items: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    flex-direction : row;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-bottom:2px;
+    padding-top:2px;
+}
+
+Button > Image {
+    width: 16px;
+    height: 16px;
+}
+
+.Collapse Button {
+    margin-top: -1px;
+    width: 26px;
+    height: 26px;
+}
+
+Button > .unity-label {
+    margin-left: 2px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-align : middle-left;
+}
+
+.Collapse Button > Label {
+    display: none;
+}
+
+.unity-button:checked {
+    background-color: #747474;
+}
+
+PopupWindow {
+    border-left-width :2px;
+    border-right-width :2px;
+}
+
+.Dark PopupWindow{
+}
+
+.Collapse PopupWindow
+{
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    align-items: center;
+}
+
+.Collapse PopupWindow > VisualElement
+{
+    padding-top: 4px;
+}

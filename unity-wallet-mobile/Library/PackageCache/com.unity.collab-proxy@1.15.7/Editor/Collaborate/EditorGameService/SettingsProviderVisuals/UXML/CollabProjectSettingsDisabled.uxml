@@ -1,0 +1,13 @@
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="project-settings-title-container">
+        <Label text="Quickly and easily access your project from anywhere. Sync and share with the entire team." class="label-container"/>
+    </VisualElement>
+    <VisualElement class="project-settings-title-container">
+        <Label text="Ask the organization owner or manager for access to Unity Teams to use the Collaborate service." class="label-container"/>
+    </VisualElement>
+    <VisualElement class="separator" />
+    <VisualElement name="LearnMore" class="field-block link-container">
+        <TextElement text="Learn More" class="link-button"/>
+        <VisualElement class="external-link-icon"/>
+    </VisualElement>
+</UXML>

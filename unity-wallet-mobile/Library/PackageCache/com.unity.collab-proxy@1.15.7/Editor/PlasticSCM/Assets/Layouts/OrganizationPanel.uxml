@@ -1,0 +1,26 @@
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="flex-container main">
+        <VisualElement>
+            <Label name="confirmationMessage" class="title" />
+            <VisualElement name="joinSingleOrganization" class="organization-section display-none">
+                <Label name="joinSingleOrganizationLabel" />
+                <VisualElement class="align-end">
+                    <Button name="joinSingleOrganizationButton" class="organization-button" />
+                </VisualElement>
+            </VisualElement>
+          
+            <VisualElement name="joinMultipleOrganizations" class="organization-section display-none">
+                <Label name="joinMultipleOrganizationsLabel" />
+                <VisualElement class="row">
+                    <VisualElement name="organizationDropdown" />
+                    <Button name="joinMultipleOrganizationsButton" class="organization-button" />
+                </VisualElement>
+            </VisualElement>
+          
+            <VisualElement name="createOrganization" class="organization-section row display-none">
+                <Label name="createOrganizationLabel" />
+                <Button name="createOrganizationButton" class="organization-button" />
+            </VisualElement>
+        </VisualElement>
+    </VisualElement>
+</UXML>

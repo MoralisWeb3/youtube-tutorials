@@ -1,0 +1,25 @@
+{
+    "ErrorExceptions": [
+        {
+            "ValidationTest": "API Validation",
+            "ExceptionMessage": "New assembly \"Unity.PlasticSCM.EditorTests\" may only be added in a new minor or major version.",
+            "PackageVersion": "1.15.7"
+        },
+        {
+            "ValidationTest": "Package Unity Version Validation",
+            "ExceptionMessage": "The Unity version requirement is more strict than in the previous version of the package. Increment the minor version of the package to leave patch versions available for previous version. Read more about this error and potential solutions at https://docs.unity3d.com/Packages/com.unity.package-validation-suite@latest/index.html?preview=1&subfolder=/manual/package_unity_version_validation_error.html#the-unity-version-requirement-is-more-strict-than-in-the-previous-version-of-the-package",
+            "PackageVersion": "1.15.7"
+        },
+        {
+            "ValidationTest": "API Validation",
+            "ExceptionMessage": "Breaking changes require a new major version.",
+            "PackageVersion": "1.15.7"
+        },
+        {
+            "ValidationTest": "API Validation",
+            "ExceptionMessage": "Additions require a new minor or major version.",
+            "PackageVersion": "1.15.7"
+        }
+    ],
+    "WarningExceptions": []
+}

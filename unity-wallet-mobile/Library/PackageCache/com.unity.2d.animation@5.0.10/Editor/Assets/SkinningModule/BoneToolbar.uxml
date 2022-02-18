@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns:ui="UnityEngine.UIElements" xmlns:aui="UnityEditor.U2D.Animation">
+  <aui:BoneToolbar name="BoneToolbar">
+      <ui:PopupWindow name="PopupWindow" text="Bones">
+          <ui:Button name="EditPose" tooltip="Pose character to view setup">
+              <ui:Image name="EditPoseImage" />
+              <ui:Label text ="Preview Pose"/>
+          </ui:Button>
+          <ui:Button name="EditJoints" tooltip="Edit bones position and rotation">
+              <ui:Image name="EditJointsImage" />
+              <ui:Label text ="Edit Bone"/>
+          </ui:Button>
+          <ui:Button name="CreateBone" tooltip="Create new bones">
+              <ui:Image name="CreateBoneImage" />
+              <ui:Label text ="Create Bone"/>
+          </ui:Button>
+          <ui:Button name="SplitBone" tooltip="Split an existing bone">
+              <ui:Image name="SplitBoneImage" />
+              <ui:Label text ="Split Bone"/>
+          </ui:Button>
+      </ui:PopupWindow>
+  </aui:BoneToolbar>
+</UXML>

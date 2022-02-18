@@ -1,0 +1,25 @@
+.organization-section {
+    margin: 10px 0px;
+}
+
+.organization-button {
+    width: 15%;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+#organizationDropdown {
+    width: 85%;
+    margin-top: 3px;
+}
+
+#createOrganization {
+    margin: 25px 0px;
+}
+
+#createOrganizationLabel {
+    width: 83%;
+    margin-top: 3px;
+}

@@ -1,0 +1,44 @@
+﻿<UXML xmlns:ui="UnityEngine.Experimental.UIElements">
+    <ui:VisualElement class="flex-container main">
+
+        <ui:VisualElement name="signUpForm">
+            <ui:VisualElement name="email">
+                <ui:TextField name="emailField" class="column" label="Email:" password="false" />
+                <ui:Label name="emailNotification" class="hidden alert-label" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="password" class="row">
+                <ui:TextField name="passwordField" class="column password" label="Password:" password="true" />
+                <ui:TextField name="confirmPasswordField" class="column password" label="Confirm Password:" password="true" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="row">
+                <ui:Label name="passwordNotificationLabel" class="hidden alert-label" />
+                <ui:Label name="confirmPasswordNotificationLabel" class="hidden alert-label" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="policyContainer" class="row horizontally-centered">
+                <ui:Label name="signUpAgreePt1" class="policyFont"/>
+                <ui:Button name="termsOfService" class="anchor policyFont" />
+                <ui:Label name="signUpAgreePt2" class="policyFont"/>
+                <ui:Button name="privacyPolicy" class="anchor policyFont" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="signInButtonContainer">
+        <ui:Button name="signUp" class="classic-button" />
+
+        <ui:VisualElement name="median" />
+        <ui:Button name="unityIDButton" class="alternate-button">
+            <ui:Image name="unityIcon" class="icon" />
+        </ui:Button>
+
+        <ui:VisualElement name="progressContainer" class="row" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="footer">
+        <ui:Label name="privacyStatementText" />
+        <ui:Button name="privacyStatement" class="anchor" />
+    </ui:VisualElement>
+</UXML>

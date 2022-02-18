@@ -1,0 +1,12 @@
+﻿.display-none {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#Status {
+    color: red;
+}

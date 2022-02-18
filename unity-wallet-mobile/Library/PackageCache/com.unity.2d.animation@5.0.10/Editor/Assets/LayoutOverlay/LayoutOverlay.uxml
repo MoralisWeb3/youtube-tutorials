@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns:ui="UnityEngine.UIElements" xmlns:myui="UnityEditor.U2D.Layout">
+  <myui:LayoutOverlay name="LayoutOverlay" picking-mode="Ignore">
+    <ui:VisualElement name="HorizontalHolder" picking-mode="Ignore">
+      <myui:ScrollableToolbar name="VerticalToolbar" picking-mode="Ignore" />
+      <ui:VisualElement name="LeftOverlay" picking-mode="Ignore" />
+      <ui:VisualElement name="RightOverlay" picking-mode="Ignore" />
+    </ui:VisualElement>
+    <myui:ScrollableToolbar name="HorizontalToolbar" isHorizontal="true" picking-mode="Ignore" />
+    <myui:DropdownMenu name="DropdownOverlay" picking-mode="Ignore" />
+  </myui:LayoutOverlay>
+</UXML>

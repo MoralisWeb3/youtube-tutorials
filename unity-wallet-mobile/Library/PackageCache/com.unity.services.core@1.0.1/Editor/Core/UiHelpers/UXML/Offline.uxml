@@ -1,0 +1,9 @@
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement name="OfflineContainer" class="offline-container">
+        <VisualElement name="OfflineMessageBlock" class="center-middle-block">
+            <VisualElement name="OfflineIcon" class="offline-icon"/>
+            <TextElement name="OfflineMessage" class="offline-message" text="No network connection :("/>
+            <Button name="RefreshBtn" text="Retry connection" class="submit-button"/>
+        </VisualElement>
+    </VisualElement>
+</UXML>

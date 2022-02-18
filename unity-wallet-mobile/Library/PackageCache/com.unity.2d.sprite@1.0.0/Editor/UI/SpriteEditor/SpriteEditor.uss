@@ -1,0 +1,162 @@
+.unity-imgui-container {
+    flex: 1 0 0;
+}
+.moduleWindow {
+    position: absolute;
+}
+.bottomRight {
+    bottom: 16px;
+    right: 16px;
+}
+.bottomLeft {
+    bottom: 16px;
+    left: 0;
+}
+.topLeft {
+    top: 0;
+    left: 0;
+}
+.topRight {
+    top: 0;
+    right: 16px;
+}
+.bottomRightFloating {
+    bottom: 24px;
+    right: 24px;
+}
+.bottomLeftFloating {
+    bottom: 24px;
+    left: 8px;
+}
+.topLeftFloating {
+    top: 8px;
+    left: 8px;
+}
+.topRightFloating {
+    top: 8px;
+    right: 24px;
+}
+#moduleViewElement{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#spriteFrameInspector{
+    min-width: 330px;
+    min-height: 170px;
+    flex: 1 0 0;
+}
+#spriteFrameModuleInspector {
+    min-width: 330px;
+    min-height: 170px;
+    flex: 1 0 0;
+}
+
+#spriteFrameModuleInspector Label{
+    -unity-text-align: upper-left;
+}
+
+#spriteFrameModuleInspector #unity-text-input{
+    -unity-text-align: upper-left;
+    min-height : 18px;
+}
+
+.spriteFrameModuleInspectorField {
+    flex-direction: row;
+    min-height: 18px;
+    padding-bottom: 2px;
+ }
+
+.spriteFrameModuleInspectorField > Label {
+    width: 130px;
+}
+
+.spriteFrameModuleInspectorField > EnumField > .unity-label {
+    width: 130px;
+    min-width:0;
+}
+
+
+.spriteFrameModuleInspectorField > EnumField {
+    flex: 1 0 0;
+    margin-right: 4px;
+}
+.spriteFrameModuleInspectorField > #SpriteName {
+    flex: 1 0 0;
+    flex-direction : row;
+}
+
+#spriteName {
+    flex : 1;
+}
+
+#spriteName > Label {
+    width: 130px;
+    min-width:0;
+}
+
+#spriteEditorWindowToolbar{
+    height : 21px;
+    flex: 0 0 auto;
+    margin-top : 0;
+}
+#spriteEditorWindowMainView{
+    flex: 1 0 0;
+    overflow: hidden;
+}
+
+#polygonShapeWindow{
+    width : 155px;
+    min-height : 45px;
+}
+#polygonShapeWindowFrame{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex: 1 0 0;
+    flex-direction : column;
+}
+#polygonShapeWindowFrame > .labelIntegerField{
+    flex: 1 0 0;
+    flex-direction: row;
+}
+#polygonShapeWindowFrame > .labelIntegerField > Label{
+    margin-right: 0;
+    margin-top: 4px;
+    min-width:0;
+    align-self:center;
+}
+#polygonShapeWindowFrame > .labelIntegerField > IntegerField{
+    flex: 1 0 auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#polygonShapeWindowFrame > Button{
+    height : 18px;
+    align-self: flex-end;
+}
+#polygonShapeWindowFrame > #warning{
+    flex-direction : row;
+    border-color: #a2a2a2;
+    border-left-width : 1px;
+    border-right-width : 1px;
+    border-top-width : 1px;
+    border-bottom-width : 1px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+#polygonShapeWindowFrame > #warning > Image{
+    background-image : resource("console.warnicon.png");
+    width : 32px;
+    height : 32px;
+}
+#polygonShapeWindowFrame > #warning > #warningLabel{
+    white-space : normal;
+    font-size : 9px;
+    flex: 1 0 0;
+}

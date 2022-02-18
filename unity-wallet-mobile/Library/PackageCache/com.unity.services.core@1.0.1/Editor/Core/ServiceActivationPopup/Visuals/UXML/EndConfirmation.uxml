@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <VisualElement class="content-body">
+        <Label text="Please confirm activating the following service packages:" class="services-description"/>
+        <VisualElement class="services-description-body-inner"/>
+    </VisualElement>
+</ui:UXML>

@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{90a5a04e-ebcc-66c7-e0a6-5afac526b237}</ProjectGuid>
+    <ProjectGuid>{76775b11-9990-7551-ac5a-b209967a0a97}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -351,40 +351,40 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Common.Logging">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Assets/MoralisWeb3ApiSdk/DLLs/Common.Logging.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Assets/MoralisWeb3ApiSdk/DLLs/Common.Logging.dll</HintPath>
  </Reference>
  <Reference Include="Common.Logging.Core">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Assets/MoralisWeb3ApiSdk/DLLs/Common.Logging.Core.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Assets/MoralisWeb3ApiSdk/DLLs/Common.Logging.Core.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="BouncyCastle.Crypto">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Assets/MoralisWeb3ApiSdk/Packages/BouncyCastle.Crypto/BouncyCastle.Crypto.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Assets/MoralisWeb3ApiSdk/Packages/BouncyCastle.Crypto/BouncyCastle.Crypto.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing.Common">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Assets/MoralisWeb3ApiSdk/Packages/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Assets/MoralisWeb3ApiSdk/Packages/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
  </Reference>
  <Reference Include="RestSharp">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Assets/MoralisWeb3ApiSdk/DLLs/RestSharp.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Assets/MoralisWeb3ApiSdk/DLLs/RestSharp.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="QRCoder">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Assets/MoralisWeb3ApiSdk/Packages/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Assets/MoralisWeb3ApiSdk/Packages/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
  </Reference>
  <Reference Include="QRCoder.Unity">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Assets/MoralisWeb3ApiSdk/Packages/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Assets/MoralisWeb3ApiSdk/Packages/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -732,15 +732,15 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Moralis/Documents/UnityProjects/WalletConnectAndroid/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UniTask.csproj">
-      <Project>{2df87a6c-739f-560e-bc87-cf258d631e55}</Project>
+      <Project>{2a0b479f-93a3-42cd-1e28-e5408318c0c2}</Project>
       <Name>UniTask</Name>
     </ProjectReference>
   </ItemGroup>

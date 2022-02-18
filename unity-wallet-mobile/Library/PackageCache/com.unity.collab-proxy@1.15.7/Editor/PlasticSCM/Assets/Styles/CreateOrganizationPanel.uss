@@ -1,0 +1,59 @@
+﻿.field {
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    .field TextField {
+        flex-direction: column;
+    }
+
+        .field TextField Label, .field-label {
+            margin: 5px;
+        }
+
+#datacenter {
+    margin-bottom: 35px;
+}
+
+Label {
+    white-space: normal;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.notification {
+    color: red;
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+.footerButton {
+    padding: 5px 7px;
+    margin-top: 10px;
+    border-width: 2px;
+    border-radius: 0;
+    width: 125px;
+}
+
+#gettingDatacenters {
+    height: 30px;
+    flex-direction: row;
+    margin-top: 10px;
+    padding-top: 7px;
+}
+
+#gdSpinner {
+    margin-right: 5px;
+}
+
+#encryptExplanation {
+    color: grey;
+}
+
+#encryptLearnMore {
+    width: 65px;
+}
