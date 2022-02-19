@@ -384,7 +384,6 @@ namespace Moralis.WebGL.Web3Api.Api
 			var path = "/{address}/events";
 			path = path.Replace("{format}", "json");
 			path = path.Replace("{" + "address" + "}", ApiClient.ParameterToString(address));
-			if (abi != null) postBody.Add("abi", ApiClient.ParameterToString(abi));
 			if(topic != null) queryParams.Add("topic", ApiClient.ParameterToString(topic));
 			if(chain != null) queryParams.Add("chain", ApiClient.ParameterToHex((long)chain));
 			if(subdomain != null) queryParams.Add("subdomain", ApiClient.ParameterToString(subdomain));
@@ -399,7 +398,7 @@ namespace Moralis.WebGL.Web3Api.Api
 			// Authentication setting, if any
 			String[] authSettings = new String[] { "ApiKeyAuth" };
 
-			string bodyData = postBody.Count > 0 ? JsonConvert.SerializeObject(postBody) : null;
+			string bodyData = JsonConvert.SerializeObject(abi);
 
 			Tuple<HttpStatusCode, Dictionary<string, string>, string> response =
 				await ApiClient.CallApi(path, Method.POST, queryParams, bodyData, headerParams, formParams, fileParams, authSettings);
@@ -409,7 +408,9 @@ namespace Moralis.WebGL.Web3Api.Api
 			else if (((int)response.Item1) == 0)
 				throw new ApiException((int)response.Item1, "Error calling GetContractEvents: " + response.Item3, response.Item3);
 
-			return (List<LogEvent>)ApiClient.Deserialize(response.Item3, typeof(List<LogEvent>), response.Item2);
+			LogEventResponse resp = (LogEventResponse)ApiClient.Deserialize(response.Item3, typeof(LogEventResponse), response.Item2);
+
+			return resp.Events;
 		}
 		/// <summary>
 		/// Runs a given function of a contract abi and returns readonly data

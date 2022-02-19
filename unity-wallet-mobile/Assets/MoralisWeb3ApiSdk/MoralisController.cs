@@ -53,7 +53,6 @@ namespace MoralisWeb3ApiSdk
         public string ApplicationDescription;
         public string[] ApplicationIcons;
         public string ApplicationUrl;
-        public string Web3RpcNodeUrl;
 
         public WalletConnect walletConnect;
 
@@ -79,7 +78,9 @@ namespace MoralisWeb3ApiSdk
                     URL = ApplicationUrl
                 };
 
-                await MoralisInterface.Initialize(MoralisApplicationId, MoralisServerURI, hostManifestData, clientMeta, Web3RpcNodeUrl);
+                walletConnect.AppData = clientMeta;
+
+                await MoralisInterface.Initialize(MoralisApplicationId, MoralisServerURI, hostManifestData, clientMeta);
             }
         }
 
@@ -105,8 +106,10 @@ namespace MoralisWeb3ApiSdk
                     URL = ApplicationUrl
                 };
 
+                walletConnect.AppData = clientMeta;
+
                 // Initialize and register the Moralis, Moralis Web3Api and NEthereum Web3 clients
-                await MoralisInterface.Initialize(MoralisApplicationId, MoralisServerURI, hostManifestData, clientMeta, Web3RpcNodeUrl);
+                await MoralisInterface.Initialize(MoralisApplicationId, MoralisServerURI, hostManifestData, clientMeta);
             }
         }
 #endif

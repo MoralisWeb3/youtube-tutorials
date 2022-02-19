@@ -226,6 +226,7 @@
      <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\Moralis.SolanaApi\Client\ApiException.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.Contracts\ContractHandlers\IContractTransactionHandler.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\MoralisDotNet\Platform\Abstractions\IInstallationService.cs" />
+     <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\Moralis.WebGL\Moralis.Web3Api.Core\Models\LogEventResponse.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.Contracts\TransactionHandlers\MultiSend\MultiSend.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.BlockchainProcessing\Orchestrator\OrchestrationProgress.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.JsonRpc.Client\IRpcRequestHandler.cs" />
@@ -351,6 +352,7 @@
      <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\Moralis.SolanaApi\Models\NftMetadata.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.Signer\SignedTransactionBase.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.Hex\HexConvertors\IHexConvertor.cs" />
+     <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\Moralis.Web3Api.Core\Models\LogEventResponse.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.Contracts\Exceptions\FilterInputNotForEventException.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\Moralis.SolanaApi\Models\CloudFunctionResult.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.ABI\Model\ContractABI.cs" />
@@ -484,6 +486,7 @@
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.Signer\RLPDecoder.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\MoralisDotNet\Platform\Operations\MoralisSetOperation.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\WalletConnectSharp.NEthereum\Client\FallbackProvider.cs" />
+     <Compile Include="Assets\MoralisWeb3ApiSdk\DeadRpcReadClient.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Moralis\Moralis.WebGL\MoralisDotNet\Platform\Objects\MoralisUser.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\Nethereum\Nethereum.RPC\Shh\KeyPair\ShhGetPublicKey.cs" />
      <Compile Include="Assets\MoralisWeb3ApiSdk\WalletConnectSharp\WalletConnectSharp.Core\Models\Ethereum\Types\EvmTypedData.cs" />

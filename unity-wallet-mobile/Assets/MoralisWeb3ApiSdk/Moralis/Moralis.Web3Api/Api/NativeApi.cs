@@ -359,7 +359,7 @@ namespace Moralis.Web3Api.Api
 		/// <param name="offset">offset</param>
 		/// <param name="limit">limit</param>
 		/// <returns>Returns a collection of events by topic</returns>
-		public async Task<List<LogEvent>> GetContractEvents (string address, string topic, RunContractDto abi, ChainList chain, string subdomain=null, string providerUrl=null, int? fromBlock=null, int? toBlock=null, string fromDate=null, string toDate=null, int? offset=null, int? limit=null)
+		public async Task<List<LogEvent>> GetContractEvents (string address, string topic, object abi, ChainList chain, string subdomain=null, string providerUrl=null, int? fromBlock=null, int? toBlock=null, string fromDate=null, string toDate=null, int? offset=null, int? limit=null)
 		{
 
 			// Verify the required parameter 'address' is set
@@ -380,8 +380,6 @@ namespace Moralis.Web3Api.Api
 			var path = "/{address}/events";
 			path = path.Replace("{format}", "json");
 			path = path.Replace("{" + "address" + "}", ApiClient.ParameterToString(address));
-			if (abi != null) postBody.Add("abi", abi.Abi);
-			if (abi != null) postBody.Add("params", abi.Params);
 			if (topic != null) queryParams.Add("topic", ApiClient.ParameterToString(topic));
 			if(chain != null) queryParams.Add("chain", ApiClient.ParameterToHex((long)chain));
 			if(subdomain != null) queryParams.Add("subdomain", ApiClient.ParameterToString(subdomain));
@@ -396,7 +394,7 @@ namespace Moralis.Web3Api.Api
 			// Authentication setting, if any
 			String[] authSettings = new String[] { "ApiKeyAuth" };
 
-			string bodyData = postBody.Count > 0 ? JsonConvert.SerializeObject(postBody) : null;
+			string bodyData = JsonConvert.SerializeObject(abi);
 
 			IRestResponse response = (IRestResponse)(await ApiClient.CallApi(path, Method.POST, queryParams, bodyData, headerParams, formParams, fileParams, authSettings));
 
@@ -405,7 +403,9 @@ namespace Moralis.Web3Api.Api
 			else if (((int)response.StatusCode) == 0)
 				throw new ApiException((int)response.StatusCode, "Error calling GetContractEvents: " + response.ErrorMessage, response.ErrorMessage);
 
-			return (List<LogEvent>)ApiClient.Deserialize(response.Content, typeof(List<LogEvent>), response.Headers);
+			LogEventResponse resp = (LogEventResponse)ApiClient.Deserialize(response.Content, typeof(LogEventResponse), response.Headers);
+
+			return resp.Events;
 		}
 		/// <summary>
 		/// Runs a given function of a contract abi and returns readonly data

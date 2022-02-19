@@ -5690,7 +5690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -532.4995}
+  m_AnchoredPosition: {x: 0, y: -249.99832}
   m_SizeDelta: {x: 640, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &125404195
@@ -47696,15 +47696,15 @@ PrefabInstance:
       objectReference: {fileID: 71058177}
     - target: {fileID: 6266890725912523073, guid: 116667ed98661304da1568439e2a3426, type: 3}
       propertyPath: Web3RpcNodeUrl
-      value: https://speedy-nodes-nyc.moralis.io/6a587d1fdcc3747f5e3e9fae/eth/mainnet
+      value: RPC NODE URI
       objectReference: {fileID: 0}
     - target: {fileID: 6266890725912523073, guid: 116667ed98661304da1568439e2a3426, type: 3}
       propertyPath: MoralisServerURI
-      value: https://km3vw1cc1k5a.usemoralis.com:2053/server
+      value: SERVER URI
       objectReference: {fileID: 0}
     - target: {fileID: 6266890725912523073, guid: 116667ed98661304da1568439e2a3426, type: 3}
       propertyPath: MoralisApplicationId
-      value: alUDz7WrgIVAq7S9wQ88vcFxrEN3qlHjADDPArJE
+      value: APPLICATION ID
       objectReference: {fileID: 0}
     - target: {fileID: 6266890725912523102, guid: 116667ed98661304da1568439e2a3426, type: 3}
       propertyPath: m_RootOrder

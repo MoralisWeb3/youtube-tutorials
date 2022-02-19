@@ -353,7 +353,7 @@ namespace Moralis.Web3Api.CloudApi
 		/// <param name="offset">offset</param>
 		/// <param name="limit">limit</param>
 		/// <returns>Returns a collection of events by topic</returns>
-		public async Task<List<LogEvent>> GetContractEvents (string address, string topic, RunContractDto abi, ChainList chain, string subdomain=null, string providerUrl=null, int? fromBlock=null, int? toBlock=null, string fromDate=null, string toDate=null, int? offset=null, int? limit=null)
+		public async Task<List<LogEvent>> GetContractEvents (string address, string topic, object abi, ChainList chain, string subdomain=null, string providerUrl=null, int? fromBlock=null, int? toBlock=null, string fromDate=null, string toDate=null, int? offset=null, int? limit=null)
 		{
 
 			// Verify the required parameter 'address' is set
@@ -374,8 +374,7 @@ namespace Moralis.Web3Api.CloudApi
 			var path = "/functions/getContractEvents";
 			if (address != null) postBody.Add("address", ApiClient.ParameterToString(address));
 			if (topic != null) postBody.Add("topic", ApiClient.ParameterToString(topic));
-			if (abi != null) postBody.Add("abi", abi.Abi);
-			if (abi != null) postBody.Add("params", abi.Params);
+			if (abi != null) postBody.Add("abi", abi);
 			if (subdomain != null) postBody.Add("subdomain", ApiClient.ParameterToString(subdomain));
 			if (providerUrl != null) postBody.Add("providerUrl", ApiClient.ParameterToString(providerUrl));
 			if (fromBlock != null) postBody.Add("from_block", ApiClient.ParameterToString(fromBlock));
@@ -398,7 +397,9 @@ namespace Moralis.Web3Api.CloudApi
 			else if (((int)response.StatusCode) == 0)
 				throw new ApiException((int)response.StatusCode, "Error calling GetContractEvents: " + response.ErrorMessage, response.ErrorMessage);
 
-			return ((CloudFunctionResult<List<LogEvent>>)ApiClient.Deserialize(response.Content, typeof(CloudFunctionResult<List<LogEvent>>), response.Headers)).Result;
+			LogEventResponse resp = ((CloudFunctionResult<LogEventResponse>)ApiClient.Deserialize(response.Content, typeof(CloudFunctionResult<LogEventResponse>), response.Headers)).Result;
+			//return ((CloudFunctionResult<List<LogEvent>>)ApiClient.Deserialize(response.Content, typeof(CloudFunctionResult<List<LogEvent>>), response.Headers)).Result;
+			return resp.Events;
 		}
 		/// <summary>
 		/// Runs a given function of a contract abi and returns readonly data

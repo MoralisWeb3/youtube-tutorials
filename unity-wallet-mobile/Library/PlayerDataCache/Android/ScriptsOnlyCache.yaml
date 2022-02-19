@@ -9,7 +9,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -60,37 +59,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10808}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 11440}
+      Script: {instanceID: 1510}
     - Class: 114
-      Script: {instanceID: 11942}
+      Script: {instanceID: 1512}
     - Class: 114
-      Script: {instanceID: 12170}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 12484}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 13544}
+      Script: {instanceID: 2214}
     - Class: 114
-      Script: {instanceID: 13876}
+      Script: {instanceID: 2728}
     - Class: 114
-      Script: {instanceID: 14750}
+      Script: {instanceID: 4342}
     - Class: 114
-      Script: {instanceID: 15046}
+      Script: {instanceID: 4674}
     - Class: 114
-      Script: {instanceID: 15190}
+      Script: {instanceID: 5554}
     - Class: 114
-      Script: {instanceID: 15392}
+      Script: {instanceID: 6000}
     - Class: 114
-      Script: {instanceID: 15550}
+      Script: {instanceID: 6202}
     - Class: 114
-      Script: {instanceID: 15932}
+      Script: {instanceID: 6360}
     - Class: 114
-      Script: {instanceID: 16460}
+      Script: {instanceID: 7272}
     - Class: 114
-      Script: {instanceID: 16618}
+      Script: {instanceID: 7430}
     - Class: 114
-      Script: {instanceID: 17822}
+      Script: {instanceID: 8650}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -110,6 +109,42 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
       Hash: e42df03a00dc2c71afedf0af09f062e0
     assemblyName: LeanTransition.dll
     namespaceName: Lean.Transition.Method
@@ -120,12 +155,6 @@ ScriptsOnlyBuild:
     assemblyName: LeanTransition.dll
     namespaceName: Lean.Transition.Method
     className: LeanRectTransformOffsetMax_x
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: b0265c372e52043c823b542462f5f1fe
@@ -398,12 +427,6 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: e637d5beedb3a6559aba9ccdfa511dd3
     assemblyName: LeanCommon.dll
     namespaceName: Lean.Common.Examples
@@ -480,12 +503,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ToggleGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 69415240821be7986b27e72bf9609a30
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: 6c95a55f24f6c6cd4c5379f5911a3542
@@ -806,12 +823,6 @@ ScriptsOnlyBuild:
     className: LeanRectTransformAnchorMin
   - hash:
       serializedVersion: 2
-      Hash: 7ab0e790220bdca831fdd886b339039d
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GridLayoutGroup
-  - hash:
-      serializedVersion: 2
       Hash: 3272e67e2a332257cb7e1e279da586ab
     assemblyName: LeanCommon.dll
     namespaceName: Lean.Common
@@ -932,12 +943,6 @@ ScriptsOnlyBuild:
     className: LeanPulse
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: 82fa046aa9efa49c6a613713c447cc65
     assemblyName: LeanTransition.dll
     namespaceName: Lean.Transition.Method
@@ -1038,12 +1043,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 748dd2a2a28da4e618912da5ac45684b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: StandaloneInputModule
   - hash:
       serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
@@ -1154,7 +1153,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 05d86c059d20c5627905e9b74a6e290c
+      Hash: 53e212f457b4431ab0dc7e464ee563f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: MoralisWeb3ApiSdk
     className: MoralisController
@@ -1461,4 +1460,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/bin/ueah.apk
+  playerPath: C:/Users/Moralis/Documents/GitHub/unity-wallet-mobile/bin/wallet.apk

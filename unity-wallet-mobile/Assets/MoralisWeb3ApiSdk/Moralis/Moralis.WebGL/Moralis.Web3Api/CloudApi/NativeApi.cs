@@ -369,7 +369,7 @@ namespace Moralis.WebGL.Web3Api.CloudApi
 			// Verify the required parameter 'abi' is set
 			if (abi == null) throw new ApiException(400, "Missing required parameter 'abi' when calling GetContractEvents");
 
-			var postBody = new Dictionary<String, String>();
+			var postBody = new Dictionary<String, object>();
 			var queryParams = new Dictionary<String, String>();
 			var headerParams = new Dictionary<String, String>();
 			var formParams = new Dictionary<String, String>();
@@ -378,7 +378,7 @@ namespace Moralis.WebGL.Web3Api.CloudApi
 			var path = "/functions/getContractEvents";
 			if (address != null) postBody.Add("address", ApiClient.ParameterToString(address));
 			if (topic != null) postBody.Add("topic", ApiClient.ParameterToString(topic));
-			if (abi != null) postBody.Add("abi", ApiClient.ParameterToString(abi));
+			if (abi != null) postBody.Add("abi", abi);
 			if (subdomain != null) postBody.Add("subdomain", ApiClient.ParameterToString(subdomain));
 			if (providerUrl != null) postBody.Add("providerUrl", ApiClient.ParameterToString(providerUrl));
 			if (fromBlock != null) postBody.Add("from_block", ApiClient.ParameterToString(fromBlock));
@@ -402,8 +402,12 @@ namespace Moralis.WebGL.Web3Api.CloudApi
 			else if (((int)response.Item1) == 0)
 				throw new ApiException((int)response.Item1, "Error calling GetContractEvents: " + response.Item3, response.Item3);
 
-			return ((CloudFunctionResult<List<LogEvent>>)ApiClient.Deserialize(response.Item3, typeof(CloudFunctionResult<List<LogEvent>>), response.Item2)).Result;
+			//			return ((CloudFunctionResult<List<LogEvent>>)ApiClient.Deserialize(response.Item3, typeof(CloudFunctionResult<List<LogEvent>>), response.Item2)).Result;
+			LogEventResponse resp = ((CloudFunctionResult<LogEventResponse>)ApiClient.Deserialize(response.Item3, typeof(CloudFunctionResult<LogEventResponse>), response.Item2)).Result;
+
+			return resp.Events;
 		}
+
 		/// <summary>
 		/// Runs a given function of a contract abi and returns readonly data
 		/// </summary>
