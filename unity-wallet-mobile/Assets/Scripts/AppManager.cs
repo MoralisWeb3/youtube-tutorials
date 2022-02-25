@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -8,10 +9,19 @@ using UnityEngine.UI;
 //Moralis
 using MoralisWeb3ApiSdk;
 using Moralis.Platform.Objects;
+using Moralis.Platform.Operations;
 
 //WalletConnect
 using WalletConnectSharp.Core.Models;
 using WalletConnectSharp.Unity;
+
+public class Hero : MoralisObject
+{
+    public int Strength { get; set; }
+    public int Level { get; set; }
+    public string Name { get; set; }
+    public string Warcry { get; set; }
+}
 
 public class AppManager : MonoBehaviour
 {
@@ -20,9 +30,12 @@ public class AppManager : MonoBehaviour
     public MoralisController moralisController;
     public WalletConnect walletConnect;
 
+    [Header("UI Elements")]
+    public GameObject editorPanel;
+    public GameObject mobilePanel;
+    public GameObject loggedInPanel;
     public GameObject connectButton;
     public TextMeshProUGUI walletAddress;
-
     public Text infoText;
 
     #endregion
@@ -34,6 +47,15 @@ public class AppManager : MonoBehaviour
         if (moralisController != null)
         {
             await moralisController.Initialize();
+            
+            if (Application.isEditor)
+            {
+                mobilePanel.SetActive(false);
+            }
+            else
+            {
+                editorPanel.SetActive(false);
+            }
         }
         else
         {
@@ -116,10 +138,9 @@ public class AppManager : MonoBehaviour
 
         if (user != null)
         {
-            connectButton.SetActive(false);
-            
-            string addr = user.authData["moralisEth"]["id"].ToString();
-            walletAddress.text = "Formatted Wallet Address:\n" + string.Format("{0}...{1}", addr.Substring(0, 6), addr.Substring(addr.Length - 3, 3));
+            mobilePanel.SetActive(false);
+            editorPanel.SetActive(false);
+            loggedInPanel.SetActive(true);
         }
     }
 
@@ -144,6 +165,51 @@ public class AppManager : MonoBehaviour
     public void HandleWalledDisconnected()
     {
         infoText.text = "Connection failed. Try again!";
+    }
+
+    public void GetWalletAddress(TextMeshProUGUI textToFill)
+    {
+        var user = MoralisInterface.GetClient().GetCurrentUser();
+
+        if (user != null)
+        {
+            string addr = user.authData["moralisEth"]["id"].ToString();
+            walletAddress.text = "Formatted Wallet Address:\n" + string.Format("{0}...{1}", addr.Substring(0, 6), addr.Substring(addr.Length - 3, 3));
+        }
+    }
+
+
+    public void ChangeUserName()
+    {
+        EditUserNameAsync();
+    }
+
+    public void CreateNewObject()
+    {
+        CreateNewObjectAsync();
+    }
+    //NEW
+    private async void EditUserNameAsync()
+    {
+        MoralisUser user = await MoralisInterface.GetUserAsync();
+
+        if (user != null)
+        {
+            user.username = "new username value";
+            await user.SaveAsync();
+        }
+    }
+    
+    private async void CreateNewObjectAsync()
+    {
+        Hero h = MoralisInterface.GetClient().Create<Hero>();
+        
+        h.Name = "Zuko";
+        h.Strength = 50;
+        h.Level = 15;
+        h.Warcry = "Honor!!!";
+
+        await h.SaveAsync();
     }
 
     #endregion

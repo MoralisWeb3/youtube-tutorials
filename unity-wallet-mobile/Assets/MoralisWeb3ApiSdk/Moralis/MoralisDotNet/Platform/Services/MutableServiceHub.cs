@@ -83,7 +83,7 @@ namespace Moralis.Platform.Services
             ObjectService ??= new MoralisObjectService(CommandRunner, ServerConnectionData, JsonSerializer);
             QueryService ??= new MoralisQueryService(CommandRunner, this.CurrentUserService.CurrentUser.sessionToken, JsonSerializer, ObjectService);
             SessionService ??= new MoralisSessionService<TUser>(CommandRunner, JsonSerializer);
-            UserService ??= new MoralisUserService<TUser>(CommandRunner, JsonSerializer);
+            UserService ??= new MoralisUserService<TUser>(CommandRunner, ObjectService, JsonSerializer);
             CurrentUserService ??= new MoralisCurrentUserService<TUser>(CacheService, JsonSerializer);
 
             //AnalyticsController ??= new ParseAnalyticsController(CommandRunner);

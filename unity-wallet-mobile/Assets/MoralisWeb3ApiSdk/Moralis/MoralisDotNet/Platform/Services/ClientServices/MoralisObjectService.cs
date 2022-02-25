@@ -42,7 +42,7 @@ namespace Moralis.Platform.Services.ClientServices
                 {
                     resp = (T)JsonSerializer.Deserialize<T>(task.Result.Item2);
 
-                    
+                    resp.ObjectService = this;
                 }
 
                 return resp;

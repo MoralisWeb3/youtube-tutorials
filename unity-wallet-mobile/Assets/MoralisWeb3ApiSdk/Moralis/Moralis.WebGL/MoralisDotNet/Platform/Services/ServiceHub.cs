@@ -53,7 +53,7 @@ namespace Moralis.WebGL.Platform.Services
         public ICacheService CacheService => LateInitializer.GetValue(() => new MoralisCacheService<TUser> (MoralisCacheService<TUser>.DefineRelativeFilePath("Moralis\\moralis.cachefile")));
         public IInstallationService InstallationService => LateInitializer.GetValue(() => new InstallationService(CacheService));
         public IMoralisCommandRunner CommandRunner => LateInitializer.GetValue(() => new MoralisCommandRunner<TUser>(WebClient, InstallationService, MetadataService, ServerConnectionData, new Lazy<IUserService<TUser>>(() => UserService)));
-        public IUserService<TUser> UserService => LateInitializer.GetValue(() => new MoralisUserService<TUser>(CommandRunner, JsonSerializer));
+        public IUserService<TUser> UserService => LateInitializer.GetValue(() => new MoralisUserService<TUser>(CommandRunner, ObjectService, JsonSerializer));
         public ICurrentUserService<TUser> CurrentUserService => LateInitializer.GetValue(() => new MoralisCurrentUserService<TUser>(CacheService, JsonSerializer));
         public IObjectService ObjectService => LateInitializer.GetValue(() => new MoralisObjectService(CommandRunner, ServerConnectionData, JsonSerializer));
         public IQueryService QueryService => LateInitializer.GetValue(() => new MoralisQueryService(CommandRunner, this.CurrentUserService.CurrentUser?.sessionToken, JsonSerializer, ObjectService));
