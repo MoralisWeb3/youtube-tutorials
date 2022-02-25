@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 0785e19d7558bf542ac3ec73faaf7709
+timeCreated: 1576438372
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Character
+    100004: Character Head
+    100006: Character L Clavicle
+    100008: Character L Finger0
+    100010: Character L Finger01
+    100012: Character L Finger02
+    100014: Character L Finger1
+    100016: Character L Finger11
+    100018: Character L Finger12
+    100020: Character L Finger2
+    100022: Character L Finger21
+    100024: Character L Finger22
+    100026: Character L Finger3
+    100028: Character L Finger31
+    100030: Character L Finger32
+    100032: Character L Finger4
+    100034: Character L Finger41
+    100036: Character L Finger42
+    100038: Character L Forearm
+    100040: Character L Hand
+    100042: Character L UpperArm
+    100044: Character Neck
+    100046: Character Pelvis
+    100048: Character R Clavicle
+    100050: Character R Finger0
+    100052: Character R Finger01
+    100054: Character R Finger02
+    100056: Character R Finger1
+    100058: Character R Finger11
+    100060: Character R Finger12
+    100062: Character R Finger2
+    100064: Character R Finger21
+    100066: Character R Finger22
+    100068: Character R Finger3
+    100070: Character R Finger31
+    100072: Character R Finger32
+    100074: Character R Finger4
+    100076: Character R Finger41
+    100078: Character R Finger42
+    100080: Character R Forearm
+    100082: Character R Hand
+    100084: Character R UpperArm
+    100086: Character Spine
+    100088: Character Spine1
+    100090: Character Spine2
+    100092: Male Base Torso
+    400000: //RootNode
+    400002: Character
+    400004: Character Head
+    400006: Character L Clavicle
+    400008: Character L Finger0
+    400010: Character L Finger01
+    400012: Character L Finger02
+    400014: Character L Finger1
+    400016: Character L Finger11
+    400018: Character L Finger12
+    400020: Character L Finger2
+    400022: Character L Finger21
+    400024: Character L Finger22
+    400026: Character L Finger3
+    400028: Character L Finger31
+    400030: Character L Finger32
+    400032: Character L Finger4
+    400034: Character L Finger41
+    400036: Character L Finger42
+    400038: Character L Forearm
+    400040: Character L Hand
+    400042: Character L UpperArm
+    400044: Character Neck
+    400046: Character Pelvis
+    400048: Character R Clavicle
+    400050: Character R Finger0
+    400052: Character R Finger01
+    400054: Character R Finger02
+    400056: Character R Finger1
+    400058: Character R Finger11
+    400060: Character R Finger12
+    400062: Character R Finger2
+    400064: Character R Finger21
+    400066: Character R Finger22
+    400068: Character R Finger3
+    400070: Character R Finger31
+    400072: Character R Finger32
+    400074: Character R Finger4
+    400076: Character R Finger41
+    400078: Character R Finger42
+    400080: Character R Forearm
+    400082: Character R Hand
+    400084: Character R UpperArm
+    400086: Character Spine
+    400088: Character Spine1
+    400090: Character Spine2
+    400092: Male Base Torso
+    2100000: Male_Base_Torso
+    2300000: //RootNode
+    2300002: Male Base Torso
+    3300000: //RootNode
+    3300002: Male Base Torso
+    4300000: Male Base Torso
+    9500000: //RootNode
+    13700000: Male Base Torso
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Male_Base_Torso
+    second: {fileID: 2100000, guid: ac1c2d6fecc6e3b4c95808616cac1d39, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

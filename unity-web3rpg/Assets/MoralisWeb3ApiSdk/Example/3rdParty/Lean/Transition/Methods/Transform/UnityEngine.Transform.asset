@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5545acbf3507bc44ad0dbb5454900f1, type: 3}
+  m_Name: UnityEngine.Transform
+  m_EditorClassIdentifier: 
+  entries:
+  - Title: Position
+    Template: {fileID: 11400000, guid: cd64a35fb6fcdca4aa198349e764c526, type: 2}
+    Contents: "PROPERTY\tposition\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: LocalPosition
+    Template: {fileID: 11400000, guid: cd64a35fb6fcdca4aa198349e764c526, type: 2}
+    Contents: "PROPERTY\tlocalPosition\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: LocalScale
+    Template: {fileID: 11400000, guid: cd64a35fb6fcdca4aa198349e764c526, type: 2}
+    Contents: "PROPERTY\tlocalScale\nDEFAULT\t = UnityEngine.Vector3.one\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Scale\")]"
+  - Title: LocalScale_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tlocalScale\nELEMENT\tx\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Scale\")]"
+  - Title: LocalScale_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tlocalScale\nELEMENT\ty\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Scale\")]"
+  - Title: LocalScale_z
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tlocalScale\nELEMENT\tz\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Scale\")]"
+  - Title: LocalPosition_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tlocalPosition\nELEMENT\tx\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: LocalPosition_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tlocalPosition\nELEMENT\ty\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: LocalPosition_z
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tlocalPosition\nELEMENT\tz\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: Position_X
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tposition\nELEMENT\tx\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: Position_Y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tposition\nELEMENT\ty\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: Position_Z
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tposition\nELEMENT\tz\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: Position_xy
+    Template: {fileID: 11400000, guid: 02f93218e4ce7f54286ffe519b7d501f, type: 2}
+    Contents: "PROPERTY\tposition\nELEMENT_A\tx\nELEMENT_B\ty"
+  - Title: LocalPosition_xy
+    Template: {fileID: 11400000, guid: 02f93218e4ce7f54286ffe519b7d501f, type: 2}
+    Contents: "PROPERTY\tlocalPosition\nELEMENT_A\tx\nELEMENT_B\ty"
+  - Title: LocalScale_xy
+    Template: {fileID: 11400000, guid: 02f93218e4ce7f54286ffe519b7d501f, type: 2}
+    Contents: "PROPERTY\tlocalScale\nELEMENT_A\tx\nELEMENT_B\ty\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Scale\")]"
