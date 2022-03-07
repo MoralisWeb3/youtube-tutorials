@@ -40,7 +40,8 @@ public class AppManager : MonoBehaviour
     {
         infoLabel.text = String.Empty;
         
-        if (Application.isEditor || Application.platform == RuntimePlatform.WindowsPlayer)
+        if (Application.isEditor || Application.platform == RuntimePlatform.WindowsPlayer
+                                 || Application.platform == RuntimePlatform.WebGLPlayer) 
         {
             editorPanel.SetActive(true);
             _currentActivePanel = editorPanel;
