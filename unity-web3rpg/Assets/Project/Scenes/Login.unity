@@ -2270,11 +2270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7184107891424667916, guid: 95a1e5c522dd5984c93ea1069e1a10c0, type: 3}
       propertyPath: MoralisServerURI
-      value: https://dbqorl3gws97.usemoralis.com:2053/server
+      value: SERVER URI
       objectReference: {fileID: 0}
     - target: {fileID: 7184107891424667916, guid: 95a1e5c522dd5984c93ea1069e1a10c0, type: 3}
       propertyPath: MoralisApplicationId
-      value: UF6reQFfi1SevKaGo3bZiRU9JptKc18w7fPijvfx
+      value: APP ID
       objectReference: {fileID: 0}
     - target: {fileID: 8258125851203630459, guid: 95a1e5c522dd5984c93ea1069e1a10c0, type: 3}
       propertyPath: ConnectedEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
