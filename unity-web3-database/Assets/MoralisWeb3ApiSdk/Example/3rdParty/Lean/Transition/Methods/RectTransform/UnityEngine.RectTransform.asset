@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5545acbf3507bc44ad0dbb5454900f1, type: 3}
+  m_Name: UnityEngine.RectTransform
+  m_EditorClassIdentifier: 
+  entries:
+  - Title: AnchoredPosition
+    Template: {fileID: 11400000, guid: 0dfd416c37e7b354384afc7be4bcfba1, type: 2}
+    Contents: "PROPERTY\tanchoredPosition\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: AnchoredPosition_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tanchoredPosition\nELEMENT\tx\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: AnchoredPosition_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tanchoredPosition\nELEMENT\ty\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Position\")]"
+  - Title: SizeDelta
+    Template: {fileID: 11400000, guid: 0dfd416c37e7b354384afc7be4bcfba1, type: 2}
+    Contents: "PROPERTY\tsizeDelta\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"SizeDelta\")]"
+  - Title: SizeDelta_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tsizeDelta\nELEMENT\tx"
+  - Title: SizeDelta_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tsizeDelta\nELEMENT\ty"
+  - Title: Pivot
+    Template: {fileID: 11400000, guid: 0dfd416c37e7b354384afc7be4bcfba1, type: 2}
+    Contents: "PROPERTY\tpivot\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Pivot\")]"
+  - Title: Pivot_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tpivot\nELEMENT\tx\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Pivot\")]"
+  - Title: Pivot_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tpivot\nELEMENT\ty\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Pivot\")]"
+  - Title: OffsetMin
+    Template: {fileID: 11400000, guid: 0dfd416c37e7b354384afc7be4bcfba1, type: 2}
+    Contents: "PROPERTY\toffsetMin\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"OffsetMin\")]"
+  - Title: OffsetMin_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\toffsetMin\nELEMENT\tx"
+  - Title: OffsetMin_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\toffsetMin\nELEMENT\ty"
+  - Title: OffsetMax
+    Template: {fileID: 11400000, guid: 0dfd416c37e7b354384afc7be4bcfba1, type: 2}
+    Contents: "PROPERTY\toffsetMax\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"OffsetMax\")]"
+  - Title: OffsetMax_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\toffsetMax\nELEMENT\tx"
+  - Title: OffsetMax_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\toffsetMax\nELEMENT\ty"
+  - Title: AnchorMin
+    Template: {fileID: 11400000, guid: 0dfd416c37e7b354384afc7be4bcfba1, type: 2}
+    Contents: "PROPERTY\tanchorMin\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"AnchorMin\")]"
+  - Title: AnchorMin_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tanchorMin\nELEMENT\tx"
+  - Title: AnchorMin_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tanchorMin\nELEMENT\ty"
+  - Title: AnchorMax
+    Template: {fileID: 11400000, guid: 0dfd416c37e7b354384afc7be4bcfba1, type: 2}
+    Contents: "PROPERTY\tanchorMax\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"AnchorMax\")]"
+  - Title: AnchorMax_x
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tanchorMax\nELEMENT\tx"
+  - Title: AnchorMax_y
+    Template: {fileID: 11400000, guid: c52c010e5ad4e934195de9468e66b620, type: 2}
+    Contents: "PROPERTY\tanchorMax\nELEMENT\ty"
