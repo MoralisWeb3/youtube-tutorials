@@ -5570,11 +5570,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6266890725912523073, guid: 116667ed98661304da1568439e2a3426, type: 3}
       propertyPath: MoralisServerURI
-      value: SERVER URI
+      value: https://jyljbar1mcuh.usemoralis.com:2053/server
       objectReference: {fileID: 0}
     - target: {fileID: 6266890725912523073, guid: 116667ed98661304da1568439e2a3426, type: 3}
       propertyPath: MoralisApplicationId
-      value: APP ID
+      value: EIMYdkopzjJIoCtqsQcs5JjNYjhDg8mw4didlnuY
       objectReference: {fileID: 0}
     - target: {fileID: 6266890725912523102, guid: 116667ed98661304da1568439e2a3426, type: 3}
       propertyPath: m_RootOrder

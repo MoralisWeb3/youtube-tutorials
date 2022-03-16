@@ -927,9 +927,6 @@ MonoBehaviour:
   CameraAngleOverride: 0
   LockCameraPosition: 0
   photonView: {fileID: 0}
-  moralisUserName: 
-  moralisWalletAddress: 
-  moralisWalletAddressFormatted: 
 --- !u!114 &1891337099255089772
 MonoBehaviour:
   m_ObjectHideFlags: 0

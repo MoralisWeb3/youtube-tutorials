@@ -2579,7 +2579,7 @@ PrefabInstance:
       objectReference: {fileID: 810474674}
     - target: {fileID: 7184107891424667916, guid: 95a1e5c522dd5984c93ea1069e1a10c0, type: 3}
       propertyPath: MoralisServerURI
-      value: SERVER URL
+      value: SERVER URI
       objectReference: {fileID: 0}
     - target: {fileID: 7184107891424667916, guid: 95a1e5c522dd5984c93ea1069e1a10c0, type: 3}
       propertyPath: MoralisApplicationId

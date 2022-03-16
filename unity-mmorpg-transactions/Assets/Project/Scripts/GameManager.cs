@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using ExitGames.Client.Photon;
 using MoralisWeb3ApiSdk;
 using Photon.Pun;
 using Photon.Realtime;
@@ -72,8 +73,9 @@ namespace Web3MultiplayerRPG
 
         #region PRIVATE_METHODS
 
-        private void PlayerClickedHandler(PhotonView clickedPhotonView, string walletAddress, string walletAddressFormatted)
+        private void PlayerClickedHandler(PhotonView clickedPhotonView)
         {
+            string walletAddress = (string)clickedPhotonView.Owner.CustomProperties["WalletAddress"];
             otherPlayerPanel.SetActive(true);
             otherPlayerPanel.GetComponent<OtherPlayerPanel>().SetInformation(clickedPhotonView.Owner.NickName, walletAddress);
         }
@@ -81,7 +83,7 @@ namespace Web3MultiplayerRPG
         #endregion
 
         #region PHOTON_NETWORK
-        
+
         public override void OnConnectedToMaster()
         {
             RoomOptions roomOptions = new RoomOptions();

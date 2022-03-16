@@ -1,6 +1,8 @@
 using System;
+using ExitGames.Client.Photon;
 using MoralisWeb3ApiSdk;
 using Photon.Pun;
+using Photon.Realtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -68,9 +70,9 @@ namespace Web3MultiplayerRPG
 		[HideInInspector] public PhotonView photonView;
 		
 		// Moralis
-		[HideInInspector] public string moralisUserName;
-		[HideInInspector] public string moralisWalletAddress;
-		[HideInInspector] public string moralisWalletAddressFormatted;
+		private string _moralisUserName;
+		private string _moralisWalletAddress;
+		private string _moralisWalletAddressFormatted;
 		
 		// cinemachine
 		private float _cinemachineTargetYaw;
@@ -104,7 +106,7 @@ namespace Web3MultiplayerRPG
 
 		private bool _hasAnimator;
 
-		public static Action<PhotonView, string, string> OnPlayerClicked;
+		public static Action<PhotonView> OnPlayerClicked;
 
 		#region UNITY_LIFECYCLE
 
@@ -350,17 +352,21 @@ namespace Web3MultiplayerRPG
 			{
 				//Get username from Database and save it locally
 				string username = user.username;
-				moralisUserName = username;
+				_moralisUserName = username;
 				//Also we take this opportunity to set the PhotonNetwork Nickname as the Moralis username for everybody to have access to it.
-				PhotonNetwork.NickName = username;
+				PhotonNetwork.NickName = _moralisUserName;
 				
 				//We activate the usernameLabel gameObject to show the username/nickname to everybody in the network
 				usernameLabel.gameObject.SetActive(true);
 				
 				//Get wallet address from Database and save it locally 
 				string addr = user.authData["moralisEth"]["id"].ToString();
-				moralisWalletAddress = addr;
-				moralisWalletAddressFormatted = string.Format("{0}...{1}", addr.Substring(0, 6), addr.Substring(addr.Length - 3, 3));
+				_moralisWalletAddress = addr;
+				_moralisWalletAddressFormatted = string.Format("{0}...{1}", addr.Substring(0, 6), addr.Substring(addr.Length - 3, 3));
+
+				Hashtable ownProperties = new Hashtable();
+				ownProperties["WalletAddress"] = _moralisWalletAddress;
+				PhotonNetwork.LocalPlayer.SetCustomProperties(ownProperties);
 			}
 		}
 
@@ -370,10 +376,9 @@ namespace Web3MultiplayerRPG
 
 		public void OnPointerClick(PointerEventData pointerEventData)
 		{
-			Debug.Log("I clicked myself!");
 			if (photonView.IsMine) return;
-			
-			OnPlayerClicked?.Invoke(photonView, moralisWalletAddress, moralisWalletAddressFormatted);
+
+			OnPlayerClicked?.Invoke(photonView);
 			//Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
 			Debug.Log(name + " Game Object Clicked!");
 		}
