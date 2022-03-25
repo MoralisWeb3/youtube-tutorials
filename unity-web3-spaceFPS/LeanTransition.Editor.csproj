@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7056fb44-2b09-cacd-ac6a-1f2727080c01}</ProjectGuid>
+    <ProjectGuid>{32292d64-727a-bac7-e8b3-6c9b240a7e6b}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -279,52 +279,52 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Common.Logging">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\MoralisWeb3ApiSdk\DLLs\Common.Logging.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\DLLs\Common.Logging.dll</HintPath>
      </Reference>
      <Reference Include="Common.Logging.Core">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\MoralisWeb3ApiSdk\DLLs\Common.Logging.Core.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\DLLs\Common.Logging.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="DOTweenEditor">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
      </Reference>
      <Reference Include="BouncyCastle.Crypto">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\MoralisWeb3ApiSdk\Packages\BouncyCastle.Crypto\BouncyCastle.Crypto.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\BouncyCastle.Crypto\BouncyCastle.Crypto.dll</HintPath>
      </Reference>
      <Reference Include="PackageManagerAssembly">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\ThirdPartyAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\ThirdPartyAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="System.Drawing.Common">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\MoralisWeb3ApiSdk\Packages\System.Drawing.Common\netstandard2.0\System.Drawing.Common.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\System.Drawing.Common\netstandard2.0\System.Drawing.Common.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
      </Reference>
      <Reference Include="RestSharp">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\MoralisWeb3ApiSdk\DLLs\RestSharp.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\DLLs\RestSharp.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="QRCoder">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\MoralisWeb3ApiSdk\Packages\QRCoder.1.3.4\lib\net35\QRCoder.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\QRCoder.1.3.4\lib\net35\QRCoder.dll</HintPath>
      </Reference>
      <Reference Include="QRCoder.Unity">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Assets\MoralisWeb3ApiSdk\Packages\QRCoder.Unity.1.0.2\lib\net35\QRCoder.Unity.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\QRCoder.Unity.1.0.2\lib\net35\QRCoder.Unity.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="mscorlib">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -675,21 +675,21 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.TestRunner">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.TestRunner">
-     <HintPath>C:\Users\Moralis\Documents\Unity_local\8_Web3Minigame\Fuka\Web3SpaceFPS\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LeanCommon.csproj">
-      <Project>{6e50c9d1-537c-4b8c-d05d-ac7ea8e861ed}</Project>
+      <Project>{aa2d447c-18c9-f092-612c-c4f366a5f33d}</Project>
       <Name>LeanCommon</Name>
     </ProjectReference>
   </ItemGroup>
