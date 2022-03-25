@@ -1,0 +1,94 @@
+﻿/*
+██████╗░██╗░░░░░███████╗██╗░░██╗██╗░░░██╗░██████╗  ░█████╗░░█████╗░███╗░░░███╗██████╗░██╗░░░██╗████████╗███████╗
+██╔══██╗██║░░░░░██╔════╝╚██╗██╔╝██║░░░██║██╔════╝  ██╔══██╗██╔══██╗████╗░████║██╔══██╗██║░░░██║╚══██╔══╝██╔════╝
+██████╔╝██║░░░░░█████╗░░░╚███╔╝░██║░░░██║╚█████╗░  ██║░░╚═╝██║░░██║██╔████╔██║██████╔╝██║░░░██║░░░██║░░░█████╗░░
+██╔═══╝░██║░░░░░██╔══╝░░░██╔██╗░██║░░░██║░╚═══██╗  ██║░░██╗██║░░██║██║╚██╔╝██║██╔═══╝░██║░░░██║░░░██║░░░██╔══╝░░
+██║░░░░░███████╗███████╗██╔╝╚██╗╚██████╔╝██████╔╝  ╚█████╔╝╚█████╔╝██║░╚═╝░██║██║░░░░░╚██████╔╝░░░██║░░░███████╗
+╚═╝░░░░░╚══════╝╚══════╝╚═╝░░╚═╝░╚═════╝░╚═════╝░  ░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚═╝░░░░░░╚═════╝░░░░╚═╝░░░╚══════╝
+
+						 ░██████╗██╗░░██╗░█████╗░██████╗░███████╗██████╗░
+						 ██╔════╝██║░░██║██╔══██╗██╔══██╗██╔════╝██╔══██╗
+						 ╚█████╗░███████║███████║██║░░██║█████╗░░██████╔╝
+						 ░╚═══██╗██╔══██║██╔══██║██║░░██║██╔══╝░░██╔══██╗
+						 ██████╔╝██║░░██║██║░░██║██████╔╝███████╗██║░░██║
+						 ╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝            
+                █▀▀▄ █──█ 　 ▀▀█▀▀ █──█ █▀▀ 　 ░█▀▀▄ █▀▀ ▀█─█▀ █▀▀ █── █▀▀█ █▀▀█ █▀▀ █▀▀█ 
+                █▀▀▄ █▄▄█ 　 ─░█── █▀▀█ █▀▀ 　 ░█─░█ █▀▀ ─█▄█─ █▀▀ █── █──█ █──█ █▀▀ █▄▄▀ 
+                ▀▀▀─ ▄▄▄█ 　 ─░█── ▀──▀ ▀▀▀ 　 ░█▄▄▀ ▀▀▀ ──▀── ▀▀▀ ▀▀▀ ▀▀▀▀ █▀▀▀ ▀▀▀ ▀─▀▀
+____________________________________________________________________________________________________________________________________________
+
+        ▄▀█ █▀ █▀ █▀▀ ▀█▀ ▀   █░█ █░░ ▀█▀ █ █▀▄▀█ ▄▀█ ▀█▀ █▀▀   ▄█ █▀█ ▄█▄   █▀ █░█ ▄▀█ █▀▄ █▀▀ █▀█ █▀
+        █▀█ ▄█ ▄█ ██▄ ░█░ ▄   █▄█ █▄▄ ░█░ █ █░▀░█ █▀█ ░█░ ██▄   ░█ █▄█ ░▀░   ▄█ █▀█ █▀█ █▄▀ ██▄ █▀▄ ▄█
+____________________________________________________________________________________________________________________________________________
+License:
+    The license is ATTRIBUTION 3.0
+
+    More license info here:
+        https://creativecommons.org/licenses/by/3.0/
+____________________________________________________________________________________________________________________________________________
+This shader has NOT been tested on any other PC configuration except the following:
+    CPU: Intel Core i5-6400
+    GPU: NVidia GTX 750Ti
+    RAM: 16GB
+    Windows: 10 x64
+    DirectX: 11
+____________________________________________________________________________________________________________________________________________
+*/
+
+#pragma kernel MoveParticels
+
+RWStructuredBuffer<float3> positions;
+RWStructuredBuffer<float3> defaultPositions;
+RWStructuredBuffer<float3> velocities;
+
+float deltaTime;
+float elapsedTime;
+float particleSpeed;
+
+// really rounded
+#define PI 3.14
+#define PI_M_2 6.28
+#define PI_D_2 1.57
+
+// Sine from Taylor series
+half ta_sin(half theta) {
+	half a = theta + PI_D_2;
+	theta = ((a>0) ? a - PI_M_2*((int)(a / PI_M_2)) : (-a + PI_M_2*((int)(a / PI_M_2)))) - PI_D_2;
+
+	if (theta > PI_D_2)
+		theta = PI - theta;
+
+	half x3 = theta * theta * theta;
+
+	return theta - (x3 / 6.0) + (x3 * theta * theta) / 120.0;
+}
+
+half ta_cos(half theta) {
+	return ta_sin(90.0 - theta);
+}
+
+float distSqr(half3 p1, half3 p2)
+{
+	return (p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y) + (p1.z - p2.z) * (p1.z - p2.z);
+}
+
+half3 randomMovement(uint3 id) {
+	return 
+		half3(frac(sin(id.x + ta_sin(id.x + ta_cos(elapsedTime))) * particleSpeed) - .5,
+			frac(cos(id.x + ta_sin(id.x + ta_sin(elapsedTime))) * particleSpeed) - .5,
+			frac(sin(id.x + ta_sin(id.x) * ta_cos(elapsedTime)) * particleSpeed) - .5
+			);
+}
+
+[numthreads(1,1,1)]
+void MoveParticels(uint3 id : SV_DispatchThreadID)
+{
+	// id.x
+
+	velocities[id.x] += randomMovement(id.x) * .1;
+	velocities[id.x] += (defaultPositions[id.x] - positions[id.x]) * distSqr(positions[id.x], defaultPositions[id.x]) * .1;
+
+	velocities[id.x] = normalize(velocities[id.x]);
+
+	positions[id.x] += velocities[id.x] * particleSpeed * deltaTime;
+}

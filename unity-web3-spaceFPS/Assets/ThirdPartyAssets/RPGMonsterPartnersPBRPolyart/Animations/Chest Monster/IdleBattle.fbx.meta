@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: ef2ca70faa4d0dd4295aafc44ae3b860
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: ChestMesh
+    100004: EyeBallCTRL
+    100006: EyeCTRL
+    100008: FrontLeftLeg01
+    100010: FrontLeftLeg02
+    100012: FrontLeftLeg03
+    100014: FrontRightLeg01
+    100016: FrontRightLeg02
+    100018: FrontRightLeg03
+    100020: Head
+    100022: //RootNode
+    100024: LockCTRL
+    100026: LowerEyelid
+    100028: LowerTeethCTRL
+    100030: RearLeftLeg01
+    100032: RearLeftLeg02
+    100034: RearLeftLeg03
+    100036: RearRightLeg01
+    100038: RearRightLeg02
+    100040: RearRightLeg03
+    100042: Root
+    100044: UppderEyeLid
+    100046: UpperTeethCTRL
+    400000: Body
+    400002: ChestMesh
+    400004: EyeBallCTRL
+    400006: EyeCTRL
+    400008: FrontLeftLeg01
+    400010: FrontLeftLeg02
+    400012: FrontLeftLeg03
+    400014: FrontRightLeg01
+    400016: FrontRightLeg02
+    400018: FrontRightLeg03
+    400020: Head
+    400022: //RootNode
+    400024: LockCTRL
+    400026: LowerEyelid
+    400028: LowerTeethCTRL
+    400030: RearLeftLeg01
+    400032: RearLeftLeg02
+    400034: RearLeftLeg03
+    400036: RearRightLeg01
+    400038: RearRightLeg02
+    400040: RearRightLeg03
+    400042: Root
+    400044: UppderEyeLid
+    400046: UpperTeethCTRL
+    2100000: lambert1
+    4300000: ChestMesh
+    7400000: IdleBattle
+    9500000: //RootNode
+    13700000: ChestMesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IdleBattle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

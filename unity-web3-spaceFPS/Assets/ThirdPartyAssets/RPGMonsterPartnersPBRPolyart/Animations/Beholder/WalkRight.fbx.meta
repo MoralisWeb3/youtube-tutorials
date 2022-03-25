@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 1eecef2ab83a0534a855b389434913fa
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BeholderMesh
+    100002: Body
+    100004: BottomBodyCTRL
+    100006: EyeBallCTRL
+    100008: EyeCTRL
+    100010: LeftBodyCTRL
+    100012: LowerEyelidCTRL
+    100014: Process01
+    100016: Process02
+    100018: Process03
+    100020: Process04
+    100022: Process05
+    100024: RearBodyCTRL
+    100026: RightBodyCTRL
+    100028: Root
+    100030: TentacleA01
+    100032: TentacleA02
+    100034: TentacleA03
+    100036: TentacleA04
+    100038: TentacleA05
+    100040: TentacleB01
+    100042: TentacleB02
+    100044: TentacleB03
+    100046: TentacleB04
+    100048: TentacleB05
+    100050: TentacleC01
+    100052: TentacleC02
+    100054: TentacleC03
+    100056: TentacleC04
+    100058: TentacleC05
+    100060: TentacleD01
+    100062: TentacleD02
+    100064: TentacleD03
+    100066: TentacleD04
+    100068: TentacleD05
+    100070: TentacleE01
+    100072: TentacleE02
+    100074: TentacleE03
+    100076: TentacleE04
+    100078: TentacleE05
+    100080: TentacleF01
+    100082: TentacleF02
+    100084: TentacleF03
+    100086: TentacleF04
+    100088: TentacleF05
+    100090: TopBodyCTRL
+    100092: UpperEyelidCTRL
+    100094: //RootNode
+    400000: BeholderMesh
+    400002: Body
+    400004: BottomBodyCTRL
+    400006: EyeBallCTRL
+    400008: EyeCTRL
+    400010: LeftBodyCTRL
+    400012: LowerEyelidCTRL
+    400014: Process01
+    400016: Process02
+    400018: Process03
+    400020: Process04
+    400022: Process05
+    400024: RearBodyCTRL
+    400026: RightBodyCTRL
+    400028: Root
+    400030: TentacleA01
+    400032: TentacleA02
+    400034: TentacleA03
+    400036: TentacleA04
+    400038: TentacleA05
+    400040: TentacleB01
+    400042: TentacleB02
+    400044: TentacleB03
+    400046: TentacleB04
+    400048: TentacleB05
+    400050: TentacleC01
+    400052: TentacleC02
+    400054: TentacleC03
+    400056: TentacleC04
+    400058: TentacleC05
+    400060: TentacleD01
+    400062: TentacleD02
+    400064: TentacleD03
+    400066: TentacleD04
+    400068: TentacleD05
+    400070: TentacleE01
+    400072: TentacleE02
+    400074: TentacleE03
+    400076: TentacleE04
+    400078: TentacleE05
+    400080: TentacleF01
+    400082: TentacleF02
+    400084: TentacleF03
+    400086: TentacleF04
+    400088: TentacleF05
+    400090: TopBodyCTRL
+    400092: UpperEyelidCTRL
+    400094: //RootNode
+    2100000: lambert1
+    4300000: BeholderMesh
+    7400000: WalkRight
+    9500000: //RootNode
+    13700000: BeholderMesh
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WalkRight
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

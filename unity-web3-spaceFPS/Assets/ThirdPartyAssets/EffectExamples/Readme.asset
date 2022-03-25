@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 1b854426d1f38f842a143cde84f59573, type: 3}
+  title: Unity Particle Pack 5.x
+  sections:
+  - heading: Unity Particle Pack 5.x
+    text: 'Note: this Particle Pack is compatible for Unity 5.5. Find the brand new
+      Particle Pack for Unity 2018 and above using the link below:'
+    linkText: Download the new Particle Pack HERE
+    url: http://u3d.as/1i2i
+  - heading: 
+    text: This pack of sample particle assets can be used in your games and to help
+      you understand how to achieve certain effects using the Unity Particle System
+      component and modules. You'll find Fire, Explosions, Rain and other cool effects.
+    linkText: 
+    url: 
+  loadedLayout: 1
