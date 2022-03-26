@@ -1,0 +1,21 @@
+.playerPage {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.videoPlayer {
+    max-height: 95%
+}
+
+.backHome {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 3;
+}
+
+.backButton {
+    color: green !important;
+}
