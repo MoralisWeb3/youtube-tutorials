@@ -1,0 +1,42 @@
+.appDiv{
+    background-color: #161616;
+}
+
+.sc-dkQkyq{
+    color: white;
+    font-weight: bold;
+}
+.cqVapy{
+    border-bottom: 2px solid #E50914 !important;
+}
+
+.sc-JkixQ {
+    margin-left: 160px;
+    position: fixed;
+    z-index: 2;
+}
+
+.sc-gGPzkF {
+    padding-top: 50px !important;
+}
+
+.sc-dVNjXY {
+    background-color: #161616 !important;
+    margin-top:30px;
+}
+
+.sc-bQtKYq {
+    padding: 0px !important;
+}
+
+.sc-egiyK {
+    z-index: 1 !important;
+    font-size: calc(100vw * 0.012) !important;
+    padding:calc(100vw * 0.002) calc(100vw * 0.008) !important;
+}
+
+.sc-FNXRL {
+    background-color: rgba(0,0,0,0.7) !important;
+    transition: background-color 1000ms linear !important;
+}
+

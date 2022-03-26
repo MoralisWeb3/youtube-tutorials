@@ -1,0 +1,179 @@
+.link {
+  margin: 20px;
+}
+
+.topBanner {
+  display: flex;
+  justify-content: start;
+  padding-top: 20px;
+}
+
+.logo {
+  position: fixed;
+  padding: 20px;
+  width: 100vw;
+  background-color: #161616;
+  z-index: 2;
+}
+
+.connect {
+  position: fixed;
+  right:0;
+  padding: 15px;
+  z-index: 3;
+  display: flex;
+  gap:15px;
+}
+
+.scene {
+  width: 100vw;
+  height: calc(100vw * 0.5);
+  color: white;
+}
+
+.sceneImg {
+  width: 100vw;
+  position:relative;
+  top:0px;
+}
+
+.sceneLogo {
+  position: relative;
+  bottom: calc(100vw * 0.56);
+  left: 5vw;
+  width: 25vw;
+}
+
+.sceneDesc {
+  position: relative;
+  bottom: calc(100vw * 0.56);
+  left: 6vw;
+  width: 30vw;
+  font-weight: 500;
+  font-size: calc(100vw * 0.014);
+  line-height: calc(100vw * 0.02);
+}
+
+.playButton {
+  position: relative;
+  bottom: calc(100vw * 0.55);
+  left: 6vw;
+  display: flex;
+  gap: 10px
+}
+
+.title {
+  position: relative;
+  top: -130px;
+  padding-left: 4vw;
+  color: white;
+  font-weight: bold;
+  font-size: calc(100vw * 0.014);
+}
+
+.thumbs {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap:2px;
+  row-gap: 20px;
+  position: relative;
+  top: -120px;
+}
+
+.ownThumbs {
+  padding-left: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap:2px;
+  row-gap: 20px;
+  position: relative;
+  top: -100px;
+}
+
+.thumbnail {
+  width: 19vw;
+  border-radius: 5px;
+  transition: transform .4s;
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.modal {
+  max-height: 200px !important;
+}
+
+.modalContent {
+  position: relative;
+  top: -70px;
+  width: 100%;
+}
+
+.modalImg {
+  width:100%;
+}
+
+.modalLogo {
+  position: fixed;
+  top: 360px;
+  left: 6%;
+  width:30%;
+}
+
+.modalPlayButton {
+  position: fixed;
+  top: 500px;
+  left: 6%;
+  display: flex;
+  gap: 10px
+}
+
+.details {
+  color: white;
+  font-weight: bold;
+  gap: 20px;
+  padding: 20px 0px;
+  display: flex;
+  font-size: 20px;
+}
+
+.movieInfo {
+  display: flex;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.description{
+  padding-left: 50px;
+  width: 60%;
+  color: white;
+}
+
+.detailedInfo {
+  padding-left: 10%;
+  padding-right:5%;
+  padding-top: 60px;
+  width: 30%;
+}
+
+.deets {
+  margin-left: 5px;
+  color: white;
+}
+
+
+.ownListContent {
+  background-color: #161616;
+  height: 100vh;
+  margin-top:150px;
+}
+
+.msg {
+  margin-left: 5vw;
+}
