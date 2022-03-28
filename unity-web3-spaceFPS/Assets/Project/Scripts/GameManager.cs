@@ -57,6 +57,8 @@ namespace Main
             });
             _enemyCallbacks.OnDeleteEvent += ((item, requestId) =>
             {
+                if (_currentAliveEnemiesCount == 0) return;
+
                 _currentAliveEnemiesCount--;
                 Debug.Log("Current alive enemies = " + _currentAliveEnemiesCount);
             });
@@ -78,12 +80,22 @@ namespace Main
             Boss.Dead -= OnBossDead;
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                StartCoroutine(QuitGame());
+            }
+        }
+
         private void OnApplicationQuit()
         {
-            if (MoralisInterface.IsLoggedIn())
-            {
-                DeleteAllEnemiesData();   
-            }
+            //This only executes when we stop playing on the Editor.
+#if UNITY_EDITOR
+            if (_currentAliveEnemiesCount == 0) return;
+
+            DeleteAllEnemiesData();
+#endif
         }
 
         #endregion
@@ -146,10 +158,9 @@ namespace Main
         
         private IEnumerator AwardTime()
         {
-            while (false)
-            {
-                yield return null;
-            }
+            yield return null;
+            
+            Debug.Log("Time to claim the NFT!");
         }
 
         #endregion
@@ -275,6 +286,25 @@ namespace Main
             {
                 Debug.Log("There ara no EnemyData objects in the DB to delete.");
             }
+        }
+
+        private IEnumerator QuitGame()
+        {
+            if (_currentAliveEnemiesCount > 0)
+            {
+                DeleteAllEnemiesData();
+            }
+
+            while (_currentAliveEnemiesCount > 0)
+            {
+                yield return null;
+            }
+            
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit();
+            #endif
         }
 
         #endregion

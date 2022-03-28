@@ -61,12 +61,6 @@ namespace Main
             {
                 LogOut();
             }
-            
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                LogOut();
-                Application.Quit();
-            }
         }
 
         #endregion
