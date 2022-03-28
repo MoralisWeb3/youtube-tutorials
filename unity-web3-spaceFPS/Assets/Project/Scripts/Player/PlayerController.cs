@@ -85,6 +85,12 @@ namespace Main
             {
                 lifeSlider.value -= 0.5f;
             }
+            
+            //If we collide with Boss, we're dead!
+            if (other.gameObject.CompareTag("BossBody"))
+            {
+                lifeSlider.value -= 1;
+            }
         }
 
         public void HandleSliderValue()

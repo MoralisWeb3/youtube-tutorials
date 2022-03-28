@@ -736,9 +736,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1701009212260125476}
   - component: {fileID: 1701009212265044486}
+  - component: {fileID: 3531219854125957464}
   m_Layer: 0
   m_Name: ChestMesh
-  m_TagString: Untagged
+  m_TagString: BossBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -831,6 +832,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.33805645, y: 0.30108458, z: 0}
     m_Extent: {x: 0.7146654, y: 0.8540221, z: 0.56799185}
   m_DirtyAABB: 0
+--- !u!65 &3531219854125957464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701009212259768068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4356999, y: 1.4291499, z: 1.4454757}
+  m_Center: {x: 0, y: 0.021492377, z: 0.7120504}
 --- !u!1 &1701009212259768070
 GameObject:
   m_ObjectHideFlags: 0
