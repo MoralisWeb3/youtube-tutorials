@@ -23,18 +23,23 @@ const Home = () => {
 
   useEffect(() => {
     async function fetchMyList() {
-     /*  await Moralis.start({
-        serverUrl: "<Server URL>",
-        appId: "<APP ID>",
-      }); */ //if getting errors add this 
-      
-      const theList = await Moralis.Cloud.run("getMyList", { addrs: account });
+      //  await Moralis.start({
+      //     serverUrl: "https://nxnum9lbbe37.usemoralis.com:2053/server",
+      //     appId: "pI4URxOPkpA9Ob4PuMQS88zBgyISVIVFot9qXxYQ",
+      //   }); //if getting errors add this 
 
-      const filterdA = movies.filter(function (e) {
-        return theList.indexOf(e.Name) > -1;
-      });
+      try {
+        const theList = await Moralis.Cloud.run("getMyList", { addrs: account });
 
-      setMyMovies(filterdA);
+        const filterdA = movies.filter(function (e) {
+          return theList.indexOf(e.Name) > -1;
+        });
+
+        setMyMovies(filterdA);
+        
+      } catch (error) {
+        console.error(error)
+      }
     }
 
     fetchMyList();
