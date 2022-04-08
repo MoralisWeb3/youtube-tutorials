@@ -1,0 +1,114 @@
+.container {
+  position: absolute;
+  top: 0;
+  width: 100vw; 
+  height: 100vh;
+  background-size: cover;
+  z-index: -999;
+}
+
+.containerGradinet {
+  background-image: linear-gradient(rgb(0,0,0,0.75), rgb(0,0,0,0));
+  height:50%;
+  width:100%
+}
+
+
+.lrContainers {
+  width: 200px;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+}
+
+.topBanner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:93%;
+  padding: 30px 60px;
+}
+
+.logo{
+  width:10vw;
+  height:calc(10vw*0.3)
+}
+
+.tabContent {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchFields {
+  width:800px;
+  background-color: white;
+  height:65px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.tabs{
+  color:white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap:35px;
+  font-size: 16px;
+}
+
+.selected {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+
+.inputs {
+  font-size: 12px;
+  font-weight:bold;
+  margin-top: 10px;
+  width:160px;
+}
+
+
+.vl {
+  position: relative;
+  top:15;
+  height: 20%;
+  background-color: rgb(228, 228, 228);
+  width: 1.5px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+}
+
+.searchButton {
+  background-color: #EB4E5F;
+  padding:10px;
+  border-radius: 50%;
+  transition: transform .4s;
+}
+
+.searchButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.randomLocation {
+  margin-top: 25vh;
+  color: white;
+  width: 300px;
+  padding-left:100px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-weight: 600;
+  margin-bottom: 25px;
+}

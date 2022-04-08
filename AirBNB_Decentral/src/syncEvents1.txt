@@ -1,0 +1,58 @@
+Description:
+New Booking For A Rental
+
+
+Sync_historical:
+Yes
+
+
+Topic:
+newDatesBooked (string[], uint256, address, string, string)
+
+
+Abi:
+{
+  "anonymous": false,
+  "inputs": [
+    {
+      "indexed": false,
+      "internalType": "string[]",
+      "name": "datesBooked",
+      "type": "string[]"
+    },
+    {
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "id",
+      "type": "uint256"
+    },
+    {
+      "indexed": false,
+      "internalType": "address",
+      "name": "booker",
+      "type": "address"
+    },
+    {
+      "indexed": false,
+      "internalType": "string",
+      "name": "city",
+      "type": "string"
+    },
+    {
+      "indexed": false,
+      "internalType": "string",
+      "name": "imgUrl",
+      "type": "string"
+    }
+  ],
+  "name": "newDatesBooked",
+  "type": "event"
+}
+
+
+Address:
+0xa9110224Df672c266569931F4e03f009651149E6
+
+
+TableName:
+newBookings
