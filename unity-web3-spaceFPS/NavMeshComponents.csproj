@@ -41,11 +41,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ThirdPartyAssets\NavMeshComponents\Scripts\NavMeshLink.cs" />
-     <Compile Include="Assets\ThirdPartyAssets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
-     <Compile Include="Assets\ThirdPartyAssets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-     <Compile Include="Assets\ThirdPartyAssets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
-     <None Include="Assets\ThirdPartyAssets\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
+    <Analyzer Include="C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\ThirdParty\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll" />
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ThirdParty\NavMeshComponents\Scripts\NavMeshLink.cs" />
+     <Compile Include="Assets\ThirdParty\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+     <Compile Include="Assets\ThirdParty\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+     <Compile Include="Assets\ThirdParty\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+     <None Include="Assets\ThirdParty\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -301,9 +304,6 @@
      <Reference Include="BouncyCastle.Crypto">
      <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\BouncyCastle.Crypto\BouncyCastle.Crypto.dll</HintPath>
      </Reference>
-     <Reference Include="PackageManagerAssembly">
-     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\ThirdPartyAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
-     </Reference>
      <Reference Include="log4netPlastic">
      <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
@@ -324,6 +324,9 @@
      </Reference>
      <Reference Include="QRCoder.Unity">
      <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\QRCoder.Unity.1.0.2\lib\net35\QRCoder.Unity.dll</HintPath>
+     </Reference>
+     <Reference Include="PackageManagerAssembly">
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\ThirdParty\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
