@@ -337,14 +337,14 @@
      <Reference Include="RestSharp">
      <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\DLLs\RestSharp.dll</HintPath>
      </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+     </Reference>
      <Reference Include="QRCoder">
      <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\QRCoder.1.3.4\lib\net35\QRCoder.dll</HintPath>
      </Reference>
      <Reference Include="QRCoder.Unity">
      <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Assets\MoralisWeb3ApiSdk\Packages\QRCoder.Unity.1.0.2\lib\net35\QRCoder.Unity.dll</HintPath>
-     </Reference>
-     <Reference Include="Newtonsoft.Json">
-     <HintPath>C:\Users\Moralis\Documents\GitHub\unity-web3-spaceFPS\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
