@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5545acbf3507bc44ad0dbb5454900f1, type: 3}
+  m_Name: UnityEngine.AudioSource
+  m_EditorClassIdentifier: 
+  entries:
+  - Title: SpatialBlend
+    Template: {fileID: 11400000, guid: c0f6e40f2e6422d4a93fdf10f337a9fe, type: 2}
+    Contents: "PROPERTY\tspatialBlend\nDEFAULT\t = 1.0f\nATTRIBUTE\t[UnityEngine.Range(0.0f,
+      1.0f)]"
+  - Title: Volume
+    Template: {fileID: 11400000, guid: c0f6e40f2e6422d4a93fdf10f337a9fe, type: 2}
+    Contents: "PROPERTY\tvolume\nDEFAULT\t = 1.0f\nATTRIBUTE\t[UnityEngine.Range(0.0f,
+      1.0f)]\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Volume\")]"
+  - Title: Pitch
+    Template: {fileID: 11400000, guid: c0f6e40f2e6422d4a93fdf10f337a9fe, type: 2}
+    Contents: "PROPERTY\tpitch\nDEFAULT\t = 1.0f\nATTRIBUTE\t[UnityEngine.Range(-3.0f,
+      3.0f)]\nFSA\t\t[UnityEngine.Serialization.FormerlySerializedAs(\"Pitch\")]"
+  - Title: PanStereo
+    Template: {fileID: 11400000, guid: c0f6e40f2e6422d4a93fdf10f337a9fe, type: 2}
+    Contents: "PROPERTY\tpanStereo\nATTRIBUTE\t[UnityEngine.Range(-1.0f, 1.0f)]"
