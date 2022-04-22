@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Head Content-->
+        <title>Land</title>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Links -->
+        <!-- Make It Pretty Import the Bootstrap stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <div class="container mt-5">
+                <div class="row">
+                    <h1 class="display-1 text-center text-success" > Moraland</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-center bg-success text-white">
+                            <h1>Map</h1>
+                        </div>
+                        <div id="MainCanvasDiv" class="text-center">
+                            <canvas id="mainCanvas"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center bg-success text-white">
+                            <h1>Current Plot</h1>
+                        </div>
+                        <div id="PlotCanvasDiv"class="text-center">
+                            <canvas id="plotCanvas"></canvas>
+                        </div>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">Plot ID</span>
+                            <input  disabled="true" id="plotID" type="text" class="form-control">
+                        </div>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">Plot Coordinates</span>
+                            <input disabled="true" id="plotX" type="text" class="form-control">
+                            <input disabled="true" id="plotY" type="text" class="form-control">
+                        </div>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">Location Coordinates</span>
+                            <input disabled="true" id="locationX" type="text" class="form-control">
+                            <input disabled="true" id="locationY" type="text" class="form-control">
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-success btn-block btn-lg" id="claimButton" onclick="">Claim</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row"> 
+                    <div class="text-center bg-success text-white">
+                        <h1>Notifications</h1>
+                    </div>
+                    <div id="notifications" class="container mt-2">         
+                    </div>
+                </div>   
+            </div>
+        </main>
+    <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+        <script src="static/js/logic.js"></script>
+    </body>
+</html>
