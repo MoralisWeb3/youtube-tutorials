@@ -1,0 +1,78 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideBar {
+  position: sticky;
+  top: 0px;
+  width: calc((100vw - 800px)*0.45);
+  border-right: 1px solid rgb(63, 63, 63);
+  color: white;
+  height: 100vh;
+}
+
+.rightBar {
+  position: sticky;
+  top: 0px;
+  width: calc((100vw - 800px)*0.55);
+  border-left: 1px solid rgb(63, 63, 63);
+  color: white;
+  height: 100vh;
+}
+
+.mainWindow {
+  width: 800px;
+}
+
+/* Text Field */
+.sc-fWIMVQ {
+  background-color: transparent !important;
+  border-right: 0px !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid rgb(63, 63, 63) !important;
+  color: white !important;
+  height: 90px !important;
+}
+
+/* Text Area */
+.sc-jWEIYm {
+  color: white !important;
+  fill: white !important;
+  font-size: 20px !important;
+  height: 10px !important;
+}
+
+.rdMZu {
+    min-height: 90px !important;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none !important;
+  height: 0px !important;
+}
+
+.logout{
+  display: flex;
+  justify-content: end;
+  margin-right: 100px;
+  font-weight: bold;
+}
+
+.logout:hover {
+  color:gray;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loginPage {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
