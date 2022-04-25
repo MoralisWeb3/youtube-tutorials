@@ -1,0 +1,80 @@
+.profileBanner {
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.pfpContainer {
+    max-width:100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.profilePFP {
+    widtH: 130px;
+    border-radius: 50%;
+    border: 5px solid #141d26;
+    position: relative;
+    top:-65px;
+    left:40px;
+}
+
+.profileName {
+    color: white;
+    position: relative;
+    top:-55px;
+    left:40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profileWallet {
+    color: rgb(114, 114, 114);
+    position: relative;
+    top:-50px;
+    left:40px;
+    font-size: 14px;
+}
+
+.profileBio {
+    color: white;
+    position: relative;
+    top:-40px;
+    left:40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profileEdit {
+    color: white;
+    position: relative;
+    top:-160px;
+    left:650px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0.5px solid white;
+    width: 100px;
+    justify-content: center;
+    display:flex;
+    padding: 10px 10px;
+    border-radius: 1000px;
+}
+
+.profileEdit:hover {
+    cursor: pointer;
+}
+
+.profileTabs {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.profileTab {
+    padding-bottom: 10px;  
+    border-bottom: 2px solid #1DA1F2;
+}

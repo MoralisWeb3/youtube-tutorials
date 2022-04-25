@@ -1,0 +1,47 @@
+.siderContent{
+    padding-top: 20px;
+    padding-right: 90px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height:85vh;
+    align-items: end;
+}
+
+.details {
+    display: flex;
+    padding: 10px;
+    gap:14px;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: start;
+    gap: 14px;
+    margin-top: 20px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding:10px;
+    border-radius: 1000px;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.menuItems:hover{
+    cursor:pointer;
+    background-color: #282828;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
