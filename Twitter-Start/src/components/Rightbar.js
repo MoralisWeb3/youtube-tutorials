@@ -6,7 +6,8 @@ import academy from "../images/academy.png";
 import youtube from "../images/youtube.png";
 import js from "../images/js.png";
 import { Input } from "web3uikit";
-
+import FollowButton from "./FollowBtn";
+import GetPopularProfiles from "../queries/GetPopularProfiles";
 
 const Rightbar = () => {
   const trends = [
@@ -37,6 +38,8 @@ const Rightbar = () => {
     },
   ];
 
+  const popularProfiles = GetPopularProfiles();
+
   return (
     <>
     <div className="rightbarContent">
@@ -47,6 +50,33 @@ const Rightbar = () => {
         labelBgColor="#141d26" 
         >
       </Input>
+
+    <div className="popular">
+      You might like
+      {
+        popularProfiles.length > 0 &&
+        popularProfiles.map((elem, idx) => (
+          <div key={idx} className="popularProfile">
+            <div className="popularDetails">
+              <div className="popularImg">
+                {
+                  elem.avatar &&
+                  <img src={elem.avatar}></img>
+                }
+              </div>
+              <div>
+                <div>{elem.domain ? elem.domain : elem.address}</div>
+                <div>{elem.recommendationReason}</div>
+              </div>
+            </div>
+            <FollowButton
+              address={elem.address}
+              isFollowing={elem.isFollowing}
+            />
+          </div>
+        ))
+      }
+    </div>
 
     <div className="trends">
       News For You
