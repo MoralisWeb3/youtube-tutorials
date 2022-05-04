@@ -1,0 +1,13 @@
+.followButton {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    outline: none;
+}
+
