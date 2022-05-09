@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "2.0.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.6.11",
     "com.unity.collab-proxy": "1.15.7",
