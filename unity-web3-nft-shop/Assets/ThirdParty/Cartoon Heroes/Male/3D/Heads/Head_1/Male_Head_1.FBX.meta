@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 3ed30173e52bad9469c5720c7646c3de
+timeCreated: 1576412053
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Character Head
+    100004: Male Head Mesh
+    100006: Character
+    100008: Character Head 1
+    100010: Character Neck
+    100012: Character Pelvis
+    100014: Character Spine
+    100016: Character Spine1
+    100018: Character Spine2
+    100020: Male_Head_1_Mesh
+    100022: Head_1_Mesh
+    100024: Character Chin
+    100026: Character Jawline
+    100028: Character L Ear
+    100030: Character L Eye
+    100032: Character L Eyebrow
+    100034: Character Mouth
+    100036: Character Nose
+    100038: Character R Ear
+    100040: Character R Eye
+    100042: Character R Eyebrow
+    100044: Male_Head_1
+    400000: //RootNode
+    400002: Character Head
+    400004: Male Head Mesh
+    400006: Character
+    400008: Character Head 1
+    400010: Character Neck
+    400012: Character Pelvis
+    400014: Character Spine
+    400016: Character Spine1
+    400018: Character Spine2
+    400020: Male_Head_1_Mesh
+    400022: Head_1_Mesh
+    400024: Character Chin
+    400026: Character Jawline
+    400028: Character L Ear
+    400030: Character L Eye
+    400032: Character L Eyebrow
+    400034: Character Mouth
+    400036: Character Nose
+    400038: Character R Ear
+    400040: Character R Eye
+    400042: Character R Eyebrow
+    400044: Male_Head_1
+    2100000: No Name
+    2100002: Male_Head_1
+    2300000: //RootNode
+    2300002: Male Head Mesh
+    2300004: Character Head 1
+    2300006: Male_Head_1_Mesh
+    2300008: Character Head
+    3300000: //RootNode
+    3300002: Male Head Mesh
+    3300004: Character Head 1
+    3300006: Male_Head_1_Mesh
+    3300008: Character Head
+    4300000: Male Head Mesh
+    4300002: Character Head
+    4300004: Male_Head_1_Mesh
+    4300006: Head_1_Mesh
+    4300008: Male_Head_1
+    9500000: //RootNode
+    13700000: Male_Head_1_Mesh
+    13700002: Character Head
+    13700004: Head_1_Mesh
+    13700006: Male_Head_1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Male_Head_1
+    second: {fileID: 2100000, guid: 25e381a33d04932429a8bd13baaefaee, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

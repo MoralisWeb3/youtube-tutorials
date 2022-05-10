@@ -1,0 +1,43 @@
+SPELL BOOK
+name = Spell Book
+description = You see a spellbook. It can only be wielded properly by sorcerers and druids.
+image = https://ipfs.moralis.io:2053/ipfs/Qma5Axkoq5Dezigd9FnKviXf4S1QhAEVcs9XsdmjPWv6j4
+full metadata = https://ipfs.moralis.io:2053/ipfs/QmNdGkEnLdE4VzrXX1UuvxGmHfM6vVJ7ZQK63BqwQfQKAm
+
+GOLD RING
+name = Gold Ring
+description = You see a gold ring. It is used mostly for decoration.
+image = https://ipfs.moralis.io:2053/ipfs/QmQxcdcbYzUZEiE9xyyJoQbBR2ANw5L1B8Dq2nofDwXRec
+full metadata = https://ipfs.moralis.io:2053/ipfs/QmdicyntAjpUfVBE24mxP7gXt4oYkuCWJiWSLTrxnqwLFs
+
+MEAT
+name = Meat
+desc = You see meat. It looks tasty.
+image = https://ipfs.moralis.io:2053/ipfs/QmPjXqvHDmCAE9DHwc2qPA8rqi5KA5KVf9TrBtgr4BuXDu
+full metadata = https://ipfs.moralis.io:2053/ipfs/QmbTX3PyrkRzUgo1tLB6oCPCz5h2R18hSxM7qXiBvnUVKm
+
+HEALTH POTION
+name = Health Potion
+desc = You see a health potion. Heals the target for 125 to 175 hitpoints, an average of 150.
+image = https://ipfs.moralis.io:2053/ipfs/QmWRdvxZBTiaMwkTTn4ETAv46st3sjxVKiz16PZ54vvanC
+full metadata = https://ipfs.moralis.io:2053/ipfs/QmVaFeMkoVYr2yNhbQeZXsuT7Mr6h6pZFZpju7k968fQLy
+
+MANA POTION
+name = Mana Potion
+desc = You see a mana potion. It regenerates 75 to 125 mana with an average of 100 mana.
+image = https://ipfs.moralis.io:2053/ipfs/QmS3xa1gMtWU3ZCKNMX4fRHjwfe1fBRzcKf74YbEDNurmg
+full metadata = https://ipfs.moralis.io:2053/ipfs/QmZ71ohQRC8DpCQKruLuwTTnj2UobttH52TtuiHTuQDhB7
+
+SOLDIER HELMET
+name = Soldier Helmet
+desc = You see a soldier helmet. A cheap and good helmet.
+image = https://ipfs.moralis.io:2053/ipfs/QmNjVyu4gLS1yJqmD9RDCEYp95ua35YzfLYKfsvDxjAy75
+full metadata = https://ipfs.moralis.io:2053/ipfs/QmRP44bhRvgoLRK35gKe2tzdfmX32JGruuS5tQfq3vNVxv
+
+CARLIN SWORD
+name = Carlin Sword
+desc = You see a carlin sword. A very good sword to kill minotaurs.
+image = https://ipfs.moralis.io:2053/ipfs/QmRR7CY9h5fpTfjALaQywDKzyf98Ko5Av3ZKugAn1QDXAq
+full metadata = https://ipfs.moralis.io:2053/ipfs/QmPTQV3oR7XM4qQhfPDCh1HoVTJMzXcxQhYfknajQXLRVF
+
+
