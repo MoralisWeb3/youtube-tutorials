@@ -1,0 +1,49 @@
+.circle {
+  border: 4px solid black;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.wave {
+  position: relative;
+  right: 30%;
+  width: 160%;
+  height: 160%;
+  transform-origin: 50% 50%;
+  border-radius: 78% 56%;
+  animation: spin 5s infinite linear;
+}
+
+.percentage {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.votes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.token {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
