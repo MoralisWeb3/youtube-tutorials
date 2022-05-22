@@ -1,0 +1,52 @@
+//!! Remember that you need to have NodeJS installed: https://nodejs.org/en/download/
+
+// 1. INSTALL HARDHAT
+npm i -D hardhat
+npx hardhat
+
+// 2. INSTALL DEPENDENCIES
+npm i -D dotenv
+npm i -D @nomiclabs/hardhat-etherscan
+npm i -D @nomiclabs/hardhat-waffle
+npm install keccak256                 //https://github.com/miguelmota/keccak256
+
+// 3. RENAME "contracts/Greeter.sol" AND CODE YOUR OWN SMART CONTRACT
+
+// 4. RENAME "scripts/sample_script.js" to "scripts/deploy.js"
+
+// 5. ON "scripts/deploy.js" RENAME ALL THE "Greeter" AND "greeter" fields WITH YOUR CONTRACT NAME
+//    IN THIS CASE "MoriaGates" and "moriaGates"
+
+// 6. MAKE SURE the "deploy()" function has the correct contract constructor parameters
+
+// 7. MODIFY "scripts/deploy.js" WITH YOUR NEEDS
+
+// 8. ON "hardhat.config.js" ADD THIS TO THE TOP:
+
+        require("@nomiclabs/hardhat-etherscan");
+        const dotenv = require("dotenv");
+        dotenv.config();
+
+// 9. CREATE ".env" FILE AND CREATE FIELDS:
+
+        API_KEY = 'Etherscan API Key'
+        POLYGON_MUMBAI = 'Mumbai Testnet RPC Node'
+        PRIVATE_KEY = 'MetaMask wallet private key'
+
+// 10. MODIFY "module.exports" in "hardat.config.js" WITH YOUR NEEDS
+
+
+************* ALL THIS STEPS ARE ALREADY DONE IN THIS PROJECT *************
+************* YOU JUST NEED EXECUTE THE FOLLOWING COMMANDS TO DEPLOY THE CONTRACT *************
+
+// 11. FILL ".env" FIELDS WITH YOUR KEYS
+
+// 12. COMPILE SMART CONTRACT
+npx hardhat clean
+npx hardhat compile
+
+// 13. RUN "scripts/deploy.js" TO DEPLOY SMART CONTRACT
+npx hardhat run scripts/deploy.js --network mumbai
+
+************* CONTRACT DEPLOYED AND VERIFIED *************
+
