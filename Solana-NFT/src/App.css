@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.pwr {
+    height: 50px !important;
+    width: 200px !important;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.search {
+    border-radius: 1000px;
+    height: 40px;
+    width: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left top, #9945FF, #14F195);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 30px;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+.name {
+    margin: 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
