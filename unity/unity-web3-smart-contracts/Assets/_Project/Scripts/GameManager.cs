@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Triggers;
@@ -38,13 +39,29 @@ namespace Web3MoriaGates
         [SerializeField] private TextMeshProUGUI statusLabel;
 
         private bool _listening;
-
+        
+        // Only for Editor using
+        private bool _responseReceived;
+        private bool _responseResult;
+        
 
         #region UNITY_LIFECYCLE
 
         private void Awake()
         {
             statusLabel.text = string.Empty;
+        }
+
+        private void Update()
+        {
+            // We only do this in Editor because of single threading and UI elements issues
+            if (!Application.isEditor) return;
+            
+            if (_responseReceived)
+            {
+                ShowResponsePanel(_responseResult);
+                _responseReceived = false;
+            }
         }
 
         #endregion
@@ -126,7 +143,21 @@ namespace Web3MoriaGates
         {
             if (!_listening) return;
 
-            if (newEvent.result)
+            // You will find this a bit different from the video. It's a quality improvement for Editor testing. Functionality continues in ShowResponsePanel() :)
+            if (Application.isEditor)
+            {
+                _responseResult = newEvent.result;
+                _responseReceived = true;
+
+                return;
+            }
+
+            ShowResponsePanel(newEvent.result);
+        }
+
+        private void ShowResponsePanel(bool isCorrect)
+        {
+            if (isCorrect)
             {
                 correctPanel.SetActive(true);
                 Debug.Log("Correct password");
@@ -140,7 +171,7 @@ namespace Web3MoriaGates
             statusLabel.text = string.Empty;
             _listening = false;
 
-            StartCoroutine(DoSomething(newEvent.result));
+            StartCoroutine(DoSomething(isCorrect));
         }
 
         private IEnumerator DoSomething(bool result)
@@ -149,8 +180,8 @@ namespace Web3MoriaGates
 
             if (result)
             {
-                //We could load the game scene here
-                SceneManager.LoadScene("Main");
+                //We could load another game scene here
+                //SceneManager.LoadScene("Main");
             }
             else
             {
