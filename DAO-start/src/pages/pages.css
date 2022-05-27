@@ -1,0 +1,97 @@
+  .voting{
+    margin-top: 350px;
+    background-color: white;
+    height:100vh;
+  }
+  
+  .content{
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contentProposal{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 26px;
+    width:60vw;
+    left: 20vw;
+    position: absolute;
+  }
+
+  .proposal{
+    margin-bottom: 40px;
+  }
+
+  .votesDiv{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .backHome {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    font-size: 12px;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .proposalOverview{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .proposer {
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    color:rgba(0, 0, 0, 0.5);
+    align-items: center;
+  }
+  
+  .tabContent {
+    left: 20vw;
+    position: absolute;
+    width:60vw;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 26px;
+  }
+  
+  .widgets { 
+    display: flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height:120px;
+  }
+  
+  .extraWidgetInfo{
+    color:rgba(6, 158, 252, 0.5);
+    font-size: 12px;
+    width: 50%;
+    margin-top: 10px;
+  }
+  
+  .extraTitle{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .progress{
+    margin-top: 20px;
+    height:8px;
+    background-color:rgb(222, 222, 222);
+    border-radius: 4px;
+  }
+  
+  .progressPercentage{
+    height:8px;
+    background-color:rgba(6, 158, 252, 0.5);
+    border-radius: 4px;
+  }
+  
