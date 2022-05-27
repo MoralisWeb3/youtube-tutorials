@@ -1,0 +1,11 @@
+.header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: white !important;
+}
