@@ -1,9 +1,0 @@
-{
-    "name": "PsdPlugin",
-    "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": true
-}

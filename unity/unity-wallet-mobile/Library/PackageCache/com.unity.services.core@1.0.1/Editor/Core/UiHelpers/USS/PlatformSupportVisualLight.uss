@@ -1,4 +1,0 @@
-.platform-tag {
-    background-color:#AEAEAE; /*from light.uss --theme-line-selection-background-color*/
-    color:#ffffff; /*from light.uss --theme-line-selection-text-color*/
-}

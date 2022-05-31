@@ -1,7 +1,0 @@
-﻿<UXML xmlns="UnityEngine.UIElements">
-<VisualElement class="parent-container">
-	<Label name="turnoff-label" />
-	<Button name="turnoff-button" />
-	<Label name="progress-label" />
-</VisualElement>
-</UXML>

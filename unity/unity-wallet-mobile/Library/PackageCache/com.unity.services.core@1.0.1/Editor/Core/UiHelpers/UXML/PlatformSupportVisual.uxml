@@ -1,6 +1,0 @@
-<UXML xmlns="UnityEngine.UIElements">
-    <VisualElement name="SupportedPlatformsBlock" class="multi-field-block">
-        <Label text="Supported Platforms" class="title"/>
-        <VisualElement class="tag-container"/>
-    </VisualElement>
-</UXML>

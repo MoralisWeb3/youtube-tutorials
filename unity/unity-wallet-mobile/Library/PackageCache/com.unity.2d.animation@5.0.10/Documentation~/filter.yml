@@ -1,4 +1,0 @@
-apiRules:
-  - exclude:
-      uid: UnityEngine.U2D.Animation.PositionVertex
-      type: Struct

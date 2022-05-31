@@ -1,8 +1,0 @@
-<UXML xmlns="UnityEngine.UIElements">
-    <VisualElement name="AccessTokenErrorContainer" class="warning-container">
-        <VisualElement name="AccessTokenErrorMessageBlock" class="center-middle-block">
-            <VisualElement name="AccessTokenErrorIcon" class="warning-icon"/>
-            <TextElement name="AccessTokenErrorMessage" class="warning-message" text="An error has occurred"/>
-        </VisualElement>
-    </VisualElement>
-</UXML>

@@ -1,5 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
-    <VisualElement class="content-body">
-        <Label text="Please wait..." class="user-request-text" />
-    </VisualElement>
-</ui:UXML>

@@ -1,4 +1,0 @@
-<UXML xmlns="UnityEngine.UIElements">
-    <Label text="[Exception context here]" class="exception-context"/>
-    <Label text="[Exception message here]" class="exception-message"/>
-</UXML>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<UXML xmlns:ui="UnityEngine.UIElements" xmlns:aui="UnityEditor.U2D.Animation">
-  <aui:Toolbar name="VisibilityToolbar">
-    <ui:Button name="VisibilityToolButton" tooltip="Visibility Tool">
-      <ui:Image name="HierarchyToolButtonImage" />
-    </ui:Button>
-  </aui:Toolbar>
-</UXML>

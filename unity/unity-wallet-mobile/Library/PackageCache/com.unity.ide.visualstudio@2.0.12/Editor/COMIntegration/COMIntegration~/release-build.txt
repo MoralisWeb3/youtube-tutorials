@@ -1,1 +1,0 @@
-cl /EHsc /std:c++17 COMIntegration.cpp /link Shlwapi.lib /out:"..\Release\COMIntegration.exe"

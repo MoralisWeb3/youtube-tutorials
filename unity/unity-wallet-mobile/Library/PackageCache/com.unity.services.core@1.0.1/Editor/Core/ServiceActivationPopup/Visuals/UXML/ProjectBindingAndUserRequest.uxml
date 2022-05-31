@@ -1,5 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
-    <VisualElement class="project-bind"/>
-    <VisualElement class="separator"/>
-    <VisualElement class="user-request"/>
-</ui:UXML>

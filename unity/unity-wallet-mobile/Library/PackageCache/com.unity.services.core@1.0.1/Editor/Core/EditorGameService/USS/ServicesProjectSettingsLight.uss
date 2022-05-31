@@ -1,7 +1,0 @@
-.unity-text-element.link-button {
-    color:#074492; /*from light.uss --unity-active-text-color*/
-}
-
-.separator {
-    background-color:#8F8F8F; /*from light.uss --theme-slider-background-color*/
-}
