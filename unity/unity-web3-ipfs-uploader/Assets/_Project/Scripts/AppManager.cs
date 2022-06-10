@@ -7,6 +7,7 @@ using UnityEngine;
 using MoralisUnity;
 using MoralisUnity.Web3Api.Models;
 using Newtonsoft.Json;
+using System.Text.RegularExpressions;
 
 namespace IPFS_Uploader
 {
@@ -26,7 +27,9 @@ namespace IPFS_Uploader
         
         private async void UploadToIpfs(string imgName, string imgDesc, string imgPath, byte[] imgData)
         {
-            string ipfsImagePath = await SaveImageToIpfs(imgName, imgData);
+            // We are replacing any space for an empty
+            string filteredName = Regex.Replace(imgName, @"\s", "");
+            string ipfsImagePath = await SaveImageToIpfs(filteredName, imgData);
 
             if (string.IsNullOrEmpty(ipfsImagePath))
             {
@@ -39,8 +42,10 @@ namespace IPFS_Uploader
             Debug.Log(ipfsImagePath);
 
             // Build Metadata
-            object metadata = BuildMetadata(imgName, imgDesc, ipfsImagePath);
-            string metadataName = $"{imgName}.json";
+            object metadata = BuildMetadata(filteredName, imgDesc, ipfsImagePath);
+            string dateTime = DateTime.Now.Ticks.ToString();
+            
+            string metadataName = $"{filteredName}" + $"_{dateTime}" + ".json";
 
             // Store metadata to IPFS
             string json = JsonConvert.SerializeObject(metadata);
