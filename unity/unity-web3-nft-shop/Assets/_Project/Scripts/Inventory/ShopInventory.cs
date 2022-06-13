@@ -21,7 +21,6 @@ public class ShopInventory : Inventory
 
     private void OnEnable()
     {
-        MoralisAuthenticator.Authenticated += SubscribeToDatabaseEvents;
         ShopCounterCollider.PlayerEnteredShop += OpenShop;
         ShopItem.Selected += OnItemSelectedHandler;
         PurchaseItemManager.PurchaseCompleted += DeletePurchasedItem;
@@ -30,7 +29,6 @@ public class ShopInventory : Inventory
 
     private void OnDisable()
     {
-        MoralisAuthenticator.Authenticated -= SubscribeToDatabaseEvents;
         ShopCounterCollider.PlayerEnteredShop -= OpenShop;
         ShopItem.Selected -= OnItemSelectedHandler;
         PurchaseItemManager.PurchaseCompleted -= DeletePurchasedItem;
@@ -42,7 +40,7 @@ public class ShopInventory : Inventory
     
     #region EVENT_HANDLERS
 
-    private async void SubscribeToDatabaseEvents()
+    public async void SubscribeToDatabaseEvents()
     {
         _getAllItemsQuery = await Moralis.GetClient().Query<ItemData>();
         

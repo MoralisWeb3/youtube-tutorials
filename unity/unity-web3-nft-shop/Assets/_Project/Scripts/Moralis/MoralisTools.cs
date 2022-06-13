@@ -73,11 +73,10 @@ public class MoralisTools
     
     public static async UniTask<string> GetWalletAddress()
     {
-        if (!Moralis.Initialized) return null;
-
-        if (!Moralis.IsLoggedIn()) return null;
-        
         MoralisUser user = await Moralis.GetUserAsync();
+        
+        if (user is null) return null;
+        
         var walletAddress = user.authData["moralisEth"]["id"].ToString();
 
         return walletAddress;

@@ -24,7 +24,6 @@ public class PlayerInputHandler : MonoBehaviour
 
 		_input.General.Logout.performed += DeactivateInput;
 
-		MoralisAuthenticator.Authenticated += ActivateInput;
 		PurchaseItemManager.PurchaseStarted += ActivateInput;
 		
 		Inventory.Opened += DeactivateInput;
@@ -38,7 +37,6 @@ public class PlayerInputHandler : MonoBehaviour
 		
 		_input.General.Logout.performed -= DeactivateInput;
 		
-		MoralisAuthenticator.Authenticated -= ActivateInput;
 		PurchaseItemManager.PurchaseStarted -= ActivateInput;
 		
 		Inventory.Opened += DeactivateInput;
@@ -65,7 +63,7 @@ public class PlayerInputHandler : MonoBehaviour
 
 	#region PRIVATE_METHODS
 
-	private void ActivateInput()
+	public void ActivateInput()
 	{
 		_input.Player.Enable();
 		LockCursor(true);

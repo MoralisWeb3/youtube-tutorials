@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -12,17 +11,7 @@ public class PlayerAddressRetriever : MonoBehaviour
         _addressLabel = GetComponent<TextMeshPro>();
     }
 
-    private void OnEnable()
-    {
-        MoralisAuthenticator.Authenticated += GetPlayerAddress;
-    }
-
-    private void OnDisable()
-    {
-        MoralisAuthenticator.Authenticated -= GetPlayerAddress;
-    }
-    
-    private async void GetPlayerAddress()
+    public async void GetPlayerAddress()
     {
         _addressLabel.text = await MoralisTools.GetWalletAddress();
 
