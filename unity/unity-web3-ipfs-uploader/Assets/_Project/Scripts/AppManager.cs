@@ -42,7 +42,7 @@ namespace IPFS_Uploader
             Debug.Log(ipfsImagePath);
 
             // Build Metadata
-            object metadata = BuildMetadata(filteredName, imgDesc, ipfsImagePath);
+            object metadata = BuildMetadata(imgName, imgDesc, ipfsImagePath);
             string dateTime = DateTime.Now.Ticks.ToString();
             
             string metadataName = $"{filteredName}" + $"_{dateTime}" + ".json";
