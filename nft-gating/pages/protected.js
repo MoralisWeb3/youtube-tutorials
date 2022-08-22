@@ -36,7 +36,7 @@ export async function getServerSideProps(context) {
 
     const nftList = await Moralis.EvmApi.account.getNFTsForContract({
         address: session.user.address,
-        tokenAddress: '0xEA5e2D4CaAeD0520a38EcCBbc175E857AB14bD16',
+        tokenAddress: 'xxx',
         chain: 80001 // defualt 1 (ETH)
     });
 
