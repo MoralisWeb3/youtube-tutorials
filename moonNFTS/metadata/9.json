@@ -1,0 +1,19 @@
+{
+  "description": "A unique moon in a collection of moons :)",
+  "attributes": [
+    {
+      "trait_type": "Weather",
+      "value": "Cloudy"
+    },
+    {
+        "trait_type": "Moon",
+        "value": "Cheese"
+    },
+    {
+        "trait_type": "Extra",
+        "value": "none"
+    }
+  ],
+  "image": "https://firebasestorage.googleapis.com/v0/b/moonnfts-d3cbe.appspot.com/o/image%2F9.png?alt=media",
+  "name": "Moon #9"
+}
