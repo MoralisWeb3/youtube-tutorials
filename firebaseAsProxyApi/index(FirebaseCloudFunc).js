@@ -21,7 +21,6 @@ exports.getPrice = functions.https.onRequest(async (req, res) => {
 
     const usd = response.raw.usdPrice;
 
-    res.set('Access-Control-Allow-Origin', '*');
     res.json({usd});
 
 });
