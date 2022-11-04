@@ -1,0 +1,44 @@
+.App {
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+
+.bu {
+  margin-top:30px;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+}
+
+.bu:hover {
+  cursor: pointer
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.moralis {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 50vw;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.input {
+  height: 30px;
+  width: 200px;
+  border-width: 0px !important;
+}
