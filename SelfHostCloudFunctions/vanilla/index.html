@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample Cloud</title>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+</head>
+
+<body>
+    <button id="run-cloud">Cloud Function</button>
+    <pre id="token-price"></pre>
+    <script>
+        /** Connect to Parse server */
+        Parse.initialize("001"); 
+        Parse.serverURL = "http://localhost:1337/server";
+
+        /** Run Cloud Function */
+        async function cloud() {
+           const response = await Parse.Cloud.run("secretCloudCode");
+           document.getElementById("token-price").innerHTML= JSON.stringify(response)
+           console.log(response);
+        }
+        document.getElementById("run-cloud").onclick = cloud;
+    </script>
+</body>
+
+</html>
