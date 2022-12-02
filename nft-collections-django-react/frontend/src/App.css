@@ -1,0 +1,89 @@
+body {
+  background-image: url("./img/moralis.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.nft-app {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100%;
+  /* background-color: #282c34; */
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.App {
+  text-align: center;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 20% 20px 20%;
+}
+
+.chains {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 30px 20% 20px 20%;
+}
+
+.bu {
+  display: flex;
+  margin: 0 20% 0 20%;
+  margin-top: 30px;
+}
+
+.d-text {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.nfts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-self: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  font-size: 20px !important;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.result-card {
+  width: 700px !important;
+}
+
+.result-element {
+  display: flex;
+}
+
+.result-element p {
+  font-size: 16px;
+}
+
+.result-begin {
+  flex-basis: 20%;
+}
+
+.result-end {
+  flex-basis: 80%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: right;
+}
