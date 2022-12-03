@@ -1,0 +1,67 @@
+.container {
+  padding: 0 2rem;
+  background-color: #fcfcfc;
+  color: #000000;
+  background-image: url("../public/assets/moralis.png")
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  color: #387df4;
+}
+
+.getTokenForm {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.contractAddress {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #fcfcfc;
+  color: #000000;
+  outline: none;
+  border: 0.5px solid #387df4;
+  border-radius: 0.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  margin: 0.5rem 0 0.2rem;
+  padding-bottom: 0.2rem;
+  color: #ffffff;
+}
+
+.form_btn {
+  width: 40vw;
+  height: 3rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  background-color: #286ee8;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form_btn:hover {
+  background-color: #284eb7;
+}
+
+.result {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #2f2f2f;
+}
