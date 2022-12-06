@@ -1,0 +1,4 @@
+{
+  "cSpell.words": ["dotenv", "MORALIS"],
+  "python.formatting.provider": "black"
+}
