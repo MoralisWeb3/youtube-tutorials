@@ -1,0 +1,17 @@
+service: aws-node-express-api-project
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  environment:
+    MORALIS_API_KEY: "replace_me"
+
+plugins:
+  - serverless-offline
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - httpApi: "*"

@@ -1,0 +1,14 @@
+{
+  "name": "aws-node-express-api-project",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.17.1",
+    "moralis": "^2.9.0",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^12.0.2"
+  }
+}
