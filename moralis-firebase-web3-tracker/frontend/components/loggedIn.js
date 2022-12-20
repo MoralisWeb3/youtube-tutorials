@@ -11,12 +11,7 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB1zvfT4B-A0D_M9ht-4ULFthMyF0kCxmQ",
-  authDomain: "moralisweb3wallettracker.firebaseapp.com",
-  projectId: "moralisweb3wallettracker",
-  storageBucket: "moralisweb3wallettracker.appspot.com",
-  messagingSenderId: "608043583374",
-  appId: "1:608043583374:web:4e4ae7f734f10c96d606df",
+  Config: "Add your config here",
 };
 
 const app = initializeApp(firebaseConfig);
