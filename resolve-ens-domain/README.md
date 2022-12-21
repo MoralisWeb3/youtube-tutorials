@@ -1,6 +1,6 @@
 # Using Moralis NFT API with Django and React.
 
-This is simple implementation for Moralis NFT Api using Django and React in order to get any NFT address an specific wallet has
+This is simple implementation for Moralis Resol API
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ This is simple implementation for Moralis NFT Api using Django and React in orde
 
 ## Usage
 
-1. Set up your Moralis API key on `backend/nft/.env`.
+1. Set up your Moralis API key on `backend/domain/.env`.
 2. Run the Django server on backend with:
    
    ```Shell
