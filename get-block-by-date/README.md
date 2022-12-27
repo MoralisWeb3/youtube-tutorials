@@ -1,4 +1,4 @@
-# Using Moralis NFT API with Django and React.
+# Using Moralis Block API with Django and React.
 
 This is simple implementation for Moralis Block API using Django and React
 
