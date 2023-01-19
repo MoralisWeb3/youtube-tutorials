@@ -1,0 +1,257 @@
+.container {
+  background-color: #11223a;
+  color: #ffffff;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+}
+
+.header {
+  padding-top: 2rem;
+  background-color: #192942;
+}
+
+.header_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav > ul {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+.nav_li {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  height: 3rem;
+  padding-left: 3rem;
+  transition: all ease 0.7s;
+}
+
+.nav_li:hover {
+  background-color: #09182a;
+  cursor: pointer;
+}
+
+.nav_li:visited {
+  color: red;
+  cursor: pointer;
+}
+
+.header_connect {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_helper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3rem;
+  width: 87vw;
+  border-bottom: 0.8px solid #213554;
+}
+
+.questionMark {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  background-color: #ffffff;
+  width: 50rem;
+  height: 40rem;
+  margin: -40rem;
+  padding: 0 5rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 15px #0000006d, -3px -3px 50px #0000006d;
+}
+
+.popup > h1 {
+  margin-top: 3rem;
+}
+
+.popup > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20rem;
+  font-size: 1.1rem;
+  padding: 0 6rem;
+  margin-top: 3rem;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.ConnectButton_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+.loggedIn_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.result_token {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.tokenContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #68738d;
+  border-radius: 0.7rem;
+  margin-top: 5%;
+  width: 22rem;
+  height: 6rem;
+}
+
+.tokenContainer > img {
+  flex-basis: 10%;
+  padding-left: 1rem;
+}
+
+.name {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.amount {
+  flex-basis: 40%;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.result_nft {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  padding-top: 4%;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 27rem;
+  margin: 1rem;
+}
+
+.cardContainer h1 {
+  color: #e78db3;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.cardContainer img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.result_transaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.transactionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #68738d;
+  border-radius: 0.7rem;
+  margin-top: 5%;
+  width: 55rem;
+  height: 15rem;
+}
+
+.result_streams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.streamContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  width: 55rem;
+  height: 15rem;
+}
+
+.float {
+  animation-name: Floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes Floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
