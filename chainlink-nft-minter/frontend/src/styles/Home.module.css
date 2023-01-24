@@ -1,0 +1,116 @@
+.moralis_logo {
+  margin-left: 50px;
+}
+
+.hero_text {
+  margin-left: 100px;
+}
+
+.connect_button {
+  margin-right: 50px;
+  width: 10vw;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #00c3f8;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.connect_button:hover {
+  background-color: #11a7d1;
+}
+
+.container {
+  padding: 0 2rem;
+  background-color: #fcfcfc;
+  color: #000000;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 6rem;
+  text-align: left;
+  color: #00c3f8;
+}
+
+
+
+
+
+.label {
+  padding-bottom: 0.2rem;
+  color: #041836;
+}
+
+.form_btn {
+  width: 10vw;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #00c3f8;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.form_btn:hover {
+  background-color: #11a7d1;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.result {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color: #041836;
+  text-shadow: 1px 1px 2px #dedede;
+}
+
+.tokenContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #68738d;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+}
+
+.tokenContainer > img {
+  flex-basis: 10%;
+  padding-left: 1rem;
+}
+
+.name {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.amount {
+  flex-basis: 40%;
+  text-align: right;
+  margin-right: 1rem;
+}
