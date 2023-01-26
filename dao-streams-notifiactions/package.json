@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@moralisweb3/core": "^2.7.4",
+    "express": "^4.18.2",
+    "moralis": "^2.12.0",
+    "node-notifier": "^10.0.1"
+  }
+}
