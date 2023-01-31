@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font: 14px/1.4em Arial, Verdana, Tahoma, Serif;
+  text-align: center;
+}
+button {
+  border: 0;
+  background: #eee;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  opacity: 0.8;
+}

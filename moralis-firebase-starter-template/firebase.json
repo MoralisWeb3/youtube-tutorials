@@ -1,0 +1,12 @@
+{
+  "emulators": {
+    "hosting": {
+      "port": 5555
+    }
+  },
+  "hosting": {
+    "source": "hosting",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  },
+  "extensions": {}
+}
