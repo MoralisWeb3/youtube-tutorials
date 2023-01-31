@@ -13,7 +13,7 @@ Required Google Cloud services:
 1. Create a Firebase project.
 2. Upgrade to Blaze plan.
 3. Activate the `Authentication` feature in the Firebase Console. Go to the Firebase Console > Your Project > Build > Authentication and click the Get Started button.
-4. Create a Webb App and Copy Config for step 14.
+4. Create a Webb App and Copy Config for step 15.
 5. Generate a certificate for the [Service Account](https://firebase.google.com/support/guides/service-accounts). You will need it in the next step.
 6. Convert the certificate to extension variables by [this online converter](https://moralisweb3.github.io/firebase-extensions/service-account-converter/). You will use these variables in step 13.
 7. Clone this repo.
