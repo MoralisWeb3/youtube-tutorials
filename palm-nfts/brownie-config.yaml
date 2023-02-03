@@ -1,0 +1,22 @@
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@0.6.0
+  - OpenZeppelin/openzeppelin-contracts@4.8.1
+reports:
+  exclude_contracts:
+    - LinkToken
+    - VRFCoordinatorV2Mock
+    - MockV3Aggregator
+    - ERC721
+    - EnumerableMap
+    - Address
+    - EnumerableSet
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.8.1"
+      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.6.0"
+dotenv: .env
+
+
+wallets:
+  from_key: ${PRIVATE_KEY}
