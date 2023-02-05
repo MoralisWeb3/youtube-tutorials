@@ -99,3 +99,20 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+.mint_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2980b9;
+  color: #ffffff;
+  width: 13rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+}

@@ -8,6 +8,8 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
+const MORALIS_API_KEY = process.env.MORALIS_API_KEY;
+
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -32,6 +34,28 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+app.get("/uploadtoipfs", async (req, res) => {
+  const { query } = req;
+  try {
+    const response = await Moralis.EvmApi.ipfs.uploadFolder({
+      abi: [
+        {
+          path: "conversation.json",
+          content: { chat: query.pair },
+        },
+      ],
+    });
+    console.log(response.result);
+  } catch (e) {
+    console.log(`Something went wrong ${e}`);
+    return res.status(400).json();
+  }
+});
+
+Moralis.start({
+  apiKey: MORALIS_API_KEY,
+}).then(() => {
+  app.listen(port, () => {
+    console.log(`Listening for API Calls`);
+  });
 });
