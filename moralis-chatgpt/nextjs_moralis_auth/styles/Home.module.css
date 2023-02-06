@@ -108,7 +108,8 @@
   color: #ffffff;
   width: 13rem;
   height: 3.5rem;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: -2rem;
   outline: none;
   border: none;
   border-radius: 1rem;

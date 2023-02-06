@@ -18,7 +18,6 @@ const openai = new OpenAIApi(configuration);
 
 app.get("/", async (req, res) => {
   const { query } = req;
-  console.log("qq", query.message);
   try {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
@@ -26,7 +25,6 @@ app.get("/", async (req, res) => {
       max_tokens: 30,
       temperature: 0,
     });
-    console.log("before return", response.data);
     return res.status(200).json(response.data);
   } catch (e) {
     console.log(`Something went wrong ${e}`);
@@ -46,6 +44,7 @@ app.get("/uploadtoipfs", async (req, res) => {
       ],
     });
     console.log(response.result);
+    return res.status(200).json(response.result);
   } catch (e) {
     console.log(`Something went wrong ${e}`);
     return res.status(400).json();

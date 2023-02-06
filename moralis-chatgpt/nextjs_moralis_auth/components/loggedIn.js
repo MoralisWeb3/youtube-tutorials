@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { useContract, useProvider, useSigner, useAccount } from "wagmi";
 import styles from "../styles/Home.module.css";
 import { abi, MSG_CONTRACT_ADDRESS } from "../constants/index";
 
@@ -7,7 +8,17 @@ export default function LoggedIn() {
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
   const [pair, setPair] = useState({});
+  const [ipfsUri, setIpfsUri] = useState("");
   const [showMintBtn, setShowMintBtn] = useState(false);
+  const { address } = useAccount();
+  const provider = useProvider();
+  const { data: signer } = useSigner();
+
+  const messageConversation = useContract({
+    addressOrName: MSG_CONTRACT_ADDRESS,
+    contractInterface: abi,
+    signerOrProvider: signer || provider,
+  });
 
   const getMessage = (e) => {
     setMessage(e.target.value);
@@ -39,11 +50,18 @@ export default function LoggedIn() {
     setShowMintBtn(true);
   };
 
-  const upload = async () => {
-    console.log("Mint", pair);
+  const mint = async () => {
     const response = await axios.get("http://localhost:5001/uploadtoipfs", {
       params: { pair },
     });
+    setIpfsUri(response.data[0].path);
+    try {
+      const tx = await messageConversation.mintNFT(address, ipfsUri);
+      await tx.wait();
+      console.log("You successfully created a profile!");
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
@@ -61,8 +79,8 @@ export default function LoggedIn() {
         </section>
       </section>
       {showMintBtn && (
-        <button className={styles.mint_btn} onClick={upload}>
-          UPLOAD TO IPFS
+        <button className={styles.mint_btn} onClick={mint}>
+          MINT NFT
         </button>
       )}
     </section>
