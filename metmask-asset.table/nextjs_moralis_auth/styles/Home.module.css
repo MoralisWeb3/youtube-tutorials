@@ -1,0 +1,222 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #101213;
+  margin: -8px;
+}
+
+.header {
+  color: #ffffff;
+  letter-spacing: 0.05rem;
+  margin-bottom: 5rem;
+}
+
+.header_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+.connect_btn {
+  background-image: linear-gradient(
+    to right,
+    #ff8008 0%,
+    #ffc837 51%,
+    #ff8008 100%
+  );
+  display: block;
+  background-size: 200% auto;
+  margin: 10px;
+  padding: 18px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #ffffff;
+  letter-spacing: 0.03rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.connect_btn:hover {
+  background-position: right center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.loggedIn_container {
+  margin: 2rem auto;
+  width: 85vw;
+  height: 40rem;
+  background-color: #1e1f24;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.assets {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.085rem;
+}
+
+.menuDots {
+  display: flex;
+  height: 1.4rem;
+  margin-left: 0.5rem;
+}
+
+.menuDots:hover {
+  color: #c3c3c3;
+  cursor: pointer;
+}
+
+.tableHeader_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.listView {
+  display: flex;
+  justify-content: space-between;
+  width: 5.5rem;
+  height: 1rem;
+  padding: 1rem;
+  border: 1px solid #3e3f4a;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.listView:hover {
+  background-color: #263ea9;
+  border: 1px solid #3661e3;
+}
+
+.displayAssetsOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 17rem;
+  height: 1rem;
+  padding: 1rem;
+  border: 1px solid #3e3f4a;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.displayAssetsOption > p {
+  border-radius: 2rem;
+  padding: 0.8rem;
+  margin: 0 0.5rem;
+}
+
+.displayAssetsOption > p:hover {
+  background-color: #262832;
+}
+
+.tokens {
+  background-color: #3e3f4a;
+}
+
+.tableContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.tableTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a7a9ba;
+  font-size: 1.1rem;
+  width: 100%;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #364153;
+  letter-spacing: 0.1rem;
+}
+
+.portfolio {
+  color: #516be1;
+}
+
+.tableAssets_container {
+  width: 100%;
+  letter-spacing: 0.1rem;
+}
+
+.tableAsset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a7a9ba;
+  font-size: 1.1rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #364153;
+  letter-spacing: 0.1rem;
+  text-align: right;
+}
+
+.titleData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+}
+
+.nameAndSymbol {
+  display: flex;
+  flex-direction: column;
+}
+
+.tokenName {
+  font-size: 0.8rem;
+}
+
+.tokenSymbol {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.portfolioValues {
+  width: 5rem;
+}
+
+.price {
+  color: #ffffff;
+  width: 5rem;
+  margin-left: 5rem;
+}
+
+.dollarAndAmount {
+  display: flex;
+  flex-direction: column;
+}
+
+.dollarAmount {
+  color: #ffffff;
+  width: 10rem;
+}
