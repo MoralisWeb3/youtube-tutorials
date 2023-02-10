@@ -4,8 +4,7 @@ const options = {
   method: "GET",
   headers: {
     accept: "application/json",
-    "X-API-Key":
-      "q2uxXuKPvqa57IlGGFJffeBZx51iFlPvFidpSvcqYI31jwbukVgc2P0v7CIAB1rO",
+    "X-API-Key": "YOUR-API-KEY-HERE",
   },
 };
 
