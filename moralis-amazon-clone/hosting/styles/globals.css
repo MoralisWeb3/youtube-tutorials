@@ -1,0 +1,23 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+button {
+  border: 0;
+  background: #eee;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

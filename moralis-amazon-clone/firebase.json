@@ -1,0 +1,18 @@
+{
+  "emulators": {
+    "hosting": {
+      "port": 5555
+    }
+  },
+  "hosting": {
+    "source": "hosting",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "extensions": {
+    "moralis-auth": "moralis/moralis-auth@0.1.4"
+  }
+}
