@@ -1,0 +1,89 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  align-items: center;
+  letter-spacing: 0.05rem;
+  background-color: #192942;
+}
+
+.logo_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  width: 40%;
+  margin-top: 1.5rem;
+}
+
+.mxa {
+  width: 2.5rem;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background-color: #0d1829af;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 4rem 5rem 5rem;
+}
+
+.label {
+  font-size: 1.2rem;
+  padding-bottom: 0.7rem;
+}
+
+.inputField {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #fcfcfc;
+  color: #041836;
+  outline: none;
+  border: 1px solid #cbcbcb;
+  border-radius: 0.3rem;
+}
+
+.form_btn {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-color: #00c3f8;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  width: 65%;
+  padding-bottom: 2rem;
+}
+
+.cardComp {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  width: 25rem;
+  margin-top: 2rem;
+}
+
+.nftImage {
+  width: 100%;
+}
