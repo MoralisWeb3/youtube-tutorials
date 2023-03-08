@@ -6,7 +6,7 @@ import styles from "@/styles/Home.module.css";
 import MoralisLogo from "../public/assets/moralis.png";
 import AptosLogo from "../public/assets/aptos_white.png";
 
-export default function Header() {
+export default function Main() {
   const [walletAddress, setWalletAddress] = useState("");
   const [result, setResult] = useState([]);
   const [showResult, setShowResult] = useState(false);
@@ -22,7 +22,6 @@ export default function Header() {
       params: { address: walletAddress },
     });
 
-    console.log("res", response);
     setResult(response.data.result);
     setShowResult(true);
   };
