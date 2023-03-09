@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.12",
+    "@web3uikit/core": "^0.2.47",
+    "axios": "^1.3.4",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
