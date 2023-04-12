@@ -1,0 +1,139 @@
+.container {
+  background-color: #1b1f1e;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(17, 42, 87);
+  padding-left: 3rem;
+  box-shadow: 1px 1px 1.5px #2d2d2d;
+}
+
+.mxa {
+  width: 2.5rem;
+}
+
+.title {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-left: 4rem;
+  font-weight: 500;
+}
+
+.input_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.inputField {
+  width: 100%;
+  height: 3rem;
+  background-color: #fcfcfc;
+  color: #041836;
+  font-size: 1rem;
+  padding-left: 1rem;
+  outline: none;
+  /* border: 1px solid #cbcbcb; */
+  border: none;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.submit_btn {
+  width: 15%;
+  height: 3rem;
+  font-size: 1.2rem;
+  background-color: #0099c3;
+  border: none;
+  outline: none;
+  border-radius: 0 0.3rem 0.3rem 0;
+  cursor: pointer;
+}
+
+.submit_btn:hover {
+  background-color: #00acdc;
+}
+
+.result {
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
+  /* margin-top: 2rem; */
+  /* font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px #dedede25; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90rem;
+}
+
+.resultContainer {
+  /* display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  width: 60vw;
+  height: 35vh; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.8rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  height: 20rem;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+}
+
+.card_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  padding: 1.5rem;
+  margin: 2rem;
+  border: 2px solid rgb(158, 199, 234);
+  border-radius: 1rem;
+}
+
+.card_details__key {
+  color: rgb(104, 115, 141);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  margin-bottom: 0.5rem;
+}
+
+.card_details__value {
+  display: flex;
+  align-items: center;
+  color: rgb(11, 114, 196);
+  letter-spacing: 0.02rem;
+  margin-bottom: 0.5rem;
+}
