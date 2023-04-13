@@ -1,0 +1,114 @@
+.container {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  background-color: #131615c2;
+  background-image: url("https://etherscan.io/images/svg/waves-light.svg");
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(17, 42, 87);
+  padding: 0 3rem;
+  box-shadow: 1px 1px 1.5px #2d2d2d;
+}
+
+.title {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-left: 4rem;
+  font-weight: 500;
+}
+
+.main_form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 32vw;
+  height: 4rem;
+  margin-top: 0.5rem;
+}
+
+.submit_btn {
+  width: 15rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+  background-color: rgb(29, 64, 129);
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  letter-spacing: 0.01rem;
+}
+
+.submit_btn:hover {
+  background-color: rgb(39, 87, 169);
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 70rem;
+}
+
+.resultSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.8rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  height: 13rem;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15rem;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.cardContainer h1 {
+  color: #e78db3;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.cardContainer img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.nftImage {
+  width: 100%;
+  height: 10rem;
+}
