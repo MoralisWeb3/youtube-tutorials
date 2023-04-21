@@ -1,0 +1,121 @@
+.container {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  background-color: #131615c2;
+  background-image: url("https://etherscan.io/images/svg/waves-light.svg");
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(17, 42, 87);
+  padding-left: 3rem;
+  box-shadow: 1px 1px 1.5px #2d2d2d;
+}
+
+.title {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-left: 4rem;
+  font-weight: 500;
+}
+
+.input_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.inputField {
+  width: 100%;
+  height: 3rem;
+  background-color: #fcfcfc;
+  color: #041836;
+  font-size: 1rem;
+  padding-left: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.submit_btn {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  background-color: rgb(29, 64, 129);
+  letter-spacing: 0.02rem;
+  border: none;
+  outline: none;
+  border-radius: 0 0.3rem 0.3rem 0;
+  cursor: pointer;
+}
+
+.submit_btn:hover {
+  background-color: rgb(39, 87, 169);
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 60rem;
+  margin-top: 3rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13rem;
+  height: 18rem;
+  color: #000000;
+  background-color: #f1f8fb;
+  border-radius: 1.2rem;
+  margin-top: 1rem;
+}
+
+.card > h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.illustration {
+  width: 60%;
+  height: 10rem;
+}
+
+.spam {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.2rem;
+  padding: 0.2rem 0;
+  background-color: rgb(245, 48, 48);
+}
+
+.noSpam {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.2rem;
+  padding: 0.2rem 0;
+  background-color: rgb(48, 245, 143);
+}
