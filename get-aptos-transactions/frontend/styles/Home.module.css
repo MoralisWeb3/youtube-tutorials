@@ -1,0 +1,86 @@
+.main {
+  font-family: lft-etica-mono, ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+    Consolas, "Liberation Mono", monospace;
+  min-height: 100vh;
+  background-color: #131615;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(17, 42, 87);
+  padding: 0 3rem;
+  box-shadow: 1px 1px 1.5px #2d2d2d;
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 0 8rem;
+}
+
+.title {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-left: 4rem;
+  font-weight: 500;
+}
+
+.table {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 5rem;
+  border-collapse: collapse;
+}
+
+.tableHeader_row {
+  margin-top: 1rem;
+  border-bottom: 2px solid #9c9c9c;
+}
+
+.tableHeader_row :first-child {
+  text-align: left;
+}
+
+.tableBody_row {
+  border-bottom: 1px solid #9c9c9c;
+}
+
+.tableBody_row :first-child {
+  text-align: left;
+}
+
+.svg {
+  width: 2rem;
+  height: 3rem;
+}
+
+.address {
+  background-color: #363a39;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.function {
+  background-color: #0ea4e921;
+  color: #83cbed;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.amountData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.5rem 0;
+}
+
+.amountData :last-child {
+  color: #909099;
+  font-size: 0.75rem;
+}
