@@ -14,7 +14,7 @@ contract NFTMarketplace is ReentrancyGuard {
     address public owner;
 
     constructor() {
-        owner == msg.sender;
+        owner = msg.sender;
     }
 
     struct MarketItem {
