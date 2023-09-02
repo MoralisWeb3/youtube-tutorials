@@ -1,6 +1,6 @@
 Moralis.Cloud.define("getUserItems", async (request) => {
 
-    const query = new Moralis.Query("NFTTokenOwners");
+    const query = new Moralis.Query("EthNFTTokenOwners");
     query.equalTo("contract_type", "ERC721");
     query.containedIn("owner_of", request.user.attributes.accounts);
     const queryResults = await query.find();
@@ -19,7 +19,7 @@ Moralis.Cloud.define("getUserItems", async (request) => {
   
   Moralis.Cloud.beforeSave("ItemsForSale", async (request) => {
   
-    const query = new Moralis.Query("NFTTokenOwners");
+    const query = new Moralis.Query("EthNFTTokenOwners");
     query.equalTo("token_address", request.object.get('tokenAddress'));
     query.equalTo("token_id", request.object.get('tokenId'));
     const object = await query.first();
