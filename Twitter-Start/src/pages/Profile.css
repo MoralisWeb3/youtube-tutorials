@@ -67,6 +67,20 @@
     cursor: pointer;
 }
 
+.profileFollowersAndFollowings {
+    color: rgb(114, 114, 114);
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 200px;
+    padding: 20px 40px;
+}
+
+.profileFollowersAndFollowings span:first-child {
+    color: white;
+    margin-right: 4px;
+}
+
 .profileTabs {
     display: flex;
     justify-content: center;

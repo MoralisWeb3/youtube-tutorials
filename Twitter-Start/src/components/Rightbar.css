@@ -3,10 +3,10 @@
   width: 80%;
 }
 
-.trends {
+.trends,
+.popular {
   background-color: #222b34;
   border-radius: 25px;
-  min-height: calc(100vh - 200px);
   max-width:290px;
   margin-top: 40px;
   padding: 20px;
@@ -44,4 +44,38 @@
     font-weight: normal;
     padding: 15px;
     color:#1DA1F2;
+}
+
+.popularProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.popularDetails {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 38px auto;
+    grid-gap: 10px;
+}
+
+.popularImg,
+.popularDetails img {
+    background-color: white;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
+
+.popularDetails div:first-child {
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.popularDetails div:last-child {
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+    font-weight: lighter;
 }
